@@ -17,7 +17,7 @@ const Navbar = () => {
 
       <Menu />
 
-      <Box display={{base: 'none', md: 'flex'}}>
+      <Box display={'none'}>
         <a href="#about">About</a>
         <br />
 
