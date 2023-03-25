@@ -3,41 +3,46 @@ import {
   CardHeader, 
   CardBody, 
   CardFooter,
-  Box
+  Box,
+  Stack,
+  Button,
+  Divider,
+  Text,
+  ButtonGroup,
+  Heading
 } from '@chakra-ui/react'
+import Image from 'next/image';
 
-const ProjectCard = () => {
+const ProjectCard = (props:any) => {
   return ( 
-    <Card maxW='sm'>
-      <CardBody>
+    <Card maxW='sm' alignItems={'center'}>
+      <Box>
         <Image
-          src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
-          alt='Green double couch with wooden legs'
-          borderRadius='lg'
+          src={props.src}
+          alt={props.alt}
+          height={250}
+          width={250}
         />
+      </Box>
+
+      <Box>
         <Stack mt='6' spacing='3'>
-          <Heading size='md'>Living room Sofa</Heading>
-          <Text>
-            This sofa is perfect for modern tropical spaces, baroque inspired
-            spaces, earthy toned spaces and for people who love a chic design with a
-            sprinkle of vintage design.
-          </Text>
-          <Text color='blue.600' fontSize='2xl'>
-            $450
+          <Heading size='md'>{props.heading}</Heading>
+          <Text>{props.description}</Text>
+          <Text bgColor={'grey'} color='blue.600' fontSize='2xl' p={5}>
+            {props.category}
           </Text>
         </Stack>
-      </CardBody>
-      <Divider />
-      <CardFooter>
-        <ButtonGroup spacing='2'>
-          <Button variant='solid' colorScheme='blue'>
-            Buy now
+
+        <ButtonGroup spacing='7'>
+          <Button variant='solid' colorScheme='blue' onClick={props.repoLink}>
+            View Repo
           </Button>
-          <Button variant='ghost' colorScheme='blue'>
-            Add to cart
+          <Button variant='ghost' colorScheme='blue' onClick={props.link}>
+            Visit
           </Button>
         </ButtonGroup>
-      </CardFooter>
+      </Box>
     </Card>
    );
 }
@@ -45,8 +50,30 @@ const ProjectCard = () => {
 
 const Projects = () => {
   return ( 
-    <Box>
-      <ProjectCard />
+    <Box bgColor={'bisque'} px={'1rem'} py={'3rem'} minH={'100vh'} textAlign={'center'}>
+      <Heading>Projects</Heading>
+
+      <Box>
+        <ProjectCard 
+          src='/thirteen.svg'
+          alt='thirteen'
+          heading='Fashion haven'
+          description= 'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.'
+          category='e-commerce'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
+        />
+
+        <ProjectCard 
+          src='/thirteen.svg'
+          alt='thirteen'
+          heading=''
+          description=''
+          category=''
+          repoLink=''
+          link=''
+        />
+      </Box>
 
     </Box>
    );
