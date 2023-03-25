@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 
-const Home = () => {
+const Hero = () => {
   return ( 
     <Box>
       
@@ -8,4 +8,4 @@ const Home = () => {
    );
 }
  
-export default Home;
+export default Hero;
