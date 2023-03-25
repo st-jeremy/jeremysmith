@@ -5,35 +5,34 @@ import {
 } from "@chakra-ui/react";
 import Menu from "./Menu";
 
-const Navlinks = () => {
-  return ( 
-    <>
-     <a href="#about"> About </a>
-      <br />
-
-      <a href="#solutions"> Solutions </a>
-      <br />
-
-      <a href="#howItWorks"> How it works </a>
-      <br />
-
-      <a href="#roadmap"> Roadmap </a>
-      <br />
-    </>
-   );
-}
 
 const Navbar = () => {
  
   return ( 
-    <Box display='flex' flex-direction='row' padding={{ base:'1rem', lg:'5rem'}} gap={{base:'2px', md:'20px'}} maxWidth='1440px' position={'fixed'} zIndex={'1000'} width={'100%'} color={'white'}>
+    <Box display='flex'>
       
       <Box _hover={{bgColor: 'red', textDecor: 'underline'}}>
-        {/* <Heading>Jeremy_Smith</Heading> */}
+        <h3>Jeremy_Smith</h3>
       </Box>
 
       <Menu />
 
+      <Box display={{base: 'none', md: 'flex'}}>
+        <a href="#about">About</a>
+        <br />
+
+        <a href="#expertise">Technology</a>
+        <br />
+
+        <a href="#projects">Projects</a>
+        <br />
+
+        <a href="#experience">Experience</a>
+        <br />
+
+        <a href="#contact">Contact</a>
+        <br />
+      </Box>
      
     </Box>
    );
