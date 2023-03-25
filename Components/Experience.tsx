@@ -11,7 +11,7 @@ import {
 const Experience = () => {
   return ( 
     <>
-      <Accordion defaultIndex={[0]} allowMultiple>
+      <Accordion defaultIndex={[0]}>
         <AccordionItem>
           <h2>
             <AccordionButton>

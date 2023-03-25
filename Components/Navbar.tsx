@@ -9,9 +9,9 @@ import Menu from "./Menu";
 const Navbar = () => {
  
   return ( 
-    <Box display='flex'>
+    <Box px={'1rem'} py={'.5rem'} borderBottom={'1px solid red'}>
       
-      <Box _hover={{bgColor: 'red', textDecor: 'underline'}}>
+      <Box _hover={{color: 'red', textDecor: 'underline'}}>
         <h3>Jeremy_Smith</h3>
       </Box>
 
@@ -33,7 +33,6 @@ const Navbar = () => {
         <a href="#contact">Contact</a>
         <br />
       </Box>
-     
     </Box>
    );
 }

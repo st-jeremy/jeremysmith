@@ -1,13 +1,12 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 
 const Hero = () => {
   return ( 
-    <>
-    
-    {/* <Heading height={'90vh'}> */}
-      {/* With a mission for good user-experience centric purpose, we are able to turn ideation to reality */}
-    {/* </Heading> */}
-    </>
+    <Box px={'1rem'} py={'1rem'} height={'90vh'}>
+      <Text >
+        With a mission for good user-experience centric purpose, we are able to turn ideation to reality
+      </Text>
+    </Box>
    );
 }
  

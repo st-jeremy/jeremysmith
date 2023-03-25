@@ -16,7 +16,9 @@ const Menu = () => {
   
   return ( 
     <Box display={{md: 'none'}}>
-      <BsMenuApp onClick={onOpen}/>
+      <Box position={'absolute'} right={'1rem'} top={'.7rem'}>
+        <BsMenuApp onClick={onOpen}/>
+      </Box>
 
       <Drawer
         isOpen={isOpen}
