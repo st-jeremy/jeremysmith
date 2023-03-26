@@ -8,8 +8,8 @@ const TechImage = (props: any) => {
         src={props.src}
         alt={props.alt}
         loading={'lazy'}
-        width={50}
-        height={50}
+        width={180}
+        height={160}
       />
       </Box>
    );
@@ -20,37 +20,36 @@ const Tech = () => {
     <Box bgColor={'white'} py={'2rem'} px={'3rem'} height={'100vh'}>
       <Heading>Tech Stack</Heading>
       <TechImage 
-        src='/thirteen.svg'
+        src='/HTML5.png'
         alt='HTML'
       />
       <TechImage 
-        src='/thirteen.svg'
+        src='/CSS.png'
         alt='CSS'
       />
       <TechImage 
-        src='/thirteen.svg'
+        src='/JavaScript.png'
         alt='JavaScript'
       />
       <TechImage 
-        src='/thirteen.svg'
+        src='/TypeScript.png'
         alt='TypeScript'
       />
       <TechImage 
-        src='/thirteen.svg'
+        src='/react.png'
         alt='React'
       />
       <TechImage 
-        src='/thirteen.svg'
+        src='/Nextjs.png'
         alt='Next.JS'
       />
-
 
       <TechImage 
         src='/thirteen.svg'
         alt='Material UI'
       />
       <TechImage 
-        src='/thirteen.svg'
+        src='/chakra.png.svg'
         alt='Chakra UI'
       />
       <TechImage 
