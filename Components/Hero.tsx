@@ -12,7 +12,7 @@ const Hero = () => {
       </Text>
 
       <Text >
-        ...a mission for good user-experience centric purpose, we are able to turn ideation to reality
+        ...a mission for turning designs into great user-experience with an encompassing user-centric approach
       </Text>
     </Box>
    );

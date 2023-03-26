@@ -9,6 +9,7 @@ import Contact from '@/Components/Contact'
 import Experience from '@/Components/Experience'
 import Projects from '@/Components/Projects'
 import Tech from '@/Components/Tech'
+import Footer from '@/Components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,6 +38,7 @@ export default function Home() {
 
         <Contact />
 
+        <Footer />
       </main>
     </>
   )
