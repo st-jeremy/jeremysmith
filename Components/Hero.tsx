@@ -2,7 +2,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 const Hero = () => {
   return ( 
-    <Box px={'1rem'} py={'1rem'} height={'92vh'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'}>
+    <Box px={'1rem'} py={'1rem'} height={'92vh'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'} id={'hero'}>
       <Heading fontSize={'50px'}>
         JEREMY <br /> SMITH 
       </Heading>

@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const TechImage = (props: any) => {
   return ( 
-    <Box position={'relative'} display={'block'}>
+    <Box position={'relative'} display={'flex'} justifyItems={'center'} alignItems={'center'} bgColor={'white'} p={'.8rem'}>
       <Image 
         src={props.src}
         alt={props.alt}
         loading={'lazy'}
         width={180}
-        height={160}
+        height={140}
       />
       </Box>
    );
@@ -17,9 +17,10 @@ const TechImage = (props: any) => {
  
 const Tech = () => {
   return ( 
-    <Box bgColor={'white'} py={'2rem'} px={'3rem'} minHeight={'100vh'}>
+    <Box bgColor={'black'} py={'2rem'} px={'1rem'} minHeight={'100vh'} color={'whatsapp.700'}>
       <Heading>Tech Stack</Heading>
-      <Box>
+
+      <Box display={{md:'grid'}} gap={'1rem'} gridTemplateColumns={{md:'auto auto auto'}} justifyItems={'center'} alignItems={'center'} m={'auto'}>
         <TechImage 
           src='/HTML5.png'
           alt='HTML'

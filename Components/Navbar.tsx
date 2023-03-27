@@ -1,5 +1,6 @@
 import { 
   Box, 
+  Button,
   Heading, 
   Text 
 } from "@chakra-ui/react";
@@ -17,21 +18,19 @@ const Navbar = () => {
 
       <Menu />
 
-      <Box display={'none'}>
-        <a href="#about">About</a>
-        <br />
+      <Box display={{base: 'none', md: 'flex'}} gap={'40px'}>
+        <Button variant={'ghost'}>
+          <a href="#about">About</a>
+        </Button>
+        
 
         <a href="#expertise">Technology</a>
-        <br />
 
         <a href="#projects">Projects</a>
-        <br />
 
         <a href="#experience">Experience</a>
-        <br />
 
         <a href="#contact">Contact</a>
-        <br />
       </Box>
     </Box>
    );
