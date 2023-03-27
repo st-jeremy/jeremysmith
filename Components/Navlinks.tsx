@@ -1,28 +1,53 @@
 import { Box, Button } from '@chakra-ui/react'
 
+const NavlinksBtn = (props: any) => {
+  return ( 
+    <Box display={{base: 'none', md: 'flex'}} gap={'40px'}>
+
+      <Button 
+        variant={'unstyled'} 
+        border={'none'} 
+        bgColor={'transparent'} 
+        _hover={{color: 'teal', textDecor:'underline' }} 
+        _visited={{color: 'red', bgColor: 'green'}}
+      >
+        <a href={props.link}>
+          {props.name}
+        </a>
+      </Button>
+    </Box>
+   );
+}
+
 const Navlinks = () => {
   return ( 
     <Box display={{base: 'none', md: 'flex'}} gap={'40px'}>
-      <Button variant={'unstyled'} border={'none'} bgColor={'transparent'} _visited={{color: 'red', bgColor: 'green'}}>
-        <a href="#hero">About</a>
-      </Button>
-      
-      <Button variant={'unstyled'} border={'none'} bgColor={'transparent'} _visited={{color: 'red', bgColor: 'green'}}>
-        <a href="#tech">Technology</a>
-      </Button>
 
-      <Button variant={'unstyled'} border={'none'} bgColor={'transparent'} _visited={{color: 'red', bgColor: 'green'}}>
-        <a href="#projects">Projects</a>
-      </Button>
-      
+      <NavlinksBtn 
+        name='About'
+        link='#about'
+      />
 
-      <Button variant={'unstyled'} border={'none'} bgColor={'transparent'} _visited={{color: 'red', bgColor: 'green'}}>
-        <a href="#experience">Experience</a>
-      </Button>
+      <NavlinksBtn 
+        name='Tech'
+        link='#tech'
+      />
 
-      <Button variant={'unstyled'} border={'none'} bgColor={'transparent'} _visited={{color: 'red', bgColor: 'green'}}>
-        <a href="#contact">Contact</a>
-      </Button>
+      <NavlinksBtn 
+        name='Projects'
+        link='#projects'
+      />
+
+      <NavlinksBtn 
+        name='Experience'
+        link='#experience'
+      />
+
+      <NavlinksBtn 
+        name='Contact'
+        link='#contact'
+      />
+
     </Box>
    );
 }
