@@ -6,7 +6,6 @@ import Menu from "./Menu";
 import Navlinks from "./Navlinks";
 
 
-
 const Navbar = () => {
  
   return (
