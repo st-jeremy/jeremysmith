@@ -7,9 +7,11 @@ import {
   DrawerCloseButton,
   Box,
   useDisclosure,
+  Divider,
 } from '@chakra-ui/react'
 import React from 'react';
 import { BsMenuApp } from 'react-icons/bs'
+import Navlinks from './Navlinks';
 
 const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -25,18 +27,20 @@ const Menu = () => {
         placement='right'
         onClose={onClose}
       >
-        <DrawerOverlay />
+        <DrawerOverlay bgColor={'grey'} height={'10rem'} />
 
-        {/* <DrawerContent>
-          <DrawerCloseButton onClick={onClose}/>
+        <DrawerContent p={'1rem'}>
+          <DrawerCloseButton onClick={onClose} position={'absolute'} right={'1rem'} />
           <DrawerHeader borderBottomWidth='1px'>
             Jeremy.dev
           </DrawerHeader>
+          
+          <Divider />
 
           <DrawerBody>
-           
+            <Navlinks />
           </DrawerBody>
-        </DrawerContent> */}
+        </DrawerContent>
       </Drawer>
     </Box>
    );
