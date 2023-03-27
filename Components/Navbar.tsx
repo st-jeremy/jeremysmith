@@ -10,9 +10,9 @@ import Navlinks from "./Navlinks";
 const Navbar = () => {
  
   return ( 
-    <Box px={{base: '1rem', sm: '1.5rem', md: '2rem', lg: '5rem'}} py={{base: '.5rem', md:'1rem'}} borderBottom={'1px solid red'}>
+    <Box px={{base: '1.25rem', sm: '1.5rem', md: '2rem', lg: '5rem'}} py={{base: '.5rem', md:'1rem'}} borderBottom={'1px solid red'}>
  
-      <Heading fontSize={'25px'} m={0}>Jeremy_Smith</Heading>
+      <Heading fontSize={'25px'} width={'fit-content'} m={0}>Jeremy_Smith</Heading>
 
       <Menu />
 

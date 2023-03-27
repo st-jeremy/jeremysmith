@@ -1,4 +1,5 @@
 import { Box, Button } from '@chakra-ui/react'
+import { CSSProperties } from 'react';
 
 const NavlinksBtn = (props: any) => {
   return ( 
@@ -7,7 +8,8 @@ const NavlinksBtn = (props: any) => {
       <Button 
         variant={'unstyled'} 
         border={'none'} 
-        bgColor={'transparent'} 
+        // color={'w'}
+        // bgColor={'transparent'} 
         _hover={{color: 'teal', textDecor:'underline' }} 
         _visited={{color: 'red', bgColor: 'green'}}
       >
@@ -21,7 +23,7 @@ const NavlinksBtn = (props: any) => {
 
 const Navlinks = () => {
   return ( 
-    <Box display={{base: 'none', md: 'flex'}} gap={'40px'}>
+    <Box gap={'40px'}>
 
       <NavlinksBtn 
         name='About'

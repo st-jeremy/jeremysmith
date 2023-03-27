@@ -18,7 +18,7 @@ const Menu = () => {
   
   return ( 
     <Box display={{md: 'none'}}>
-      <Box position={'absolute'} right={'1rem'} top={'.7rem'}>
+      <Box position={'absolute'} right={{base:'1.25rem', sm: '1.5rem', md: '2rem', lg: '5rem'}} top={{base: '.7rem', sm:'1rem'}}>
         <BsMenuApp onClick={onOpen}/>
       </Box>
 
@@ -27,15 +27,15 @@ const Menu = () => {
         placement='right'
         onClose={onClose}
       >
-        <DrawerOverlay bgColor={'grey'} height={'10rem'} />
+        <DrawerOverlay/>
 
-        <DrawerContent p={'1rem'}>
-          <DrawerCloseButton onClick={onClose} position={'absolute'} right={'1rem'} />
+        <DrawerContent bgColor={'blackAlpha.900'}>
+          <DrawerCloseButton onClick={onClose} border={'none'} />
           <DrawerHeader borderBottomWidth='1px'>
             Jeremy.dev
           </DrawerHeader>
-          
-          <Divider />
+
+          {/* <Divider /> */}
 
           <DrawerBody>
             <Navlinks />
