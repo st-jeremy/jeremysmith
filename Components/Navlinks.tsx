@@ -23,7 +23,7 @@ const NavlinksBtn = (props: any) => {
 
 const Navlinks = () => {
   return ( 
-    <Box gap={'40px'}>
+    <Box>
 
       <NavlinksBtn 
         name='About'

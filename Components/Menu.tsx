@@ -8,10 +8,11 @@ import {
   Box,
   useDisclosure,
   Divider,
+  Button
 } from '@chakra-ui/react'
 import React from 'react';
 import { BsMenuApp } from 'react-icons/bs'
-import Navlinks from './Navlinks';
+import Navlinks from '@/Components/Navlinks';
 
 const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -31,14 +32,13 @@ const Menu = () => {
 
         <DrawerContent bgColor={'blackAlpha.900'} color={'white'}>
           <DrawerCloseButton onClick={onClose} border={'none'} />
-          <DrawerHeader borderBottomWidth='1px'>
+          <DrawerHeader >
             Jeremy.dev
           </DrawerHeader>
 
-          {/* <Divider /> */}
-
-          <DrawerBody>
+          <DrawerBody color={'white'}>
             <Navlinks />
+            <Button>Hello</Button>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
