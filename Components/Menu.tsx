@@ -29,7 +29,7 @@ const Menu = () => {
       >
         <DrawerOverlay/>
 
-        <DrawerContent bgColor={'blackAlpha.900'}>
+        <DrawerContent bgColor={'blackAlpha.900'} color={'white'}>
           <DrawerCloseButton onClick={onClose} border={'none'} />
           <DrawerHeader borderBottomWidth='1px'>
             Jeremy.dev
