@@ -5,6 +5,7 @@ import {
   Text 
 } from "@chakra-ui/react";
 import Menu from "./Menu";
+import Navlinks from "./Navlinks";
 
 
 
@@ -19,6 +20,7 @@ const Navbar = () => {
 
       <Menu />
 
+      <Navlinks />
       
     </Box>
    );
