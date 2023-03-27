@@ -1,11 +1,16 @@
 import { Box, Button } from '@chakra-ui/react'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 
 const NavlinksBtn = (props: any) => {
+
   return ( 
     <Box>
       <Button 
         variant={'ghost'} 
         border={'none'} 
+        height={'fit-content'}
         _hover={{color: 'teal', textDecor:'underline' }} 
         _visited={{color: 'red', bgColor: 'green'}}
       >
@@ -19,7 +24,7 @@ const NavlinksBtn = (props: any) => {
 
 const Navlinks = (props:any) => {
   return ( 
-    <Box display={props.display} flexDir={props.flexDirection}>
+    <Box display={props.display}>
       <NavlinksBtn 
         name='About'
         link='#about'
