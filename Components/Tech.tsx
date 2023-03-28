@@ -17,7 +17,7 @@ const TechImage = (props: any) => {
  
 const Tech = () => {
   return ( 
-    <Box bgColor={'black'} py={'8rem'} px={'1rem'} minHeight={'50vh'}>
+    <Box bgColor={'black'} py={'8rem'}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={'50vh'}>
       <Heading textAlign={'center'} pb={'1rem'}>Tech Stack</Heading>
 
       <Box display={{base:'grid'}} 
