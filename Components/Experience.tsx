@@ -12,8 +12,8 @@ import {
 
 const ExpAccordion = (props:any) => {
   return ( 
-    <Box mt={'2rem'} p={0} borderRadius={'20px'} background='black'>
-          <AccordionItem color={'white'} bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, lg:'20px 0 0 0 20px'}} borderTop={'1px solid blue'} border={{ lg:'none'}} pb={{lg:'5rem'}} pt={{lg:'5rem'}} >
+    <Box p={0} borderRadius={'20px'} background='black'>
+          <AccordionItem color={'white'} bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, lg:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ lg:'none'}} pb={{lg:'5rem'}} pt={{lg:'5rem'}} >
             <h2>
               <AccordionButton mt={{lg:'50%'}} pt={{lg:'0%'}}>
                 <Box as="span" flex='1' textAlign={{base:'center', lg:'left'}} minW={'4rem'}>
@@ -44,7 +44,7 @@ const Experience = () => {
       <Heading fontSize={{base:'24px', md:'40px'}} color={'white'}>Experience</Heading>
       <Text fontSize={{base:'16px', md:'18px'}}>See spaces where I have worked while reaching my goal</Text>
 
-      <Box mt={'2rem'} p={0} borderRadius={'20px'}>
+      <Box mt={'1rem'} p={0} borderRadius={'20px'}>
         <Accordion defaultIndex={[0]} reduceMotion display={'flex'} flexDirection={{base:'column', lg:'row'}} >
         <ExpAccordion 
           bgColor='grey'

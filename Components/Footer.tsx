@@ -7,7 +7,7 @@ import { BsFillFileArrowUpFill } from 'react-icons/bs'
 
 const Footer = () => {
   return ( 
-    <Box>
+    <Box padding={{base:'2rem 1rem', md:'10rem 4rem 4rem', lg:'10rem 6rem 4rem'}}>
       <Box position={'fixed'} bottom={5} right={4} border={'1px solid black'}>
         <Tooltip label="Return to top" aria-label='A tooltip'>
           <a href="#hero">
@@ -18,7 +18,7 @@ const Footer = () => {
 
       <Divider color={'#0C37AA'} w={'90%'} m={'auto'} />
 
-      <Text fontSize={'14px'} textAlign={'center'} p={'10px 0'}>
+      <Text fontSize={'14px'} textAlign={'center'} >
         Copyright © {new Date().getFullYear()}- jeremysmith.dev
       </Text>
     </Box>

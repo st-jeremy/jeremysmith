@@ -1,5 +1,6 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
 const Contact = () => {
   return ( 
     <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} minH={'100vh'} textAlign={'center'} minHeight={'100vh'}>
@@ -15,7 +16,7 @@ const Contact = () => {
       <Text>Contact me via </Text>
       
       <nav>
-        
+        <Link href={'http://wa.me/2349053292009'}>Whatsapp</Link>
         <a href="mailto:hello@tamal.dev">hello@tamal.dev</a> <br />
         <a href="http://wa.me/2349053292009">WhatsApp Messenger</a> <br />
         <a href="http://">LinkedIn</a> <br />
