@@ -1,12 +1,9 @@
 import { 
   Card, 
-  CardHeader, 
-  CardBody, 
-  CardFooter,
+  Badge,
   Box,
   Stack,
   Button,
-  Divider,
   Text,
   ButtonGroup,
   Heading
@@ -15,23 +12,32 @@ import Image from 'next/image';
 
 const ProjectCard = (props:any) => {
   return ( 
-    <Card width='350px' height={'400px'} alignItems={'center'} mb={'1rem'} pb={'1rem'}>
+    <Card width='350px' height={'430px'} alignItems={'center'} mb={'1rem'} pb={'1rem'}>
       <Box width={{base:'100%'}}>
         <Image
           src={props.src}
           alt={props.alt}
-          height={250}
+          height={300}
           width={350}
         />
       </Box>
 
       <Box bgColor={'linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1))'}>
-        <Stack spacing='.1' mb={'1rem'} p={'1rem'} >
+        <Stack spacing='.1' p={'1rem'} >
           <Heading size='md'>{props.heading}</Heading>
           <Text>{props.description}</Text>
           <Text fontStyle={'italic'} fontWeight={'bold'}>
             {props.category}
           </Text>
+          <Box display={'flex'} textAlign={'center'} gap={'.3rem'} pb={'.3rem'}>
+            <Badge>{props.badge1}</Badge>
+            <Badge>{props.badge2}</Badge>
+            <Badge>{props.badge3}</Badge>
+          </Box>
+          <Box display={'flex'} textAlign={'center'} gap={'.3rem'}>
+            <Badge>{props.badge4}</Badge>
+            <Badge>{props.badge5}</Badge>
+          </Box>
         </Stack>
 
         <ButtonGroup>
@@ -60,6 +66,11 @@ const Projects = () => {
           heading='Fashion haven'
           description= 'an e-commerce website for fashion...'
           category='e-commerce'
+          badge1='Next.Js'
+          badge2='TypeScript'
+          badge3='Redux'
+          badge4='Chakra UI'
+          badge5='CSS'
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
@@ -70,6 +81,9 @@ const Projects = () => {
           heading='Flyplux'
           description='an airline landing page'
           category='landing page'
+          badge1='React'
+          badge2='Chakra UI'
+          badge3='CSS'
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
@@ -93,6 +107,11 @@ const Projects = () => {
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
+      </Box>
+
+      <Box>
+        <Heading>Still cooking in the pot... </Heading>
+        
       </Box>
 
     </Box>
