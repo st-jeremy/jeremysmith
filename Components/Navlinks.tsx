@@ -1,6 +1,8 @@
 import { Box, Button } from '@chakra-ui/react'
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { FcHome, FcCalendar, FcWorkflow } from 'react-icons/fc'
+import { VscProject, VscFileCode } from 'react-icons/vsc'
+import { MdContacts } from 'react-icons/md'
+
 
 
 const NavlinksBtn = (props: any) => {
@@ -11,11 +13,9 @@ const NavlinksBtn = (props: any) => {
         variant={'ghost'} 
         border={'none'} 
         height={'fit-content'}
+        leftIcon={props.icon} 
         _hover={{color: 'teal', textDecor:'underline' }} 
         _visited={{color: 'red', bgColor: 'green'}}
-        transitionProperty={"box-shadow"}
-        transitionTimingFunction={'cubic-bezier(0.4, 0, 0.2, 1)'}
-        transitionDuration={'150ms'}
       >
         <a href={props.link}>
           {props.name}
@@ -29,28 +29,33 @@ const Navlinks = (props:any) => {
   return ( 
     <Box display={props.display}>
       <NavlinksBtn 
-        name='About'
-        link='#about'
+        name='Home'
+        link='#hero'
+        icon={<FcHome />} 
       />
 
       <NavlinksBtn 
         name='Tech'
         link='#tech'
+        icon={<VscFileCode/>}
       />
 
       <NavlinksBtn 
         name='Projects'
         link='#projects'
+        icon={<VscProject/>}
       />
 
       <NavlinksBtn 
         name='Experience'
         link='#experience'
+        icon={<FcWorkflow />}
       />
 
       <NavlinksBtn 
         name='Contact'
         link='#contact'
+        icon={<MdContacts />}
       />
 
     </Box>

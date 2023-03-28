@@ -35,7 +35,7 @@ const Menu = () => {
         <DrawerContent bgColor={'blackAlpha.900'} color={'white'}>
           <DrawerCloseButton onClick={onClose} border={'none'} />
           <DrawerHeader pl={'2rem'}>
-            Dev_
+            Dev_ Jeremy Smith
           </DrawerHeader>
 
           <DrawerBody color={'white'}>
