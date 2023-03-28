@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 const TechImage = (props: any) => {
@@ -18,7 +18,8 @@ const TechImage = (props: any) => {
 const Tech = () => {
   return ( 
     <Box bgColor={'black'} py={'8rem'}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={'50vh'}>
-      <Heading textAlign={'center'} pb={'1rem'}>Tech Stack</Heading>
+      <Heading textAlign={'center'}>Tech Stack</Heading>
+      <Text pb={'1rem'}>Tech worked with over time. Skilled at using the following software</Text>
 
       <Box 
         display={{base:'grid'}} 
@@ -46,12 +47,12 @@ const Tech = () => {
           alt='React'
         />
         <TechImage 
-          src='/Nextjs.png'
+          src='/react.png'
           alt='Next.JS'
         />
 
         <TechImage 
-          src='/thirteen.svg'
+          src='/react.png'
           alt='Material UI'
         />
         <TechImage 
@@ -61,6 +62,26 @@ const Tech = () => {
         <TechImage 
           src='/tailwind.png'
           alt='Tailwind'
+        />
+        <TechImage 
+          src='/tailwind.png'
+          alt='git'
+        />
+        <TechImage 
+          src='/tailwind.png'
+          alt='Bootstrap'
+        />
+        <TechImage 
+          src='/tailwind.png'
+          alt='SASS'
+        />
+        <TechImage 
+          src='/tailwind.png'
+          alt='Jira'
+        />
+        <TechImage 
+          src='/tailwind.png'
+          alt='Redux'
         />
 
       </Box>
