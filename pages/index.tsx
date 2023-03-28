@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/Components/Navbar'
 import Hero from '@/Components/Hero'
-import About from '@/Components/About'
 import Contact from '@/Components/Contact'
 import Experience from '@/Components/Experience'
 import Projects from '@/Components/Projects'
@@ -17,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Jeremy Smith- FrontEnd Dev.</title>
+        <title>Dev._ Jeremy Smith</title>
         <meta name="description" content="Jeremy Smith Portfolio Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -29,8 +28,6 @@ export default function Home() {
         <Hero />
 
         <Tech />
-
-        <About />
 
         <Projects />
 
