@@ -1,7 +1,8 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom';
 const Contact = () => {
   return ( 
-    <Box px={'1rem'} py={'3rem'} minHeight={'100vh'}>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} minH={'100vh'} textAlign={'center'} minHeight={'100vh'}>
 
       <Heading>Contact</Heading>
       <Text>
@@ -9,15 +10,18 @@ const Contact = () => {
 
         Have an exciting project you need help with or collaboration on?
         <br />
+      </Text>
 
-        Contact me via 
+      <Text>Contact me via </Text>
+      
+      <nav>
+        
         <a href="mailto:hello@tamal.dev">hello@tamal.dev</a> <br />
         <a href="http://wa.me/2349053292009">WhatsApp Messenger</a> <br />
         <a href="http://">LinkedIn</a> <br />
         <a href="http://">Github</a> <br />
         <a href="tel:+2349053292009">+234 905 329 2009</a>
-
-      </Text>
+      </nav>
     </Box>
    );
 }
