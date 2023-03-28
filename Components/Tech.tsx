@@ -20,11 +20,11 @@ const Tech = () => {
     <Box bgColor={'black'} py={'8rem'}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={'50vh'}>
       <Heading textAlign={'center'} pb={'1rem'}>Tech Stack</Heading>
 
-      <Box display={{base:'grid'}} 
-      gap={'1rem'} 
-      // gridAutoFlow={'column'}
-      // gridAutoColumns={'auto'}
-      gridTemplateColumns={{base:'repeat(3, minmax(0, 1fr));'}} >
+      <Box 
+        display={{base:'grid'}} 
+        gap={'1rem'} 
+        gridTemplateColumns={{base:'repeat(3, minmax(0, 1fr));'}} 
+      >
         <TechImage 
           src='/HTML5.png'
           alt='HTML'
