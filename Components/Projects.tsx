@@ -50,10 +50,10 @@ const ProjectCard = (props:any) => {
 
 const Projects = () => {
   return ( 
-    <Box px={'1rem'} py={'3rem'} minH={'100vh'} textAlign={'center'}>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} minH={'100vh'} textAlign={'center'}>
       <Heading pb={'1rem'}>Projects</Heading>
 
-      <Box gap={'1rem'} display={{base:'flex', md: 'grid'}} flexDir={'column'} alignItems={'center'} gridTemplateColumns={'auto auto auto'}>
+      <Box gap={'3rem'} display={{base:'flex', md: 'grid'}} flexDir={'column'} alignItems={'center'} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}}>
         <ProjectCard 
           src='/fashion-haven.png'
           alt='fashion haven image'
@@ -93,7 +93,6 @@ const Projects = () => {
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
-
       </Box>
 
     </Box>

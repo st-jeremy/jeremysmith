@@ -41,7 +41,8 @@ const Menu = () => {
           <DrawerBody color={'white'}>
             <Navlinks />
             <Text fontSize={'16px'} position={'absolute'} bottom={5}>
-              © 2023. Made with passion by Jeremy Smith. <br />
+              © 2023 <br />
+              Made with passion by Jeremy Smith. <br />
               All right reserved.
             </Text>
           </DrawerBody>
