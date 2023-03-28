@@ -5,12 +5,15 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Heading
   
 } from '@chakra-ui/react'
 
 const Experience = () => {
   return ( 
-    <>
+    <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} minH={'100vh'} textAlign={'center'}>
+      <Heading textAlign={'center'} mb={'1rem'}>Experience</Heading>
+    
       <Accordion defaultIndex={[0]}>
         <AccordionItem>
           <h2>
@@ -46,7 +49,7 @@ const Experience = () => {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-    </>
+    </Box>
    );
 }
  
