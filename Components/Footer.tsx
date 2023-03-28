@@ -8,12 +8,10 @@ import { BsFillFileArrowUpFill } from 'react-icons/bs'
 const Footer = () => {
   return ( 
     <Box>
-    
-      <Box>
-        
+      <Box position={'fixed'} bottom={5} right={4} border={'1px solid black'}>
         <Tooltip label="Return to top" aria-label='A tooltip'>
           <a href="#hero">
-            <BsFillFileArrowUpFill />
+            <BsFillFileArrowUpFill style={{color:'white', backgroundColor:'black'}}/>
           </a>
         </Tooltip>
       </Box>
