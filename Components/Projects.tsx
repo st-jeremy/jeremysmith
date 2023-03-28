@@ -53,12 +53,12 @@ const Projects = () => {
     <Box bgColor={'bisque'} px={'1rem'} py={'3rem'} minH={'100vh'} textAlign={'center'}>
       <Heading>Projects</Heading>
 
-      <Box>
+      <Box gap={'2rem'}>
         <ProjectCard 
           src='/thirteen.svg'
           alt='thirteen'
           heading='Fashion haven'
-          description= 'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.'
+          description= 'an e-commerce website for fashion products.'
           category='e-commerce'
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
