@@ -1,8 +1,16 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const TechImage = (props: any) => {
   return ( 
+    <motion.div 
+      animate={{
+        scale: [1, 2, 2, 1, 1],
+        rotate: [0, 90, 180, 270, 360, 0],
+        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+      }}
+    >
     <Box width={'fit-content'}>
       <Image 
         src={props.src}
@@ -12,6 +20,7 @@ const TechImage = (props: any) => {
         height={60}
       />
       </Box>
+      </motion.div>
    );
 }
  
