@@ -15,31 +15,31 @@ import Image from 'next/image';
 
 const ProjectCard = (props:any) => {
   return ( 
-    <Card maxW='sm' alignItems={'center'}>
-      <Box>
+    <Card width='350px' height={'400px'} alignItems={'center'} mb={'1rem'} pb={'1rem'}>
+      <Box width={{base:'100%'}}>
         <Image
           src={props.src}
           alt={props.alt}
           height={250}
-          width={250}
+          width={350}
         />
       </Box>
 
-      <Box>
-        <Stack mt='6' spacing='3'>
+      <Box bgColor={'linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1))'}>
+        <Stack spacing='.1' mb={'1rem'} p={'1rem'} >
           <Heading size='md'>{props.heading}</Heading>
           <Text>{props.description}</Text>
-          <Text bgColor={'grey'} color='blue.600' fontSize='2xl' p={5}>
+          <Text fontStyle={'italic'} fontWeight={'bold'}>
             {props.category}
           </Text>
         </Stack>
 
-        <ButtonGroup spacing='7'>
-          <Button variant='solid' colorScheme='blue' onClick={props.repoLink}>
-            View Repo
+        <ButtonGroup>
+          <Button variant='outline' colorScheme='black' onClick={props.repoLink} fontSize={'16px'}>
+            View Repository
           </Button>
-          <Button variant='ghost' colorScheme='blue' onClick={props.link}>
-            Visit
+          <Button variant='outline' colorScheme='black' onClick={props.link} fontSize={'16px'}>
+            Visit 
           </Button>
         </ButtonGroup>
       </Box>
@@ -50,13 +50,33 @@ const ProjectCard = (props:any) => {
 
 const Projects = () => {
   return ( 
-    <Box bgColor={'bisque'} px={'1rem'} py={'3rem'} minH={'100vh'} textAlign={'center'}>
-      <Heading>Projects</Heading>
+    <Box px={'1rem'} py={'3rem'} minH={'100vh'} textAlign={'center'}>
+      <Heading pb={'1rem'}>Projects</Heading>
 
-      <Box gap={'2rem'}>
+      <Box gap={'1rem'} display={{base:'flex', md: 'grid'}} flexDir={'column'} alignItems={'center'} gridTemplateColumns={'auto auto auto'}>
         <ProjectCard 
-          src='/thirteen.svg'
-          alt='thirteen'
+          src='/fashion-haven.png'
+          alt='fashion haven image'
+          heading='Fashion haven'
+          description= 'an e-commerce website for fashion...'
+          category='e-commerce'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
+        />
+
+        <ProjectCard 
+          src='/fashion-haven.png'
+          alt='Fly plux'
+          heading='Flyplux'
+          description='an airline landing page'
+          category='landing page'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
+        />
+
+        <ProjectCard 
+          src='/fashion-haven.png'
+          alt='fashion haven image'
           heading='Fashion haven'
           description= 'an e-commerce website for fashion products.'
           category='e-commerce'
@@ -65,14 +85,15 @@ const Projects = () => {
         />
 
         <ProjectCard 
-          src='/thirteen.svg'
-          alt='thirteen'
-          heading=''
-          description=''
-          category=''
-          repoLink=''
-          link=''
+          src='/fashion-haven.png'
+          alt='fashion haven image'
+          heading='Fashion haven'
+          description= 'an e-commerce website for fashion products.'
+          category='e-commerce'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
         />
+
       </Box>
 
     </Box>

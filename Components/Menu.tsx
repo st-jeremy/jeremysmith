@@ -6,6 +6,7 @@ import {
   DrawerContent,
   DrawerCloseButton,
   Box,
+  Text,
   useDisclosure,
   Divider,
   Button
@@ -39,7 +40,12 @@ const Menu = () => {
 
           <DrawerBody color={'white'}>
             <Navlinks />
+            <Text fontSize={'16px'} position={'absolute'} bottom={5}>
+              © 2023. Made with passion by Jeremy Smith. <br />
+              All right reserved.
+            </Text>
           </DrawerBody>
+         
         </DrawerContent>
       </Drawer>
     </Box>
