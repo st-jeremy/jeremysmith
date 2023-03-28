@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const TechImage = (props: any) => {
   return ( 
-    <Box position={'relative'} display={'flex'} justifyItems={'center'} alignItems={'center'} bgColor={'white'} p={'.8rem'}>
+    <Box width={'fit-content'}>
       <Image 
         src={props.src}
         alt={props.alt}
         loading={'lazy'}
-        width={180}
-        height={140}
+        width={70}
+        height={60}
       />
       </Box>
    );
@@ -17,10 +17,14 @@ const TechImage = (props: any) => {
  
 const Tech = () => {
   return ( 
-    <Box bgColor={'black'} py={'2rem'} px={'1rem'} minHeight={'100vh'} color={'whatsapp.700'}>
-      <Heading>Tech Stack</Heading>
+    <Box bgColor={'black'} py={'8rem'} px={'1rem'} minHeight={'100vh'}>
+      <Heading textAlign={'center'} pb={'1rem'}>Tech Stack</Heading>
 
-      <Box display={{md:'grid'}} gap={'1rem'} gridTemplateColumns={{md:'auto auto auto'}} justifyItems={'center'} alignItems={'center'} m={'auto'}>
+      <Box display={{base:'grid'}} 
+      gap={'1rem'} 
+      // gridAutoFlow={'column'}
+      // gridAutoColumns={'auto'}
+      gridTemplateColumns={{base:'repeat(3, minmax(0, 1fr));'}} >
         <TechImage 
           src='/HTML5.png'
           alt='HTML'
@@ -59,10 +63,6 @@ const Tech = () => {
           alt='Tailwind'
         />
 
-        <TechImage 
-          src='/thirteen.svg'
-          alt='HTML'
-        />
       </Box>
 
     </Box>

@@ -13,6 +13,9 @@ const NavlinksBtn = (props: any) => {
         height={'fit-content'}
         _hover={{color: 'teal', textDecor:'underline' }} 
         _visited={{color: 'red', bgColor: 'green'}}
+        transitionProperty={"box-shadow"}
+        transitionTimingFunction={'cubic-bezier(0.4, 0, 0.2, 1)'}
+        transitionDuration={'150ms'}
       >
         <a href={props.link}>
           {props.name}
