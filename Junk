@@ -1,0 +1,27 @@
+{/* <motion.svg
+      width='300'
+      height="400"
+      viewBox="0 10 600 600"
+      initial="hidden"
+      animate="visible"
+    >
+      
+      <motion.circle className={styles.circle}
+        cx="200"
+        cy="300"
+        r="120"
+        stroke="#ff0055"
+        variants={draw}
+        custom={1}
+      />
+       <motion.rect className={styles.circle}
+        width="90"
+        height="170"
+        x="410"
+        y="430"
+        rx="20"
+        stroke="#ff0055"
+        variants={draw}
+        custom={2}
+      />
+       </motion.svg> */}

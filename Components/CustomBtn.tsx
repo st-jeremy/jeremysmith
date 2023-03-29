@@ -23,6 +23,7 @@ const CustomBtn = (props: any) => {
         _hover={{color:'black', bgColor:'white'}}
         _visited={{color: 'grey', }}
         bgColor={props.bgColor}
+        rightIcon={props.rightIcon}
       >
         <a href={props.link}>
           {props.name}
