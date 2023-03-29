@@ -22,6 +22,7 @@ const CustomBtn = (props: any) => {
         justifyContent='left'
         _hover={{color:'black', bgColor:'white'}}
         _visited={{color: 'grey', }}
+        bgColor={props.bgColor}
       >
         <a href={props.link}>
           {props.name}

@@ -20,7 +20,7 @@ const draw = {
 const Hero = () => {
   return ( 
     <Box id={'hero'}>
-    <motion.svg
+    {/* <motion.svg
       width='300'
       height="400"
       viewBox="0 10 600 600"
@@ -46,26 +46,27 @@ const Hero = () => {
         variants={draw}
         custom={2}
       />
-       </motion.svg>
+       </motion.svg> */}
 
-      <Box mt={'-8rem'} px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} pt={'.1rem'} height={{base:'fit-content', lg:'95vh'}} position={'sticky'}  top={'12rem'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'} >
+      <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '4rem'}} pt={'.1rem'} height={{base:'fit-content', lg:'95vh'}} position={'sticky'}  top={'12rem'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'} >
 
-        <motion.div whileHover={{ scale: 0.8 }} whileTap={{ scale: 0.8 }} drag dragConstraints={{ left: 0, right: 300 }} dragSnapToOrigin={true} 
+        <motion.div whileTap={{ scale: 0.8 }} drag dragConstraints={{ left: 0, right: 300 }} dragSnapToOrigin={true} 
   dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} dragPropagation>
 
-        <Heading fontSize={{base:'50px', lg: '64px'}}>
-          JEREMY <br /> SMITH 
-        </Heading>
-      
-
-        <Heading fontSize={{base:'18px', lg:'30px'}}>
-          FRONT-END DEVELOPER
+        <Heading fontSize={{base:'50px', lg: '64px'}} textAlign={'left'}>
+          Hello, I am <br />
+          <Box color={'red'} textShadow={'2px solid white'}>JEREMY SMITH </Box>
+          a Front-End Developer
         </Heading>
 
-        <Text fontSize={{lg: '24px'}} p={{base:'1rem'}}>
+        <Text fontSize={{lg: '24px'}} textAlign={'left'}>
           ...a mission for turning designs, with an encompassing user-centric approach to deliver a great experience.
         </Text>
         </motion.div>
+      </Box>
+
+      <Box position={'absolute'} left={1}>
+        <Text textDecorationStyle={'revert'}>Scroll down</Text>
       </Box>
       </Box>
    );
