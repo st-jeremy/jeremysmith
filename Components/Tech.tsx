@@ -1,17 +1,9 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, spring } from "framer-motion";
 
 const TechImage = (props: any) => {
   return ( 
-    <motion.div 
-      animate={{
-        scale: [1, 2, 2, 1, 1],
-        rotate: [0, 90, 180, 270, 360, 0],
-        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-      }}
-      
-    >
     <Box width={'fit-content'}>
       <Image 
         src={props.src}
@@ -21,12 +13,19 @@ const TechImage = (props: any) => {
         height={60}
       />
       </Box>
-      </motion.div>
    );
 }
  
 const Tech = () => {
   return ( 
+    <motion.div
+    initial={{marginTop: '-3rem'}}
+  whileInView={{marginTop: '0'}}
+  viewport={{ once: true }}
+  transition={spring}
+    >
+
+
     <Box bgColor={'black'} py={'8rem'}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={'50vh'} id={'tech'}>
       <Heading textAlign={'center'}>Tech Stack</Heading>
       <Text pb={'1rem'}>Tech worked with over time. Skilled at using the following software</Text>
@@ -97,6 +96,7 @@ const Tech = () => {
       </Box>
 
     </Box>
+    </motion.div>
    );
 }
  

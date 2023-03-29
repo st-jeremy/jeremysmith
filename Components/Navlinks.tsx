@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 const NavlinksBtn = (props: any) => {
   
   return ( 
-    <Box width={'fit-content'}>
+    <Box width={{md:'fit-content'}}>
     <motion.button
       whileHover={{
         scale: 1.2,
@@ -21,7 +21,7 @@ const NavlinksBtn = (props: any) => {
       <Button 
         variant={'ghost'} 
         border={'none'} 
-        width={'fit-content'}
+        width={{base: '10rem', md:'fit-content'}}
         height={'fit-content'}
         leftIcon={props.icon} 
         p={'1.5'}
@@ -40,7 +40,7 @@ const NavlinksBtn = (props: any) => {
 
 const Navlinks = (props:any) => {
   return ( 
-    <Box display={props.display} flexDir={props.flexDir} gap={{base:'.5rem', md: 8}}>
+    <Box display={props.display} flexDir={props.flexDir} gap={{base:'.5rem', md: 2, lg: 5}}>
       <NavlinksBtn 
         name='Home'
         link='#hero'

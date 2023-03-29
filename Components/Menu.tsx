@@ -17,11 +17,6 @@ import { motion } from "framer-motion"
 
 const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-  }
   
   return ( 
     
@@ -30,7 +25,6 @@ const Menu = () => {
         <BsMenuApp onClick={onOpen}/>
       </Box>
     
-    <motion.nav variants={variants} animate={isOpen ? "open" : "closed"}>
       <Drawer
         isOpen={isOpen}
         placement='right'
@@ -40,7 +34,7 @@ const Menu = () => {
         
         <DrawerContent bgColor={'blackAlpha.900'} color={'white'}>
           <DrawerCloseButton onClick={onClose} border={'none'} />
-          <DrawerHeader pl={'2rem'}>
+          <DrawerHeader pl={'2rem'} fontSize={'22px'}>
             Dev_ 
           </DrawerHeader>
 
@@ -60,7 +54,6 @@ const Menu = () => {
         </DrawerContent>
 
       </Drawer>
-    </motion.nav>
     </Box>
    );
 }

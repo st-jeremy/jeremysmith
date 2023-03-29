@@ -47,22 +47,25 @@ const Hero = () => {
         custom={2}
       />
        </motion.svg>
+
       <Box mt={'-8rem'} px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} pt={'.1rem'} height={{base:'fit-content', lg:'95vh'}} position={'sticky'}  top={'12rem'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'} >
-        
+
+        <motion.div whileHover={{ scale: 0.8 }} whileTap={{ scale: 0.8 }} drag dragConstraints={{ left: 0, right: 300 }} dragSnapToOrigin={true} 
+  dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} dragPropagation>
+
         <Heading fontSize={{base:'50px', lg: '64px'}}>
           JEREMY <br /> SMITH 
         </Heading>
       
 
-        <Heading fontSize={{base:'20px', lg:'30px'}}>
+        <Heading fontSize={{base:'18px', lg:'30px'}}>
           FRONT-END DEVELOPER
         </Heading>
-        {/* </motion.div> */}
 
-        <Text fontSize={{lg: '24px'}}>
+        <Text fontSize={{lg: '24px'}} p={{base:'1rem'}}>
           ...a mission for turning designs, with an encompassing user-centric approach to deliver a great experience.
         </Text>
-        <Progress colorScheme='white' value={10} />
+        </motion.div>
       </Box>
       </Box>
    );
