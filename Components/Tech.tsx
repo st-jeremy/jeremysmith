@@ -26,7 +26,7 @@ const Tech = () => {
     >
 
 
-    <Box bgColor={'black'} py={'8rem'}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={'50vh'} id={'tech'}>
+    <Box bgColor={'black'} py={'5rem'}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={'50vh'} id={'tech'}>
       <Heading textAlign={'center'}>Tech Stack</Heading>
       <Text pb={'1rem'}>Tech worked with over time. Skilled at using the following software</Text>
 
