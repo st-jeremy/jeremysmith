@@ -3,12 +3,14 @@ import { FcHome, FcCalendar, FcWorkflow } from 'react-icons/fc'
 import { VscProject, VscFileCode } from 'react-icons/vsc'
 import { MdContacts } from 'react-icons/md'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 
 
 
 const NavlinksBtn = (props: any) => {
-
+  
   return ( 
+    <Box width={'fit-content'}>
     <motion.button
       whileHover={{
         scale: 1.2,
@@ -19,25 +21,26 @@ const NavlinksBtn = (props: any) => {
       <Button 
         variant={'ghost'} 
         border={'none'} 
-        width={'8rem'}
+        width={'fit-content'}
         height={'fit-content'}
         leftIcon={props.icon} 
-        p={'1'}
-        textAlign={'left'}
+        p={'1.5'}
+        justifyContent='left'
         _hover={{color:'black', bgColor:'white'}}
-        _visited={{color: 'red', bgColor: 'green'}}
+        _visited={{color: 'grey', }}
       >
         <a href={props.link}>
           {props.name}
         </a>
       </Button>
     </motion.button>
+    </Box>
    );
 }
 
 const Navlinks = (props:any) => {
   return ( 
-    <Box display={props.display} flexDir={props.flexDir} >
+    <Box display={props.display} flexDir={props.flexDir} gap={{base:'.5rem', md: 8}}>
       <NavlinksBtn 
         name='Home'
         link='#hero'
