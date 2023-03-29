@@ -48,14 +48,17 @@ const Hero = () => {
       />
        </motion.svg> */}
 
-      <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '4rem'}} pt={'.1rem'} height={{base:'fit-content', lg:'95vh'}} position={'sticky'}  top={'12rem'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'} >
+      <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '4rem'}} pt={'.1rem'} height={{base:'fit-content', lg:'95vh'}} position={'sticky'}  top={'12rem'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'}  width={{base: '100%', md: '60%'}}>
 
         <motion.div whileTap={{ scale: 0.8 }} drag dragConstraints={{ left: 0, right: 300 }} dragSnapToOrigin={true} 
   dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} dragPropagation>
 
         <Heading fontSize={{base:'50px', lg: '64px'}} textAlign={'left'}>
-          Hello, I am <br />
+          Hello, <br />
+          I am 
           <Box color={'red'} textShadow={'2px solid white'}>JEREMY SMITH </Box>
+        </Heading>
+        <Heading fontSize={{base:'40px', lg: '54px'}} textAlign={'left'}>
           a Front-End Developer
         </Heading>
 
