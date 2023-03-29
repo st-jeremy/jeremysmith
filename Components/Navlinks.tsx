@@ -14,8 +14,8 @@ const NavlinksBtn = (props: any) => {
         border={'none'} 
         height={'fit-content'}
         leftIcon={props.icon} 
-        _hover={{color: 'teal', textDecor:'underline' }} 
-        _visited={{color: 'red', bgColor: 'green'}}
+        _hover={{color: 'white', border: '1px solid red', scale: 5 }} 
+        // _visited={{color: 'red', bgColor: 'green'}}
       >
         <a href={props.link}>
           {props.name}
