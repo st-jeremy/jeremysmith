@@ -41,11 +41,13 @@ const Menu = () => {
         <DrawerContent bgColor={'blackAlpha.900'} color={'white'}>
           <DrawerCloseButton onClick={onClose} border={'none'} />
           <DrawerHeader pl={'2rem'}>
-            Dev_ Jeremy Smith
+            Dev_ 
           </DrawerHeader>
 
           <DrawerBody color={'white'}>
-            <Navlinks />
+            <Navlinks 
+              display='block'
+            />
             <Text fontSize={'16px'} position={'absolute'} bottom={5}>
               © 2023 <br />
               Made with passion by Jeremy Smith. <br />
