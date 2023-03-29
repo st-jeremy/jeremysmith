@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 const ProjectCard = (props:any) => {
   return ( 
-    <Card width='350px' height={'430px'} alignItems={'center'} mb={'1rem'} pb={'1rem'}>
+    <Card width='350px' height={'430px'} alignItems={'center'} mb={'1rem'} pb={'1rem'} >
       <Box width={{base:'100%'}}>
         <Image
           src={props.src}
@@ -56,8 +56,8 @@ const ProjectCard = (props:any) => {
 
 const Projects = () => {
   return ( 
-    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} minH={'100vh'} textAlign={'center'}>
-      <Heading pb={'1rem'}>Projects</Heading>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} minH={'100vh'} textAlign={'center'} id={'projects'}>
+      <Heading pb={'1rem'} id={'projects'}>Projects</Heading>
 
       <Box gap={'3rem'} display={{base:'flex', md: 'grid'}} flexDir={'column'} alignItems={'center'} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}}>
         <ProjectCard 
@@ -111,7 +111,7 @@ const Projects = () => {
 
       <Box>
         <Heading>Still cooking in the pot... </Heading>
-        
+
       </Box>
 
     </Box>

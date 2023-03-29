@@ -13,18 +13,19 @@ const NavlinksBtn = (props: any) => {
       whileHover={{
         scale: 1.2,
         transition: { duration: 1 },
-        color: 'black',
       }}
       whileTap={{ scale: 0.9 }}
     >
       <Button 
         variant={'ghost'} 
         border={'none'} 
+        width={'8rem'}
         height={'fit-content'}
         leftIcon={props.icon} 
         p={'1'}
-        // _hover={{color: 'white', border: '1px solid red', scale: 5 }} 
-        // _visited={{color: 'red', bgColor: 'green'}}
+        textAlign={'left'}
+        _hover={{color:'black', bgColor:'white'}}
+        _visited={{color: 'red', bgColor: 'green'}}
       >
         <a href={props.link}>
           {props.name}
@@ -36,7 +37,7 @@ const NavlinksBtn = (props: any) => {
 
 const Navlinks = (props:any) => {
   return ( 
-    <Box display={props.display} flexDir={props.flexDir}>
+    <Box display={props.display} flexDir={props.flexDir} >
       <NavlinksBtn 
         name='Home'
         link='#hero'

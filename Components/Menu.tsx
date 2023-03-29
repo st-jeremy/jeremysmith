@@ -44,9 +44,11 @@ const Menu = () => {
             Dev_ 
           </DrawerHeader>
 
-          <DrawerBody color={'white'}>
+          <DrawerBody color={'white'} alignItems={'left'}  onClick={onClose}>
             <Navlinks 
-              display='block'
+              display='flex'
+              flexDir='column'
+              
             />
             <Text fontSize={'16px'} position={'absolute'} bottom={5}>
               © 2023 <br />
