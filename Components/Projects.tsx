@@ -10,10 +10,11 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image';
 import { motion } from 'framer-motion'
+import styles from '@/styles/Home.module.css'
 
 const ProjectCard = (props:any) => {
   return ( 
-    <Card width='350px' height={'430px'} alignItems={'center'} mb={'1rem'} pb={'1rem'} >
+    <Card width='350px' height={'430px'} alignItems={'center'} mb={'1rem'} pb={'1rem'} className={styles.projectCard}>
       <Box width={{base:'100%'}}>
         <Image
           src={props.src}
