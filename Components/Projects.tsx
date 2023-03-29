@@ -56,8 +56,8 @@ const ProjectCard = (props:any) => {
 
 const Projects = () => {
   return ( 
-    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} minH={'100vh'} textAlign={'center'} id={'projects'}>
-      <Heading pb={'1rem'} id={'projects'}>Projects</Heading>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base:'3rem', lg: '7rem'}} minH={'100vh'} textAlign={'center'} id={'projects'}>
+      <Heading pb={'1rem'}>Projects</Heading>
 
       <Box gap={'3rem'} display={{base:'flex', md: 'grid'}} flexDir={'column'} alignItems={'center'} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}}>
         <ProjectCard 

@@ -19,7 +19,7 @@ const draw = {
 
 const Hero = () => {
   return ( 
-    <Box>
+    <Box id={'hero'}>
     <motion.svg
       width='300'
       height="400"
@@ -47,7 +47,7 @@ const Hero = () => {
         custom={2}
       />
        </motion.svg>
-      <Box mt={'-8rem'} px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} pt={'.1rem'} height={{base:'fit-content', lg:'95vh'}} position={'sticky'}  top={'12rem'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'} id={'hero'}>
+      <Box mt={'-8rem'} px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} pt={'.1rem'} height={{base:'fit-content', lg:'95vh'}} position={'sticky'}  top={'12rem'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'1rem'} >
         
         <Heading fontSize={{base:'50px', lg: '64px'}}>
           JEREMY <br /> SMITH 
