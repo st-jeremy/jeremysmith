@@ -9,6 +9,7 @@ import {
   Heading
 } from '@chakra-ui/react'
 import Image from 'next/image';
+import { motion } from 'framer-motion'
 
 const ProjectCard = (props:any) => {
   return ( 
@@ -41,12 +42,28 @@ const ProjectCard = (props:any) => {
         </Stack>
 
         <ButtonGroup position={'absolute'} bottom={'1rem'} left={'2.4rem'}>
-          <Button variant='outline' colorScheme='black' onClick={props.repoLink} fontSize={'16px'}>
+        <motion.button
+      whileHover={{
+        scale: 1.2,
+        transition: { duration: 1 },
+      }}
+      whileTap={{ scale: 0.9 }}
+    >
+          <Button variant='outline' colorScheme='black' onClick={props.repoLink} fontSize={'14px'}>
             View Repository
           </Button>
+          </motion.button>
+          <motion.button
+      whileHover={{
+        scale: 1.2,
+        transition: { duration: 1 },
+      }}
+      whileTap={{ scale: 0.9 }}
+    >
           <Button variant='outline' colorScheme='black' onClick={props.link} fontSize={'16px'}>
             Visit 
           </Button>
+          </motion.button>
         </ButtonGroup>
       </Box>
     </Card>
