@@ -18,6 +18,7 @@ const Navbar = () => {
       <Box display={{base: 'none', md:'flex'}} position={{base: 'absolute'}} right={{md: '2.8rem', lg: '5rem'}} >
         <Navlinks 
           display='flex'
+          flexDir='row'
         />
       </Box>
     </Box>
