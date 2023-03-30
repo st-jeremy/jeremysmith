@@ -41,7 +41,7 @@ const ExpAccordion = (props:any) => {
 const Experience = () => {
   return ( 
     <Box textAlign={'left'} padding={{base:'2rem 1rem', md:'5rem 4rem 4rem', lg:'10rem 6rem 4rem'}} minHeight={{lg:'800px'}} id={'experience'} >
-      <Heading fontSize={{base:'24px', md:'40px'}} color={'white'}>Experience</Heading>
+      <Heading fontSize={{base:'24px', md:'40px'}} >Experience</Heading>
       <Text fontSize={{base:'16px', md:'18px'}}>See spaces where I have worked while reaching my goal</Text>
 
       <Box mt={'1rem'} p={0} borderRadius={'20px'}>

@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsMailbox, BsPhone, BsWhatsapp } from 'react-icon
 
 const Contact = () => {
   return ( 
-    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'9rem 1rem'} textAlign={'center'} minHeight={'100vh'} id={'contact'}>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'9rem 1rem'} textAlign={'center'} id={'contact'}>
 
       <Heading fontFamily={'fantasy'}>Contact</Heading>
       <Text >

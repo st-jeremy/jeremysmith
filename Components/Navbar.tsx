@@ -15,7 +15,7 @@ const Navbar = () => {
 
       <Menu />
 
-      <Box display={{base: 'none', md:'flex'}} position={{base: 'absolute'}} right={{md: '2.8rem', lg: '5rem'}} >
+      <Box display={{base: 'none', lg:'flex'}} position={{base: 'absolute'}} right={{md: '2.8rem', lg: '5rem'}} >
         <Navlinks 
           display='flex'
           flexDir='row'

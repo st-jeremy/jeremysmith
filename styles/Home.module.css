@@ -180,7 +180,7 @@
 }
 
 @media (prefers-reduced-motion) {
-  .thirteen::before {
+  .projectCard::before {
     animation: none;
   }
 
