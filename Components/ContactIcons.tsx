@@ -28,14 +28,14 @@ const ContactIcons = (props:any) => {
         icon={<BsWhatsapp />}
       />
       <ContactIcon 
+        tooltip='Phone: +234 905 329 2009'
+        link="tel:+2349053292009"
+        icon={<BsPhone />}
+      />
+      <ContactIcon 
         tooltip='LinkedIn'
         link='"https://linkedin.com/in/stjeremy1"'
         icon={<BsLinkedin />}
-      />
-      <ContactIcon 
-        tooltip='Phone- +234 905 329 2009'
-        link="tel:+2349053292009"
-        icon={<BsPhone />}
       />
       <ContactIcon 
         tooltip='GitHub'
