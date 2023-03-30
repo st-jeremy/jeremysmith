@@ -16,7 +16,7 @@ const Footer = () => {
         </Tooltip>
       </Box>
 
-      <Divider color={'#0C37AA'} w={'90%'} m={'auto'} />
+      <Divider color={'grey'} w={'90%'} m={'auto'} />
 
       <Text fontSize={'14px'} textAlign={'center'} >
         Copyright © {new Date().getFullYear()}- jeremysmith.dev

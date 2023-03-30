@@ -45,9 +45,9 @@ const Menu = () => {
               
             />
             <Text fontSize={'16px'} position={'absolute'} bottom={5}>
-              © 2023 <br />
               Made with passion by Jeremy Smith. <br />
-              All right reserved.
+              All right reserved. <br />
+              Copyright © {new Date().getFullYear()}- jeremysmith.dev
             </Text>
           </DrawerBody>
          
