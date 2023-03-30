@@ -6,6 +6,7 @@ const Contact = () => {
 
       <Heading>Contact</Heading>
       <Text>
+        Let&apos;s work together on your next projects.
         Available for select opportunities <br />
 
         Have an exciting project you need help with or collaboration on?

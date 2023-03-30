@@ -14,21 +14,17 @@ import { motion, useScroll } from "framer-motion"
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const { scrollYProgress } = useScroll()
   return (
     <>
       <Head>
-        <title>Dev._ Jeremy Smith</title>
+        <title>Dev_ Jeremy Smith</title>
         <meta name="description" content="Jeremy Smith Portfolio Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-      <motion.path
-      d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-      style={{ pathLength: scrollYProgress }}
-    >
+      
         <Navbar />
 
         <Hero />
@@ -42,7 +38,6 @@ export default function Home() {
         <Contact />
 
         <Footer />
-        </motion.path>
       </main>
     </>
   )
