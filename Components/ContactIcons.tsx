@@ -15,7 +15,7 @@ const ContactIcon = (props:any) => {
  
 const ContactIcons = (props:any) => {
   return ( 
-    <Box display={'flex'} flexDir={'row'} justifyContent={props.justifyContent}>
+    <Box display={'flex'} flexDir={'row'} justifyContent={props.justifyContent} mt={props.mt}>
       <ContactIcon 
         tooltip='G-mail'
         link="mailto:st.jeremy1@gmail.com"

@@ -17,7 +17,9 @@ const Footer = () => {
         </Tooltip>
       </Box>
 
-      <ContactIcons />
+      <ContactIcons 
+        justifyContent='center'
+      />
 
       <Divider color={'grey'} w={'90%'} m={'auto'} />
 
