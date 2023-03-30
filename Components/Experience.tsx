@@ -15,8 +15,8 @@ const ExpAccordion = (props:any) => {
     <Box p={0} borderRadius={'20px'}>
           <AccordionItem bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, lg:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ lg:'none'}} pb={{lg:'5rem'}} pt={{lg:'5rem'}}>
             <h2>
-              <AccordionButton mt={{lg:'50%'}} pt={{lg:'0%'}}>
-                <Box as="span" flex='1' textAlign={{base:'center', lg:'left'}} minW={'4rem'}>
+              <AccordionButton mt={{lg:'50%'}} pt={{lg:'0%'}} _hover={{bgColor:'blue'}} p={0}>
+                <Box as="span" flex='1' textAlign={{base:'center', lg:'left'}} width={'100%'} pt={2}>
                   <Heading fontFamily={'fantasy'} fontSize={{base:'25px', md:'30px'}}>
                     {props.title}
                   </Heading>
@@ -42,7 +42,7 @@ const ExpAccordion = (props:any) => {
 
 const Experience = () => {
   return ( 
-    <Box textAlign={'center'} padding={{base:'2rem 1rem', md:'5rem 4rem 4rem', lg:'10rem 6rem 4rem'}} minHeight={{lg:'800px'}} id={'experience'} >
+    <Box textAlign={'center'} padding={{base:'2rem 1rem 3rem', md:'5rem 4rem 4rem', lg:'10rem 6rem 4rem'}} minHeight={{lg:'800px'}} id={'experience'} >
       <Heading fontSize={{base:'30px', md:'40px'}} fontWeight={900} fontFamily={'fantasy'} mb={5}>Experience</Heading>
       <Text fontSize={{base:'16px', md:'18px'}}>Spaces where I have worked.</Text>
 
