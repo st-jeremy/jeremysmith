@@ -1,9 +1,8 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
-import { NavLink } from 'react-router-dom';
 import Link from 'next/link';
 const Contact = () => {
   return ( 
-    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'5rem'} minH={'100vh'} textAlign={'center'} minHeight={'100vh'} id={'contact'}>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} textAlign={'center'} minHeight={'100vh'} id={'contact'}>
 
       <Heading>Contact</Heading>
       <Text>

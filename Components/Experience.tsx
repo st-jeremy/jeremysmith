@@ -13,7 +13,7 @@ import {
 const ExpAccordion = (props:any) => {
   return ( 
     <Box p={0} borderRadius={'20px'} background='black'>
-          <AccordionItem color={'white'} bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, lg:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ lg:'none'}} pb={{lg:'5rem'}} pt={{lg:'5rem'}} >
+          <AccordionItem color={'white'} bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, lg:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ lg:'none'}} pb={{lg:'5rem'}} pt={{lg:'5rem'}}>
             <h2>
               <AccordionButton mt={{lg:'50%'}} pt={{lg:'0%'}}>
                 <Box as="span" flex='1' textAlign={{base:'center', lg:'left'}} minW={'4rem'}>

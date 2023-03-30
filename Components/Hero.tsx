@@ -1,23 +1,8 @@
-import { Box, Heading, Text, Progress } from "@chakra-ui/react";
+import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css'
-import CustomBtn from "./CustomBtn";
 import { MdContacts, MdArrowForward } from "react-icons/md";
 
-const draw = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i:any) => {
-    const delay = 1 + i * 0.5;
-    return {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        pathLength: { delay, type: "spring", duration: 3.5, bounce: 0 },
-        opacity: { delay, duration: 0.01 }
-      }
-    };
-  }
-};
 
 const Hero = () => {
   return ( 
@@ -41,13 +26,12 @@ const Hero = () => {
           ...a mission for turning designs, with an encompassing user-centric approach to deliver a great experience.
         </Text>
 
-        <CustomBtn 
-          name='Contact me'
-          link='#contact'
-          rightIcon={<MdArrowForward />}
-          bgColor='red'
-          width=''
-        />
+
+        <Button rightIcon={<MdArrowForward />} color={'red'}>
+          <a href="http://#contact">
+            Contact me
+          </a>
+        </Button>
 
       <Box position={'absolute'} left={1} display={{base:'none'}}>
         <Text textDecorationStyle={'revert'}>Scroll down</Text>
