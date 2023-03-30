@@ -42,7 +42,7 @@ const ProjectCard = (props:any) => {
           </Box>
         </Stack>
 
-        <ButtonGroup position={'absolute'} bottom={'1rem'} left={'2.4rem'}>
+        <ButtonGroup position={'absolute'} bottom={'1rem'} left={'2.4rem'} gap={'40px'}>
           <motion.button
             whileHover={{
               scale: 1.2,

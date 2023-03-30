@@ -19,15 +19,16 @@ const Contact = () => {
         <Button leftIcon={<BsWhatsapp />}>
           <a href="http://wa.me/2349053292009">WhatsApp Messenger</a> 
         </Button>
+        <Button leftIcon={<BsPhone />}>
+          <a href="tel:+2349053292009">+234 905 329 2009</a>
+        </Button>
         <Button leftIcon={<BsLinkedin />}>
           <a href="https://linkedin.com/in/stjeremy1">LinkedIn</a> 
         </Button>
         <Button leftIcon={<BsGithub />}>
           <a href="https://github.com/st-jeremy">Github</a>
         </Button>
-        <Button leftIcon={<BsPhone />}>
-          <a href="tel:+2349053292009">+234 905 329 2009</a>
-        </Button>
+        
       </Box>
 
       <Text mt={'2rem'} fontWeight={800} fontStyle={'italic'}>
