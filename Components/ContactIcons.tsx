@@ -1,4 +1,5 @@
 import { BsGithub, BsLinkedin, BsMailbox, BsPhone, BsWhatsapp } from 'react-icons/bs';
+import { SiGmail } from 'react-icons/si'
 import { Button, Box, Tooltip } from '@chakra-ui/react';
 
 const ContactIcon = (props:any) => {
@@ -19,7 +20,7 @@ const ContactIcons = (props:any) => {
       <ContactIcon 
         tooltip='G-mail'
         link="mailto:st.jeremy1@gmail.com"
-        icon={<BsMailbox />}
+        icon={<SiGmail />}
       />
       <ContactIcon 
         tooltip='Whatsapp'

@@ -13,9 +13,9 @@ import {
 const ExpAccordion = (props:any) => {
   return ( 
     <Box p={0} borderRadius={'20px'}>
-          <AccordionItem bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, lg:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ lg:'none'}} pb={{lg:'5rem'}} pt={{lg:'5rem'}} height={{lg: '24rem'}} _hover={{bgColor:'blue.400'}}>
+          <AccordionItem bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, lg:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ lg:'none'}} pb={{lg:'3rem'}} pt={{lg:'3rem'}} height={{lg: '24rem'}} _hover={{bgColor:'blue.400'}}>
             <h2>
-              <AccordionButton mt={{lg:'40%'}} p={{base:0, lg:'.5rem'}} border={{base:'.5px solid grey', lg:'none'}}>
+              <AccordionButton p={{base:0, lg:'.5rem'}} height={{lg:'20rem'}} border={{base:'.5px solid grey', lg:'none'}}>
                 <Box as="span" flex='1' textAlign={{base:'center', lg:'left'}} minW={'4rem'} pt={{base: 3, lg:'unset'}}>
                   <Heading fontFamily={'fantasy'} fontSize={{base:'25px', md:'30px'}}>
                     {props.title}
@@ -26,7 +26,7 @@ const ExpAccordion = (props:any) => {
               </AccordionButton>
             </h2>
 
-            <AccordionPanel p={{base:'1rem 0 0 0', lg: 'unset'}} fontSize={'16px'} borderLeft={{lg:'2px solid black'}} textAlign={{lg: 'left'}}>
+            <AccordionPanel p={{base:'1rem 0 0 0', lg: '1rem'}} fontSize={'16px'} height={{lg:'18.5rem'}} borderLeft={{lg:'2px solid black'}} textAlign={{lg: 'left'}}>
               {props.about}
               <ul>&nbsp;</ul>
               <li>{props.line1}</li>

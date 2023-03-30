@@ -21,7 +21,7 @@ const Menu = () => {
   
   return ( 
     <Box display={{lg: 'none'}}>
-      <Box position={'absolute'} right={{base:'1.25rem', sm: '1.5rem', md: '2rem', lg: '5rem'}} top={{base: '1rem', sm:'1.2rem'}} className={styles.btn}>
+      <Box position={'absolute'} right={{base:'1.25rem', sm: '1.5rem', md: '2.8rem', lg: '5rem'}} top={{base: '1rem', sm:'1.2rem'}} className={styles.btn}>
         <BsMenuApp onClick={onOpen}/>
       </Box>
     
