@@ -2,15 +2,13 @@ import { Box, Heading, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 const Contact = () => {
   return ( 
-    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'3rem'} textAlign={'center'} minHeight={'100vh'} id={'contact'}>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={'9rem'} textAlign={'center'} minHeight={'100vh'} id={'contact'}>
 
-      <Heading>Contact</Heading>
+      <Heading fontFamily={'fantasy'}>Contact</Heading>
       <Text>
-        Let&apos;s work together on your next projects.
-        Available for select opportunities <br />
-
         Have an exciting project you need help with or collaboration on?
         <br />
+        Let&apos;s work together on your next projects. 
       </Text>
 
       <Text>Contact me via </Text>
