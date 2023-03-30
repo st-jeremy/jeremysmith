@@ -4,6 +4,7 @@ import {
   Tooltip, 
   Divider } from "@chakra-ui/react";
 import { BsFillFileArrowUpFill } from 'react-icons/bs'
+import ContactIcons from "./ContactIcons";
 
 const Footer = () => {
   return ( 
@@ -15,6 +16,8 @@ const Footer = () => {
           </a>
         </Tooltip>
       </Box>
+
+      <ContactIcons />
 
       <Divider color={'grey'} w={'90%'} m={'auto'} />
 

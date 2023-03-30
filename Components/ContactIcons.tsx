@@ -13,11 +13,11 @@ const ContactIcon = (props:any) => {
    );
 }
  
-const ContactIcons = () => {
+const ContactIcons = (props:any) => {
   return ( 
-    <Box>
+    <Box display={'flex'} flexDir={'row'} justifyContent={props.justifyContent}>
       <ContactIcon 
-        tooltip='e-mail'
+        tooltip='G-mail'
         link="mailto:st.jeremy1@gmail.com"
         icon={<BsMailbox />}
       />

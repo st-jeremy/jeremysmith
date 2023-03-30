@@ -14,6 +14,7 @@ import { BsMenuApp } from 'react-icons/bs'
 import Navlinks from "./Navlinks";
 import styles from '@/styles/Home.module.css'
 import { motion } from "framer-motion"
+import ContactIcons from './ContactIcons';
 
 const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -42,8 +43,13 @@ const Menu = () => {
             <Navlinks 
               display='flex'
               flexDir='column'
-              
             />
+
+            <ContactIcons 
+              justifyContent='left'
+              mt='3rem'
+            />
+
             <Text fontSize={'16px'} position={'absolute'} bottom={5}>
               Made with passion by Jeremy Smith. <br />
               All right reserved. <br />
