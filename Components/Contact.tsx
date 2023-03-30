@@ -12,7 +12,7 @@ const Contact = () => {
 
       <Text fontWeight={700} m={'20px 0 3px'}>Contact me via </Text>
       
-      <Box display={'flex'} flexDir={{ base:'column'}} gap={'10px'} justifyContent={'left'} width={'13.5rem'} margin={'auto'}>
+      <Box display={{base:'flex', md: 'grid'}} gridTemplateColumns={'auto auto auto'} flexDir={{ base:'column'}} gap={'10px'} justifyContent={'left'} width={{base:'13.5rem', md: '100%'}} margin={'auto'}>
         <Button leftIcon={<BsMailbox />}>
           <a href="mailto:st.jeremy1@gmail.com">st.jeremy1@gmail.com</a>
         </Button>
