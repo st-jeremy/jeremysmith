@@ -3,7 +3,9 @@ import {
   Heading, 
 } from '@chakra-ui/react';
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
+import styles from '@/styles/Home.module.css'
+// import "react-multi-carousel/lib/styles.css";
 import ProjectCard from './ProjectCard';
 
 const ProjectCarousel = () => {
@@ -36,9 +38,12 @@ const ProjectCarousel = () => {
   };
 
   return ( 
-    <Box m={'auto'} mt={5} maxWidth={'1400px'} bgColor={'green.200'}  p={{md: '5', lg: '0'}}>
+    <Box m={'auto'} mt={5} maxWidth={'1400px'} bgColor={'green.200'} p={{md: '2', lg: '0'}}>
 
-      <Box width={{base: '100vw', md: '95vw', lg: '1400px'}} mt={5}>
+      <Box 
+      // width={{base: '100vw', md: '95vw', lg: '1400px'}} 
+      mt={5}
+      >
         <Carousel 
           responsive={responsive}
           swipeable={true}
@@ -52,7 +57,7 @@ const ProjectCarousel = () => {
           containerClass="carousel-container"
           // removeArrowOnDeviceType={["tablet", "mobile"]}
           dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+          // itemClass="carousel-item-padding-40-px"
         >
           <ProjectCard 
             src='/fashion-haven.png'
