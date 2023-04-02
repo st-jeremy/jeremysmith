@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import MultiCarousel from "./MultiCarosel";
+import MultiCarousel from "./ProjectCarousel";
 import ProjectCard from "./ProjectCard";
 
 const LiveProjects = () => {
