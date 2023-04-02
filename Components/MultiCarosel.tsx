@@ -5,7 +5,7 @@ import {
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const MulltiCarousel = (props:any) => {
+const MultiCarousel = (props:any) => {
 
   const responsive = {
     superLargeDesktop: {
@@ -64,4 +64,4 @@ const MulltiCarousel = (props:any) => {
    );
 }
  
-export default MulltiCarousel;
+export default MultiCarousel;

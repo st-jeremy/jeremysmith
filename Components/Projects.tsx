@@ -82,7 +82,8 @@ const Projects = () => {
 
       <Box gap={'3rem'} display={{base:'flex', md: 'grid'}} flexDir={'column'} alignItems={'center'} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}}>
         <MulltiCarousel
-        content= {<ProjectCard 
+        content= {
+        <ProjectCard 
           src='/fashion-haven.png'
           alt='fashion haven image'
           heading='Fashion haven'
