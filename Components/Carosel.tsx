@@ -15,7 +15,7 @@ import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
 import Link from 'next/link';
 
-const AllStock = () => {
+const MulltiCarousel = (props:any) => {
 
   const responsive = {
     superLargeDesktop: {
@@ -48,10 +48,7 @@ const AllStock = () => {
     <Box m={'auto'} mt={5} maxWidth={'1400px'} bgColor={'black.200'}  p={{md: '5', lg: '0'}}>
 
       <Box  bgColor={'black'} display={'flex'} color={'white'} p={2}>
-        <Heading  fontSize={'24pt'} color={'white'} >All Stock</Heading>
-        <Link href='/Shop'>
-          <Button bgColor={'black'} position={{base: 'absolute', lg: 'relative'}} right={{base: '1', lg: '-55rem'}} _hover={{textDecoration:'underline', bgColor: 'white', color: 'black'}}>View All</Button>
-        </Link>
+        <Heading  fontSize={'24pt'} color={'white'} >{props.heading}</Heading>
       </Box>
 
       <Box width={{base: '100vw', md: '95vw', lg: '1400px'}} mt={5}>
@@ -70,11 +67,11 @@ const AllStock = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          
+          {props.content}
         </Carousel>
       </Box>
     </Box>
    );
 }
  
-export default AllStock;
+export default MulltiCarousel;
