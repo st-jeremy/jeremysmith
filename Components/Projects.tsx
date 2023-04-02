@@ -129,26 +129,46 @@ const Projects = () => {
         />
       </Box>
 
-      <Box>
-        <Heading fontSize={'md'}>Still cooking in the pot...</Heading>
+      <Heading fontFamily={'fantasy'} p={'4rem'}>Still cooking in the pot...</Heading>
+      <Box display={'grid'} gridTemplateColumns={'auto auto auto'}>
         <ProjectCard 
           src='/decx.png'
           alt='decx image'
           heading='*****'
-          description= 'a blog website for data science and analysis products.'
+          description= ''
           category='blog'
-          repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
+          // repoLink='https://github.com/fashion-haven'
+          // link='https://github.com/fashion-haven'
         />
 
         <ProjectCard 
           src='/datavault.png'
-          alt='decx image'
+          alt='datavault image'
           heading='*****'
-          description= 'an e-commerce website for fashion products.'
+          description= 'a blog website for data science and analysis products.'
           category='e-commerce'
-          repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
+          // repoLink='https://github.com/fashion-haven'
+          // link='https://github.com/fashion-haven'
+        />
+
+        <ProjectCard 
+          src='/datavault.png'
+          alt='datavault image'
+          heading='*****'
+          description= 'a blog website for data science and analysis products.'
+          category='e-commerce'
+          // repoLink='https://github.com/fashion-haven'
+          // link='https://github.com/fashion-haven'
+        />
+
+        <ProjectCard 
+          src='/datavault.png'
+          alt='datavault image'
+          heading='*****'
+          description= 'a blog website for data science and analysis products.'
+          category='e-commerce'
+          // repoLink='https://github.com/fashion-haven'
+          // link='https://github.com/fashion-haven'
         />
 
       </Box>
