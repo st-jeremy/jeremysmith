@@ -15,7 +15,7 @@ const CustomBtn = (props: any) => {
       <Button 
         variant={'ghost'} 
         border={'none'} 
-        width={{base: '10rem', md:'fit-content'}}
+        width={{base: '11rem', md:'fit-content'}}
         height={'fit-content'}
         leftIcon={props.icon} 
         p={'1.5'}

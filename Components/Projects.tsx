@@ -13,7 +13,7 @@ import { motion } from 'framer-motion'
 import styles from '@/styles/Home.module.css'
 
 const ProjectCard = (props:any) => {
-  return ( 
+  return (
     <Card width='350px' height={'460px'} alignItems={'center'} mb={'1rem'} pb={'1rem'} className={styles.projectCard}>
       <Box width={{base:'100%'}} height={350}>
         <Image
@@ -31,6 +31,7 @@ const ProjectCard = (props:any) => {
           <Text fontStyle={'italic'} fontWeight={'bold'}>
             {props.category}
           </Text>
+
           <Box display={'flex'} textAlign={'center'} gap={'.3rem'} pb={'.3rem'}>
             <Badge bgColor={'grey'}>{props.badge1}</Badge>
             <Badge bgColor={'blue'}>{props.badge2}</Badge>
@@ -129,7 +130,26 @@ const Projects = () => {
       </Box>
 
       <Box>
-        <Heading>Still cooking in the pot... </Heading>
+        <Heading fontSize={'md'}>Still cooking in the pot...</Heading>
+        <ProjectCard 
+          src='/decx.png'
+          alt='decx image'
+          heading='*****'
+          description= 'a blog website for data science and analysis products.'
+          category='blog'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
+        />
+
+        <ProjectCard 
+          src='/datavault.png'
+          alt='decx image'
+          heading='*****'
+          description= 'an e-commerce website for fashion products.'
+          category='e-commerce'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
+        />
 
       </Box>
 

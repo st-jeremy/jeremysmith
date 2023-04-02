@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <Box position={'fixed'} width={{base: '100%'}}  zIndex={'1000'} px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base: '.6rem', sm: '1rem', md:'1rem', lg:'1.6rem'}} borderBottom={'1px solid red'} bgColor={'white'} display={'flex'} maxWidth={'1500px'} >
  
-      <Heading fontSize={'25px'} width={'fit-content'} m={0} pt={'.2rem'}>Jeremy_Smith</Heading>
+      <Heading fontFamily={'fantasy'} fontSize={'25px'} width={'fit-content'} m={0} pt={'.2rem'}>Jeremy_Smith</Heading>
 
       <Menu />
 
