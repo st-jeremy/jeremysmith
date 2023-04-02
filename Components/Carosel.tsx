@@ -15,7 +15,7 @@ import "react-multi-carousel/lib/styles.css";
 import Image from 'next/image';
 import Link from 'next/link';
 
-const AllStock = ({product}) => {
+const AllStock = () => {
 
   const responsive = {
     superLargeDesktop: {
