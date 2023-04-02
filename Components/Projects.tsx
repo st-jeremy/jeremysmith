@@ -11,6 +11,7 @@ import {
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import styles from '@/styles/Home.module.css'
+import MulltiCarousel from './MultiCarosel';
 
 const ProjectCard = (props:any) => {
   return (
@@ -80,6 +81,22 @@ const Projects = () => {
       <Heading pb={'1rem'}>Projects</Heading>
 
       <Box gap={'3rem'} display={{base:'flex', md: 'grid'}} flexDir={'column'} alignItems={'center'} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}}>
+        <MulltiCarousel
+        content= {<ProjectCard 
+          src='/fashion-haven.png'
+          alt='fashion haven image'
+          heading='Fashion haven'
+          description= 'a fashion e-commerce website'
+          category='e-commerce'
+          badge1='Next.Js'
+          badge2='TypeScript'
+          badge3='Redux'
+          badge4='Chakra UI'
+          badge5='CSS'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
+        />}/>
+
         <ProjectCard 
           src='/fashion-haven.png'
           alt='fashion haven image'
