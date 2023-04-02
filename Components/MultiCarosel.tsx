@@ -1,19 +1,9 @@
 import { 
-  Box, 
-  CardBody, 
-  CardFooter, 
-  Card, 
-  Stack, 
-  Divider, 
+  Box,
   Heading, 
-  Text, 
-  Button,
-  useToast
 } from '@chakra-ui/react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Image from 'next/image';
-import Link from 'next/link';
 
 const MulltiCarousel = (props:any) => {
 
