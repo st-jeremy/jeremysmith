@@ -11,7 +11,7 @@ import {
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import styles from '@/styles/Home.module.css'
-import MultiCarousel from '../MultiCarosel';
+import MultiCarousel from './MultiCarosel';
 
  
 
