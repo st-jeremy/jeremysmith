@@ -5,8 +5,8 @@ import { Button, Box, Tooltip } from '@chakra-ui/react';
 const ContactIcon = (props:any) => {
   return ( 
     <Box>
-      <Tooltip label={props.tooltip} aria-label='A tooltip'>
-        <Button variant={'ghost'}>
+      <Tooltip label={props.tooltip} aria-label='A tooltip' fontFamily={'fantasy'}>
+        <Button variant={'ghost'} _hover={{color:'black', backgroundColor:'white'}}>
           <a href={props.link}>{props.icon}</a>
         </Button>
       </Tooltip>
@@ -16,7 +16,7 @@ const ContactIcon = (props:any) => {
  
 const ContactIcons = (props:any) => {
   return ( 
-    <Box display={'flex'} flexDir={'row'} justifyContent={props.justifyContent} mt={props.mt}>
+    <Box display={'flex'} flexDir={'row'} ml={props.ml} justifyContent={props.justifyContent} mt={props.mt}>
       <ContactIcon 
         tooltip='G-mail'
         link="mailto:st.jeremy1@gmail.com"
