@@ -14,11 +14,11 @@ const ProjectCarousel = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4
+      items: 2
     },
     tablet: {
       breakpoint: { max: 1023, min: 768 },
-      items: 3
+      items: 2
     },
     miniTablet:{
       breakpoint: { max: 767, min: 465 },
@@ -35,7 +35,7 @@ const ProjectCarousel = () => {
   };
 
   return ( 
-    <Box m={'auto'} mt={5} maxWidth={'1400px'} bgColor={'green.200'} p={{md: '2', lg: '0'}}>
+    <Box m={'auto'} maxWidth={'1400px'} bgColor={'green.200'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
       <Carousel 
         responsive={responsive}
         swipeable={true}
@@ -43,6 +43,8 @@ const ProjectCarousel = () => {
         showDots={true}
         infinite={true}
         autoPlaySpeed={1000}
+        // ssr={true}
+        renderDotsOutside={true}
         keyBoardControl={true}
         customTransition="all 1.5"
         transitionDuration={500}
