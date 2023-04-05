@@ -17,8 +17,8 @@ const Projects = () => {
 
       <ProjectCarousel />
 
-      {/* <Heading fontFamily={'fantasy'} p={'4rem'}>Still cooking in the pot...</Heading>
-      <Box display={'grid'} gridTemplateColumns={'auto auto auto'}>
+      {/* <Heading fontFamily={'fantasy'} p={'4rem'}>Still cooking in the pot...</Heading> */}
+      {/* <Box display={'grid'} gridTemplateColumns={'auto auto auto'}>
         <ProjectCard 
           src='/decx.png'
           alt='decx image'
