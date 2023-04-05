@@ -4,7 +4,7 @@ import { motion, spring } from "framer-motion";
 
 const TechImage = (props: any) => {
   return ( 
-    <Box width={'fit-content'}>
+    <Box width={'fit-content'} objectFit={'contain'}>
       <Image 
         src={props.src}
         alt={props.alt}

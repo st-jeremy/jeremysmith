@@ -35,8 +35,8 @@ const Hero = () => {
         </Box>
       </Box>
 
-      <Box position={'absolute'} left={0} top={'12rem'}>
-        <Text className={styles.scrollDown} fontSize={'10px'} padding={2}>Scroll down</Text>
+      <Box position={'absolute'} left={0} top={'22rem'}>
+        <Text className={styles.scrollDown} fontSize={'10px'} fontWeight={900} padding={2}>SCROLL DOWN</Text>
       </Box>
     </motion.div>
   );
