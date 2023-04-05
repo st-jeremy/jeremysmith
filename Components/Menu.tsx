@@ -34,8 +34,8 @@ const Menu = () => {
         
         <DrawerContent bgColor={'blackAlpha.900'} color={'white'}>
           <DrawerCloseButton onClick={onClose} border={'none'} />
-          <DrawerHeader pl={'2rem'} fontSize={'22px'}>
-            Dev_ 
+          <DrawerHeader pl={'2rem'} fontSize={'22px'} fontFamily={'fantasy'}>
+            Jeremy Smith 
           </DrawerHeader>
 
           <DrawerBody color={'white'} alignItems={'left'}  onClick={onClose}>
@@ -49,9 +49,11 @@ const Menu = () => {
               mt='3rem'
             />
 
-            <Text fontSize={'16px'} position={'absolute'} bottom={5}>
+            <Text fontSize={'16px'} position={'absolute'} bottom={5} fontFamily={'fantasy'}>
               Made with passion by Jeremy Smith. <br />
               All right reserved. <br />
+              <br />
+
               Copyright © {new Date().getFullYear()}- jeremysmith.dev
             </Text>
           </DrawerBody>
