@@ -51,9 +51,9 @@ const Menu = () => {
 
             <Text fontSize={'16px'} position={'absolute'} bottom={5} fontFamily={'fantasy'}>
               Made with passion by Jeremy Smith. <br />
-              All right reserved. <br />
               <br />
 
+              All rights reserved. <br />
               Copyright © {new Date().getFullYear()}- jeremysmith.dev
             </Text>
           </DrawerBody>
