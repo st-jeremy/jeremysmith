@@ -34,6 +34,7 @@ const Tech = () => {
           gridTemplateColumns={{base:'repeat(3, minmax(0, 1fr))', sm: 'repeat(4, minmax(0, 1fr))', md: 'repeat(5, minmax(0, 1fr))'}} 
           margin={'auto'}
           justifyItems={'center'}
+          alignItems={'center'}
         >
           <TechImage 
             src='/HTML5.png'

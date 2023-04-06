@@ -6,8 +6,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProjectCard from './ProjectCard';
 
-const ProjectCarousel = () => {
 
+const ProjectCarousel = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -19,7 +19,8 @@ const ProjectCarousel = () => {
     },
     tablet: {
       breakpoint: { max: 1023, min: 768 },
-      items: 2
+      items: 2,
+      slidesToSlide: 3 
     },
     miniTablet:{
       breakpoint: { max: 767, min: 465 },
@@ -37,7 +38,7 @@ const ProjectCarousel = () => {
 
   return ( 
     <Box m={'auto'} maxWidth={'1400px'} bgColor={'green.200'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
-      {/* <Carousel 
+      <Carousel 
         responsive={responsive}
         swipeable={true}
         draggable={true}
@@ -116,39 +117,8 @@ const ProjectCarousel = () => {
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
-      </Carousel> */}
-      dgjjdjfuycujdudcucjc
-
-      <Carousel 
-          responsive={responsive}
-          swipeable={true}
-          draggable={true}
-          showDots={true}
-          infinite={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all 1.5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          // removeArrowOnDeviceType={["tablet", "mobile"]}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          <ProjectCard 
-          src='/fashion-haven.png'
-          alt='fashion haven image'
-          heading='Fashion haven'
-          description= 'a fashion e-commerce website'
-          category='e-commerce'
-          badge1='Next.Js'
-          badge2='TypeScript'
-          badge3='Redux'
-          badge4='Chakra UI'
-          badge5='CSS'
-          repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
-        />
-        </Carousel>
+      </Carousel>
+     
     </Box>
    );
 }
