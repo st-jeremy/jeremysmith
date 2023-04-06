@@ -61,7 +61,7 @@ const Tech = () => {
             alt='Next.JS'
           />
           <TechImage 
-            src=''
+            src='/redux.png'
             alt='Redux'
           />
           <TechImage 
@@ -77,7 +77,7 @@ const Tech = () => {
             alt='Chakra UI'
           />
           <TechImage 
-            src=''
+            src='/bootstrap.png'
             alt='Bootstrap'
           />
           <TechImage 
@@ -85,7 +85,7 @@ const Tech = () => {
             alt='SCSS'
           />
           <TechImage 
-            src=''
+            src='/git.jpeg'
             alt='git'
           />
           <TechImage 
