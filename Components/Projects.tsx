@@ -48,16 +48,16 @@ const ProjectCarousel = () => {
         draggable={true}
         showDots={true}
         infinite={true}
-        // autoPlay={true}
+        autoPlay={true}
         autoPlaySpeed={1000}
-        // ssr={true}
-        // renderDotsOutside={true}
+        ssr={true}
+        renderDotsOutside={true}
         keyBoardControl={true}
         customTransition="all 1.5"
         transitionDuration={500}
         containerClass="carousel-container"
-        // removeArrowOnDeviceType={["tablet", "mobile"]}
-        // dotListClass="custom-dot-list-style"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
         className={styles.carousel}
       >
