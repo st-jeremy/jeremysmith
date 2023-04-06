@@ -10,14 +10,13 @@ import {
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import styles from '@/styles/Home.module.css'
-import MultiCarousel from './Projects';
  
 
 const ProjectCard = (props:any) => {
   return (
     <Box width='320px' height={'420px'} alignItems={'center'} pt={0} mb={'3rem'} pb={'1rem'} flexDir={'column'} 
     className={styles.projectCard} 
-    bgColor={'white'}
+    bgColor={'white'} color={'white'}
     >
       <Box bgColor={'linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1))'} p={0} m={0}>
       <Image
@@ -44,7 +43,7 @@ const ProjectCard = (props:any) => {
           </Box>
         </Stack>
 
-        <ButtonGroup position={'absolute'} bottom={'4.1rem'} left={'1.3rem'} gap={'40px'}>
+        <ButtonGroup position={'absolute'} bottom={'2rem'} left={'1.3rem'} gap={'40px'}>
           <motion.button
             whileHover={{
               scale: 1.2,
