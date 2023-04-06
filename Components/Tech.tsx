@@ -59,7 +59,7 @@ const Tech = () => {
             alt='Next.JS'
           />
           <TechImage 
-            src='/tailwind.png'
+            src=''
             alt='Redux'
           />
           <TechImage 
