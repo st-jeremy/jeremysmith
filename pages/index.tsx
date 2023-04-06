@@ -6,11 +6,9 @@ import Navbar from '@/Components/Navbar'
 import Hero from '@/Components/Hero'
 import Contact from '@/Components/Contact'
 import Experience from '@/Components/Experience'
-import Projects from '@/Components/Projects/Index'
+import Projects from '@/Components/Projects'
 import Tech from '@/Components/Tech'
 import Footer from '@/Components/Footer'
-import { motion, useScroll } from "framer-motion"
-import ProjectCarousel from '@/Components/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
