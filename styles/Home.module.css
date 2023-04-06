@@ -24,14 +24,17 @@
   text-orientation: upright;
 
 }
-
+/* 
 .react-multiple-carousel__arrow--left {
   left: 1rem;
 }
 .react-multiple-carousel__arrow--right {
   right: 1rem;
-}
-
+} */
+.carousel{
+  width: 100%;
+  
+ }
 
 
 

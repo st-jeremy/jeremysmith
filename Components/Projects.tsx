@@ -4,7 +4,8 @@ import {
 } from '@chakra-ui/react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Home.module.css';
+import ProjectCard from './ProjectCard';
 
 
 const ProjectCarousel = () => {
@@ -17,17 +18,17 @@ const ProjectCarousel = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 2,
-      slidesToSlide: 2 
+      // slidesToSlide: 2 
     },
     tablet: {
       breakpoint: { max: 1023, min: 768 },
       items: 2,
-      slidesToSlide: 2 
+      // slidesToSlide: 2 
     },
     miniTablet:{
       breakpoint: { max: 767, min: 465 },
       items: 2,
-      slidesToSlide: 2 
+      // slidesToSlide: 2 
     },
     mobile: {
       breakpoint: { max: 464, min: 425 },
@@ -47,9 +48,9 @@ const ProjectCarousel = () => {
         draggable={true}
         showDots={true}
         infinite={true}
-        autoPlay={true}
+        // autoPlay={true}
         autoPlaySpeed={1000}
-        ssr={true}
+        // ssr={true}
         // renderDotsOutside={true}
         keyBoardControl={true}
         customTransition="all 1.5"
@@ -58,9 +59,8 @@ const ProjectCarousel = () => {
         // removeArrowOnDeviceType={["tablet", "mobile"]}
         // dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
-        className={styles.caurosel}
+        className={styles.carousel}
       >
-        {/* <>
         <ProjectCard 
           src='/fashion-haven.png'
           alt='fashion haven image'
@@ -123,11 +123,6 @@ const ProjectCarousel = () => {
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
-        </> */}
-        <div>Item 1</div>
-        <div>Item 1</div>
-        <div>Item 1</div>
-        <div>Item 1</div>
       </Carousel>
      
     </Box>
