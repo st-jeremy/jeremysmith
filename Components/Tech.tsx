@@ -31,7 +31,7 @@ const Tech = () => {
         <Box 
           display={{base:'grid'}} 
           gap={'1rem'} 
-          gridTemplateColumns={{base:'repeat(3, minmax(0, 1fr));'}} 
+          gridTemplateColumns={{base:'repeat(3, minmax(0, 1fr))', sm: 'repeat(4, minmax(0, 1fr))', md: 'repeat(5, minmax(0, 1fr))'}} 
           margin={'auto'}
           justifyItems={'center'}
         >
