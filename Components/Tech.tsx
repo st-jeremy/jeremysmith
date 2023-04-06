@@ -67,7 +67,7 @@ const Tech = () => {
           alt='Tailwind'
           />
           <TechImage 
-            src=''
+            src='/mui.png'
             alt='Material UI'
           />
           <TechImage 
