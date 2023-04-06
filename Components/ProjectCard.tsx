@@ -10,7 +10,7 @@ import {
 import Image from 'next/image';
 import { motion } from 'framer-motion'
 import styles from '@/styles/Home.module.css'
-import MultiCarousel from './ProjectCarousel';
+import MultiCarousel from './Projects';
  
 
 const ProjectCard = (props:any) => {
