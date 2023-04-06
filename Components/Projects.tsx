@@ -4,7 +4,7 @@ import {
 } from '@chakra-ui/react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ProjectCard from './ProjectCard';
+import styles from '@/styles/Home.module.css'
 
 
 const ProjectCarousel = () => {
@@ -47,17 +47,20 @@ const ProjectCarousel = () => {
         draggable={true}
         showDots={true}
         infinite={true}
+        autoPlay={true}
         autoPlaySpeed={1000}
-        // ssr={true}
+        ssr={true}
         // renderDotsOutside={true}
         keyBoardControl={true}
         customTransition="all 1.5"
         transitionDuration={500}
         containerClass="carousel-container"
         // removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="custom-dot-list-style"
+        // dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
+        className={styles.caurosel}
       >
+        {/* <>
         <ProjectCard 
           src='/fashion-haven.png'
           alt='fashion haven image'
@@ -120,6 +123,11 @@ const ProjectCarousel = () => {
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
+        </> */}
+        <div>Item 1</div>
+        <div>Item 1</div>
+        <div>Item 1</div>
+        <div>Item 1</div>
       </Carousel>
      
     </Box>
