@@ -11,20 +11,23 @@ const ProjectCarousel = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 3,
+      slidesToSlide: 3
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2
+      items: 2,
+      slidesToSlide: 2 
     },
     tablet: {
       breakpoint: { max: 1023, min: 768 },
       items: 2,
-      slidesToSlide: 3 
+      slidesToSlide: 2 
     },
     miniTablet:{
       breakpoint: { max: 767, min: 465 },
-      items: 2
+      items: 2,
+      slidesToSlide: 2 
     },
     mobile: {
       breakpoint: { max: 464, min: 425 },
@@ -128,8 +131,9 @@ const ProjectCarousel = () => {
 const Projects = () => {
   return ( 
     <Box  
-    px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}
-     py={{base:'3rem', md:'5rem', lg: '7rem'}}
+    // px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}
+    //  py={{base:'3rem', md:'5rem', lg: '7rem'}}
+    height={'fit-content'}
       textAlign={'center'} bgColor={'blue.100'} id={'projects'}>
 
       <Heading fontFamily={'fantasy'}>Projects</Heading>
