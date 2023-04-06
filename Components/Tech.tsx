@@ -9,7 +9,7 @@ const TechImage = (props: any) => {
         src={props.src}
         alt={props.alt}
         loading={'lazy'}
-        width={70}
+        width={100}
         height={60}
       />
       </Box>
@@ -89,7 +89,7 @@ const Tech = () => {
             alt='git'
           />
           <TechImage 
-            src=''
+            src='/jira.png'
             alt='Jira'
           />
           
