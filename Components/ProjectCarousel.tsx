@@ -1,5 +1,6 @@
 import { 
   Box,
+  Heading
 } from '@chakra-ui/react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -36,7 +37,7 @@ const ProjectCarousel = () => {
 
   return ( 
     <Box m={'auto'} maxWidth={'1400px'} bgColor={'green.200'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
-      <Carousel 
+      {/* <Carousel 
         responsive={responsive}
         swipeable={true}
         draggable={true}
@@ -47,10 +48,10 @@ const ProjectCarousel = () => {
         // renderDotsOutside={true}
         keyBoardControl={true}
         customTransition="all 1.5"
-        // transitionDuration={500}
+        transitionDuration={500}
         containerClass="carousel-container"
         // removeArrowOnDeviceType={["tablet", "mobile"]}
-        // dotListClass="custom-dot-list-style"
+        dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
         <ProjectCard 
@@ -115,9 +116,26 @@ const ProjectCarousel = () => {
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
-      </Carousel>
+      </Carousel> */}
+      dgjjdjfuycujdudcucjc
+    </Box>
+   );
+}
+
+
+
+const Projects = () => {
+  return ( 
+    <Box  
+    px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}
+     py={{base:'3rem', md:'5rem', lg: '7rem'}}
+      textAlign={'center'} bgColor={'blue.100'} id={'projects'}>
+
+      <Heading fontFamily={'fantasy'}>Projects</Heading>
+
+      <ProjectCarousel />
     </Box>
    );
 }
  
-export default ProjectCarousel;
+export default Projects;

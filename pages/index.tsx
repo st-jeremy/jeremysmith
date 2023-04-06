@@ -10,6 +10,7 @@ import Projects from '@/Components/Projects/Index'
 import Tech from '@/Components/Tech'
 import Footer from '@/Components/Footer'
 import { motion, useScroll } from "framer-motion"
+import ProjectCarousel from '@/Components/ProjectCarousel'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function Home() {
         <Tech />
 
         <Projects />
+        <ProjectCarousel />
 
         <Experience />
 

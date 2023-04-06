@@ -16,7 +16,7 @@ import MultiCarousel from './ProjectCarousel';
 const ProjectCard = (props:any) => {
   return (
     <Box width='320px' height={'420px'} alignItems={'center'} pt={0} mb={'3rem'} pb={'1rem'} flexDir={'column'} 
-    // className={styles.projectCard} 
+    className={styles.projectCard} 
     bgColor={'white'}
     >
       <Box bgColor={'linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1))'} p={0} m={0}>
