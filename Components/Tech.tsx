@@ -82,7 +82,6 @@ const Tech = () => {
             src='/SCSS.png'
             alt='SCSS'
           />
-          
           <TechImage 
             src=''
             alt='git'
