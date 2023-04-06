@@ -27,7 +27,7 @@ const Hero = () => {
             ...with a mission of turning designs into great experiences, through user-centric approach.
           </Text>
 
-          <Button rightIcon={<MdArrowForward />} color={'blue.900'}>
+          <Button rightIcon={<MdArrowForward />} color={'blue.900'} _hover={{color:'black', backgroundColor:'white', border: '1px solid black'}}>
             <a href="#contact">
               Contact me
             </a>
@@ -35,8 +35,8 @@ const Hero = () => {
         </Box>
       </Box>
 
-      <Box position={'absolute'} left={0} top={'22rem'}>
-        <Text className={styles.scrollDown} fontSize={'10px'} fontWeight={900} padding={2}>SCROLL DOWN</Text>
+      <Box position={'absolute'} left={0} top={'20rem'}>
+        <Text className={styles.scrollDown} fontSize={'10px'} textDecorationColor={'beige'} textDecorationStyle={'solid'} fontWeight={900} padding={1}>SCROLL DOWN</Text>
       </Box>
     </motion.div>
   );

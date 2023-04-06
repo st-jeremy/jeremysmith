@@ -46,20 +46,28 @@ const Tech = () => {
             alt='JavaScript'
           />
           <TechImage 
+          src='/react.png'
+          alt='React'
+          />
+          <TechImage 
             src='/TypeScript.png'
             alt='TypeScript'
           />
+          
           <TechImage 
-            src='/react.png'
-            alt='React'
-          />
-          <TechImage 
-            src='/react.png'
+            src='/Nextjs.png'
             alt='Next.JS'
           />
-
           <TechImage 
-            src='/react.png'
+            src='/tailwind.png'
+            alt='Redux'
+          />
+          <TechImage 
+          src='/tailwind.png'
+          alt='Tailwind'
+          />
+          <TechImage 
+            src=''
             alt='Material UI'
           />
           <TechImage 
@@ -67,29 +75,23 @@ const Tech = () => {
             alt='Chakra UI'
           />
           <TechImage 
-            src='/tailwind.png'
-            alt='Tailwind'
-          />
-          <TechImage 
-            src='/tailwind.png'
-            alt='git'
-          />
-          <TechImage 
-            src='/tailwind.png'
+            src=''
             alt='Bootstrap'
           />
           <TechImage 
-            src='/tailwind.png'
-            alt='SASS'
+            src='/SCSS.png'
+            alt='SCSS'
+          />
+          
+          <TechImage 
+            src=''
+            alt='git'
           />
           <TechImage 
-            src='/tailwind.png'
+            src=''
             alt='Jira'
           />
-          <TechImage 
-            src='/tailwind.png'
-            alt='Redux'
-          />
+          
 
         </Box>
 
