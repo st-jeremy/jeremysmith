@@ -118,6 +118,37 @@ const ProjectCarousel = () => {
         />
       </Carousel> */}
       dgjjdjfuycujdudcucjc
+
+      <Carousel 
+          responsive={responsive}
+          swipeable={true}
+          draggable={true}
+          showDots={true}
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all 1.5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          // removeArrowOnDeviceType={["tablet", "mobile"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          <ProjectCard 
+          src='/fashion-haven.png'
+          alt='fashion haven image'
+          heading='Fashion haven'
+          description= 'a fashion e-commerce website'
+          category='e-commerce'
+          badge1='Next.Js'
+          badge2='TypeScript'
+          badge3='Redux'
+          badge4='Chakra UI'
+          badge5='CSS'
+          repoLink='https://github.com/fashion-haven'
+          link='https://github.com/fashion-haven'
+        />
+        </Carousel>
     </Box>
    );
 }

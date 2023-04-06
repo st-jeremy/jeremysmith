@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dev_ Jeremy Smith</title>
+        <title>Jeremy Smith</title>
         <meta name="description" content="Jeremy Smith Portfolio Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
