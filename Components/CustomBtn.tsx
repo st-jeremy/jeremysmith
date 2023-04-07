@@ -18,11 +18,14 @@ const CustomBtn = (props: any) => {
           width={{base: '11rem', md:'fit-content'}}
           height={'fit-content'}
           leftIcon={props.icon} 
-          p={{base:'1.5', xl:'2.5'}}
+          p={{base:'1.5', xl:'2'}}
           justifyContent='left'
-          _hover={{color:'black', bgColor:'white'}}
-          _visited={{color: 'grey', }}
+          _hover={{
+            color:'white', 
+            bgColor:'rgb(26,54,93)'}}
+          _visited={{color: 'grey' }}
           bgColor={props.bgColor}
+          color={props.color}
           rightIcon={props.rightIcon}
           fontSize={{xl: '21px'}}
         >

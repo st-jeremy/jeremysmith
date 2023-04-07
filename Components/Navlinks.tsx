@@ -43,7 +43,8 @@ const Navlinks = (props:any) => {
         name='Download Resume'
         link='https://drive.com'
         icon={<MdContacts />}
-        bgColor='red'
+        bgColor='RGB(54 76 108)'
+        color='white'
       />
 
     </Box>
