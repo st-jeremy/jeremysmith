@@ -37,7 +37,7 @@ const Menu = () => {
             Jeremy_Smith 
           </DrawerHeader>
 
-          <DrawerBody color={'white'} alignItems={'left'}  onClick={onClose}>
+          <DrawerBody color={'white'} alignItems={'left'} onClick={onClose}>
             <Navlinks 
               display='flex'
               flexDir='column'

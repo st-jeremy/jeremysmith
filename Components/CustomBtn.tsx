@@ -20,6 +20,7 @@ const CustomBtn = (props: any) => {
           leftIcon={props.icon} 
           p={{base:'1.5', xl:'2'}}
           justifyContent='left'
+          alignItems={'left'} 
           _hover={{
             color:'white', 
             bgColor:'rgb(26,54,93)'}}
@@ -29,7 +30,7 @@ const CustomBtn = (props: any) => {
           rightIcon={props.rightIcon}
           fontSize={{xl: '21px'}}
         >
-          <a href={props.link} style={{paddingTop:'.5rem'}}>
+          <a href={props.link} style={{paddingTop:'.25rem'}}>
             {props.name}
           </a>
         </Button>

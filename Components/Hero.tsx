@@ -2,6 +2,7 @@ import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css'
 import { MdContacts, MdArrowForward } from "react-icons/md";
+import CustomBtn from "./CustomBtn";
 
 
 const Hero = () => {
@@ -19,24 +20,33 @@ const Hero = () => {
         <Box textAlign={{base:'center', md: 'left'}}>
           <Heading fontFamily={'fantasy'} fontSize={{base:'24px', lg: '64px'}} pb={5}>Hello, I am</Heading>
 
-          <Heading fontFamily={'fantasy'} fontSize={{base:'57px', lg: '64px'}} color={'blue.900'} textShadow={'2px solid white'} pb={5}>JEREMY SMITH </Heading>
+          <Heading fontFamily={'fantasy'} fontSize={{base:'57px', lg: '64px'}} color={'blue.900'} textShadow={'-3px -3px blue'} pb={5}>JEREMY SMITH </Heading>
           
           <Heading fontFamily={'fantasy'} fontSize={{base:'20px', lg: '54px'}} pb={5}>a Front-End Developer</Heading>
 
-          <Text fontSize={{base:'16px', lg: '24px'}} mb={'1rem'} textShadow={'outline'}>
+          <Text fontSize={{base:'16px', lg: '24px'}} mb={'3rem'} textShadow={'outline'}>
             ...with a mission of turning designs into great experiences, through user-centric approach.
           </Text>
 
-          <Button rightIcon={<MdArrowForward />} color={'blue.900'} _hover={{color:'black', backgroundColor:'white', border: '1px solid black'}}>
-            <a href="#contact">
-              Contact me
-            </a>
-          </Button>
+          <motion.button
+            whileHover={{
+              scale: 1.2,
+              transition: { duration: 1 },
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Button rightIcon={<MdArrowForward />} color={'blue.900'} border={'1px solid black'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
+              <a href="#contact" style={{paddingTop:'.3rem'}}>
+                Contact me
+              </a>
+            </Button>
+          </motion.button>
+
         </Box>
       </Box>
 
-      <Box position={'absolute'} left={0} top={'20rem'}>
-        <Text className={styles.scrollDown} fontSize={'10px'} textDecorationColor={'beige'} textDecorationStyle={'solid'} fontWeight={900} padding={1}>SCROLL DOWN</Text>
+      <Box position={'absolute'} left={0} top={{base:'29rem'}}>
+        <Text className={styles.scrollDown} fontSize={'10.5px'}  textShadow={'-1.5px -1px blue'} fontWeight={900} padding={1}>SCROLL DOWN</Text>
       </Box>
     </motion.div>
   );
