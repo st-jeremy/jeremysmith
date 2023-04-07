@@ -53,7 +53,6 @@ const ProjectCarousel = () => {
         autoPlay={true}
         autoPlaySpeed={4000}
         ssr={true}
-        renderDotsOutside={true}
         keyBoardControl={true}
         customTransition="transform 1000ms ease-in-out"
         transitionDuration={1500}
