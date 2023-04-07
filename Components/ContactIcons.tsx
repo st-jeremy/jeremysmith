@@ -6,7 +6,7 @@ const ContactIcon = (props:any) => {
   return ( 
     <Box>
       <Tooltip label={props.tooltip} aria-label='A tooltip' fontFamily={'fantasy'}>
-        <Button variant={'ghost'} _hover={{color:'black', backgroundColor:'white'}}>
+        <Button variant={'ghost'} _hover={{color:'black', backgroundColor:'white'}} fontSize={{lg:'30px'}}>
           <a href={props.link}>{props.icon}</a>
         </Button>
       </Tooltip>
