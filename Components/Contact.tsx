@@ -18,7 +18,7 @@ const Contact = () => {
         name='Contact me via'
       />
       
-      <Box display={{base:'flex', md: 'grid'}} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}} flexDir={{ base:'column'}} gap={'10px'} justifyContent={{base:'left', md:'center'}} width={{base:'13.5rem', md: '100%'}} margin={'auto'} alignItems={'center'}>
+      <Box display={{base:'flex', md: 'grid'}} gridTemplateColumns={{md:'auto auto', xl: 'auto auto auto'}} flexDir={{ base:'column'}} gap={'10px'} justifyContent={{base:'left', md:'center'}} width={{base:'13.5rem', md: '100%'}} margin={'auto'} alignItems={'center'}>
         
         <ContactButton 
           href='mailto:st.jeremy1@gmail.com'
