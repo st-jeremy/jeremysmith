@@ -26,7 +26,7 @@ const Tech = () => {
       viewport={{ once: false }}
       transition={spring}
     >
-      <Box py={{base:'5rem', md:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'}height={{base:'100vh', '2xl':'fit-content'}} id={'tech'} maxWidth={'1500px'} fontFamily={'fantasy'}>
+      <Box py={{base:'5rem', md:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={{base:'100vh', '2xl':'fit-content'}} id={'tech'} maxWidth={'1500px'} fontFamily={'fantasy'}>
 
         <Heading textAlign={'center'} fontSize={{base:'35px', md:'40px', lg:'50px'}} fontFamily={'fantasy'}>Tech Stack</Heading>
         <Text pb={'3rem'} fontSize={{base:'20px', lg:'30px'}}>Skilled at the following software</Text>
