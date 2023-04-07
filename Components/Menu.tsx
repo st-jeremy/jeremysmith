@@ -21,7 +21,7 @@ const Menu = () => {
   
   return ( 
     <Box display={{lg: 'none'}}>
-      <Box position={'absolute'} right={{base:'1.25rem', sm: '1.5rem', md: '2.8rem', lg: '5rem'}} top={{base: '1rem', sm:'1.2rem'}} className={styles.btn} fontSize={'25px'} fontWeight={900}>
+      <Box position={'absolute'} right={{base:'1.25rem', sm: '1.5rem', md: '2.8rem', lg: '5rem'}} top={{base: '1rem', sm:'1.2rem'}} className={styles.btn} fontSize={'20px'} fontWeight={900}>
         <BsMenuApp onClick={onOpen}/>
       </Box>
     
@@ -35,7 +35,7 @@ const Menu = () => {
         <DrawerContent bgColor={'blackAlpha.900'} color={'white'}>
           <DrawerCloseButton onClick={onClose} border={'none'} />
           <DrawerHeader pl={'2rem'} fontSize={'22px'} fontFamily={'fantasy'}>
-            Jeremy Smith 
+            Jeremy_Smith 
           </DrawerHeader>
 
           <DrawerBody color={'white'} alignItems={'left'}  onClick={onClose}>
@@ -50,11 +50,11 @@ const Menu = () => {
             />
 
             <Text fontSize={'16px'} position={'absolute'} bottom={5} fontFamily={'fantasy'}>
-              Made with passion by Jeremy Smith. <br />
+              Made with passion by <span style={{fontWeight: 900}}>Jeremy Smith.</span> <br />
               <br />
 
               All rights reserved. <br />
-              Copyright © {new Date().getFullYear()}- jeremysmith.dev
+              Copyright © {new Date().getFullYear()}- <span style={{fontWeight: 900}}>jeremysmith.dev</span>
             </Text>
           </DrawerBody>
          
