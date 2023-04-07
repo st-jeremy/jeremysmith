@@ -30,14 +30,12 @@ const Tech = () => {
     >
       <Box py={{base:'5rem', md:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={{base:'100vh', '2xl':'fit-content'}} id={'tech'} maxWidth={'1500px'} fontFamily={'fantasy'} m={'auto'}>
 
-        <Box textAlign={{lg: 'right'}}>
-          <SectionHeading 
-            name='Tech'
-          />
-          <SectionSubHeading 
-            name='Skilled at the following software'
-          />
-          </Box>
+        <SectionHeading 
+          name='Tech'
+        />
+        <SectionSubHeading 
+          name='Skilled at the following software'
+        />
 
         <Box 
           display={{base:'grid'}} 
