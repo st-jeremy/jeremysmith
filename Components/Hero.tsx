@@ -15,12 +15,12 @@ const Hero = () => {
       dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} 
       dragPropagation
     >
-      <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', lg:'fit-content'}} position={'sticky'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', md: 'left'}} gap={'1rem'} width={{base: '100%', md: '60%'}} maxWidth={'1500px'} id={'hero'}>
+      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', lg:'fit-content'}} position={'sticky'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', md: 'left'}} gap={'1rem'} width={{base: '100%', md: '60%'}} maxWidth={'1500px'} id={'hero'}>
 
         <Box textAlign={{base:'center', md: 'left'}}>
           <Heading fontFamily={'fantasy'} fontSize={{base:'24px', lg: '64px'}} pb={5}>Hello, I am</Heading>
 
-          <Heading fontFamily={'fantasy'} fontSize={{base:'57px', lg: '64px'}} color={'blue.900'} textShadow={'-3px -3px blue'} pb={5}>JEREMY SMITH </Heading>
+          <Heading fontFamily={'fantasy'} fontSize={{base:'57px', lg: '64px'}} color={'blue.900'} textShadow={'-3px -3px blue'} pb={5}>JEREMY SMITH</Heading>
           
           <Heading fontFamily={'fantasy'} fontSize={{base:'20px', lg: '54px'}} pb={5}>a Front-End Developer</Heading>
 
@@ -35,7 +35,7 @@ const Hero = () => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button rightIcon={<MdArrowForward />} color={'blue.900'} border={'1px solid black'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
+            <Button rightIcon={<MdArrowForward />} color={'blue.900'} fontSize={'22px'} border={'1px solid black'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
               <a href="#contact" style={{paddingTop:'.3rem'}}>
                 Contact me
               </a>
