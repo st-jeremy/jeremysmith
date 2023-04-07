@@ -18,33 +18,28 @@ const ProjectCarousel = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 3,
       slidesToSlide: 2 
     },
-    tablet: {
-      breakpoint: { max: 1023, min: 768 },
-      items: 2,
-      slidesToSlide: 2 
-    },
-    miniTablet:{
-      breakpoint: { max: 767, min: 465 },
+    tablet:{
+      breakpoint: { max: 1024, min: 715 },
       items: 2,
       slidesToSlide: 2 
     },
     mobile: {
-      breakpoint: { max: 464, min: 425 },
+      breakpoint: { max: 714, min: 0 },
       items: 1,
       slidesToSlide: 1, 
     },
-    miniMobile: {
-      breakpoint: { max: 424, min: 0 },
-      items: 1,
-      slidesToSlide: 1,
-    }
+    // miniMobile: {
+    //   breakpoint: { max: 424, min: 0 },
+    //   items: 1,
+    //   slidesToSlide: 1,
+    // }
   };
 
   return ( 
-    <Box m={'auto'} maxWidth={'1400px'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
+    <Box m={'auto'} maxWidth={'1500px'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
       <Carousel 
         responsive={responsive}
         swipeable={true}
@@ -139,7 +134,7 @@ const Projects = () => {
     <Box py={{base:'5rem', md:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} id={'projects'}>
 
       <Heading fontFamily={'fantasy'}>Projects</Heading>
-      <Text>Some projects worked on</Text>
+      <Text pb={'3rem'} fontSize={{base:'20px', lg:'30px'}}>Some projects worked on</Text>
 
       <ProjectCarousel />
     </Box>
