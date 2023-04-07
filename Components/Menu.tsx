@@ -13,14 +13,13 @@ import React from 'react';
 import { BsMenuApp } from 'react-icons/bs'
 import Navlinks from "./Navlinks";
 import styles from '@/styles/Home.module.css'
-import { motion } from "framer-motion"
 import ContactIcons from './ContactIcons';
 
 const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   
   return ( 
-    <Box display={{lg: 'none'}}>
+    <Box display={{xl: 'none'}}>
       <Box position={'absolute'} right={{base:'1.25rem', sm: '1.5rem', md: '2.8rem', lg: '5rem'}} top={{base: '1rem', sm:'1.2rem'}} className={styles.btn} fontSize={'20px'} fontWeight={900}>
         <BsMenuApp onClick={onOpen}/>
       </Box>
