@@ -36,7 +36,7 @@ const ProjectCarousel = () => {
   };
 
   return ( 
-    <Box m={'auto'} maxWidth={'1500px'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
+    <Box m={'auto'} maxWidth={'1400px'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
       <Carousel 
         responsive={responsive}
         swipeable={true}
@@ -127,7 +127,7 @@ const ProjectCarousel = () => {
 
 const Projects = () => {
   return ( 
-    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} id={'projects'}>
+    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'}>
 
       <SectionHeading 
         name='Projects'
