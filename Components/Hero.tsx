@@ -8,14 +8,13 @@ import Image from "next/image";
 const Hero = () => {
   return ( 
     <motion.div 
-      whileTap={{ scale: 0.8 }} 
       drag 
       dragConstraints={{ left: 0, right: 300 }} 
       dragSnapToOrigin={true} 
       dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} 
       dragPropagation
     >
-      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', xl:'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} id={'hero'}>
+      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', '2xl':'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} margin={'auto'} id={'hero'}>
 
         <Box textAlign={{base:'center', lg: 'left'}} width={{base: '100%', lg: '60%'}} >
           <Heading fontFamily={'fantasy'} fontSize={{base:'24px', md: '40px', lg:'30px'}} pb={5}>Hello, I am</Heading>
@@ -24,7 +23,7 @@ const Hero = () => {
           
           <Heading fontFamily={'fantasy'} fontSize={{base:'20px', md: '40px', lg: '40px'}} pb={5}>a Front-End Developer</Heading>
 
-          <Text fontSize={{base:'16px', md:'24px', lg: '24px'}} mb={'3rem'} textShadow={'outline'}>
+          <Text fontSize={{base:'16px', md:'24px', lg: '24px'}} mb={'2rem'} textShadow={'outline'}>
             ...with a mission of turning designs into great experiences, through user-centric approach.
           </Text>
 
@@ -44,18 +43,26 @@ const Hero = () => {
         </Box>
 
         <Box display={{base:'none', lg:'flex'}} width={{ lg: '40%'}}>
-          <Image 
-            src='/heroImage.png'
-            height={300}
-            width={500}
-            alt='hero image'
-            // fill
-          />
+          <motion.div 
+            whileTap={{ scale: 1.4 }} 
+            drag 
+            dragConstraints={{ left: 0, right: 300 }} 
+            dragSnapToOrigin={true} 
+            dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} 
+            dragPropagation
+          >
+            <Image 
+              src='/heroImage.png'
+              height={300}
+              width={500}
+              alt='hero image'
+            />
+          </motion.div>
         </Box>
         
       </Box>
 
-      <Box position={'absolute'} left={0} top={{base:'29rem'}}>
+      <Box position={'absolute'} left={{base: 0, xl: 5}} top={{base:'29rem', xl: '36rem'}}>
         <Text className={styles.scrollDown} fontSize={'10.5px'}  textShadow={'-1.5px -1px blue'} fontWeight={900} padding={1}>SCROLL DOWN</Text>
       </Box>
     </motion.div>
