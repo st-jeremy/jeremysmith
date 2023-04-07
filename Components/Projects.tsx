@@ -33,8 +33,7 @@ const ProjectCarousel = () => {
     mobile: {
       breakpoint: { max: 464, min: 425 },
       items: 1,
-      slidesToSlide: 1,
-      // partialVisibilityGutter: 30 
+      slidesToSlide: 1, 
     },
     miniMobile: {
       breakpoint: { max: 424, min: 0 },
@@ -54,9 +53,8 @@ const ProjectCarousel = () => {
         autoPlay={true}
         autoPlaySpeed={4000}
         ssr={true}
-        // renderDotsOutside={true}
+        renderDotsOutside={true}
         keyBoardControl={true}
-        // customTransition="all 1.5"
         customTransition="transform 1000ms ease-in-out"
         transitionDuration={1500}
         containerClass="carousel-container"
@@ -64,7 +62,6 @@ const ProjectCarousel = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
         className={styles.carousel}
-        // centerMode={true}
         partialVisible={false}
       >
         <ProjectCard 
