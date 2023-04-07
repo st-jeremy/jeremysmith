@@ -47,7 +47,7 @@ const Tech = () => {
           <TechImage 
             src='/CSS.png'
             alt='CSS'
-            tooltip='Cascading Style Sheet'
+            tooltip='Cascading Style Sheets'
           />
           <TechImage 
             src='/JavaScript.png'
@@ -64,7 +64,6 @@ const Tech = () => {
             alt='TypeScript'
             tooltip='TypeScript'
           />
-          
           <TechImage 
             src='/Nextjs.png'
             alt='Next.JS'
@@ -93,18 +92,22 @@ const Tech = () => {
           <TechImage 
             src='/bootstrap.png'
             alt='Bootstrap'
+            tooltip='Bootstrap'
           />
           <TechImage 
-            src='/SCSS.png'
-            alt='SCSS'
+            src='/sass.png'
+            alt='SASS'
+            tooltip='Syntactically Awesome Style Sheets'
           />
           <TechImage 
             src='/git.jpeg'
             alt='git'
+            tooltip='git'
           />
           <TechImage 
             src='/jira.png'
             alt='Jira'
+            tooltip='Jira'
           />
           
 
