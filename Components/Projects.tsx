@@ -1,6 +1,7 @@
 import { 
   Box,
-  Heading
+  Heading,
+  Text
 } from '@chakra-ui/react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -57,7 +58,7 @@ const ProjectCarousel = () => {
         customTransition="transform 1000ms ease-in-out"
         transitionDuration={1500}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["miniMobile", "mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
         className={styles.carousel}
@@ -135,9 +136,10 @@ const ProjectCarousel = () => {
 
 const Projects = () => {
   return ( 
-    <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base:'3rem', md:'5rem', lg: '7rem'}} height={'fit-content'} textAlign={'center'} bgColor={'blue.100'} id={'projects'}>
+    <Box py={{base:'5rem', md:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} id={'projects'}>
 
       <Heading fontFamily={'fantasy'}>Projects</Heading>
+      <Text>Some projects worked on</Text>
 
       <ProjectCarousel />
     </Box>
