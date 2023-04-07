@@ -1,5 +1,5 @@
-import { Box, Button } from '@chakra-ui/react'
-import { FcHome, FcCalendar, FcWorkflow } from 'react-icons/fc'
+import { Box } from '@chakra-ui/react'
+import { FcHome, FcWorkflow } from 'react-icons/fc'
 import { VscProject, VscFileCode } from 'react-icons/vsc'
 import { MdContacts } from 'react-icons/md'
 import CustomBtn from './CustomBtn'
