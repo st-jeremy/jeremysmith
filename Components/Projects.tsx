@@ -7,6 +7,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from '@/styles/Home.module.css';
 import ProjectCard from './ProjectCard';
+import SectionHeading from './SectionHeading';
+import SectionSubHeading from './SectionSubHeading';
 
 
 const ProjectCarousel = () => {
@@ -31,11 +33,6 @@ const ProjectCarousel = () => {
       items: 1,
       slidesToSlide: 1, 
     },
-    // miniMobile: {
-    //   breakpoint: { max: 424, min: 0 },
-    //   items: 1,
-    //   slidesToSlide: 1,
-    // }
   };
 
   return ( 
@@ -53,7 +50,7 @@ const ProjectCarousel = () => {
         customTransition="transform 1000ms ease-in-out"
         transitionDuration={1500}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["miniMobile", "mobile"]}
+        removeArrowOnDeviceType={["mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
         className={styles.carousel}
@@ -128,13 +125,16 @@ const ProjectCarousel = () => {
 }
 
 
-
 const Projects = () => {
   return ( 
-    <Box py={{base:'5rem', md:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} id={'projects'}>
+    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} id={'projects'}>
 
-      <Heading fontFamily={'fantasy'}>Projects</Heading>
-      <Text pb={'3rem'} fontSize={{base:'20px', lg:'30px'}}>Some projects worked on</Text>
+      <SectionHeading 
+        name='Projects'
+      />
+      <SectionSubHeading 
+        name='Some projects worked on'
+      />
 
       <ProjectCarousel />
     </Box>
