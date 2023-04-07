@@ -18,30 +18,33 @@ const ProjectCarousel = () => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 2,
-      // slidesToSlide: 2 
+      slidesToSlide: 2 
     },
     tablet: {
       breakpoint: { max: 1023, min: 768 },
       items: 2,
-      // slidesToSlide: 2 
+      slidesToSlide: 2 
     },
     miniTablet:{
       breakpoint: { max: 767, min: 465 },
       items: 2,
-      // slidesToSlide: 2 
+      slidesToSlide: 2 
     },
     mobile: {
       breakpoint: { max: 464, min: 425 },
-      items: 1
+      items: 1,
+      slidesToSlide: 1,
+      // partialVisibilityGutter: 30 
     },
     miniMobile: {
       breakpoint: { max: 424, min: 0 },
-      items: 1
+      items: 1,
+      slidesToSlide: 1,
     }
   };
 
   return ( 
-    <Box m={'auto'} maxWidth={'1400px'} bgColor={'green.200'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
+    <Box m={'auto'} maxWidth={'1400px'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
       <Carousel 
         responsive={responsive}
         swipeable={true}
@@ -49,17 +52,20 @@ const ProjectCarousel = () => {
         showDots={true}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={1000}
+        autoPlaySpeed={4000}
         ssr={true}
-        renderDotsOutside={true}
+        // renderDotsOutside={true}
         keyBoardControl={true}
-        customTransition="all 1.5"
-        transitionDuration={500}
+        // customTransition="all 1.5"
+        customTransition="transform 1000ms ease-in-out"
+        transitionDuration={1500}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
         className={styles.carousel}
+        // centerMode={true}
+        partialVisible={false}
       >
         <ProjectCard 
           src='/fashion-haven.png'
