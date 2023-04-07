@@ -14,7 +14,7 @@ const Hero = () => {
       dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} 
       dragPropagation
     >
-      <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', lg:'fit-content'}} position={'sticky'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', md: 'left'}} gap={'1rem'} width={{base: '100%', md: '60%'}} id={'hero'}>
+      <Box px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', lg:'fit-content'}} position={'sticky'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', md: 'left'}} gap={'1rem'} width={{base: '100%', md: '60%'}} maxWidth={'1500px'} id={'hero'}>
 
         <Box textAlign={{base:'center', md: 'left'}}>
           <Heading fontFamily={'fantasy'} fontSize={{base:'24px', lg: '64px'}} pb={5}>Hello, I am</Heading>
