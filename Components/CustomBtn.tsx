@@ -18,15 +18,15 @@ const CustomBtn = (props: any) => {
           width={{base: '11rem', md:'fit-content'}}
           height={'fit-content'}
           leftIcon={props.icon} 
-          p={'1.5'}
+          p={{base:'1.5', xl:'2.5'}}
           justifyContent='left'
           _hover={{color:'black', bgColor:'white'}}
           _visited={{color: 'grey', }}
           bgColor={props.bgColor}
           rightIcon={props.rightIcon}
-          fontSize={{xl: '25px'}}
+          fontSize={{xl: '21px'}}
         >
-          <a href={props.link}>
+          <a href={props.link} style={{paddingTop:'.5rem'}}>
             {props.name}
           </a>
         </Button>
