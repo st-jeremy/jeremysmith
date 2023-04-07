@@ -3,11 +3,9 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
   Box,
   Heading,
   Text
-  
 } from '@chakra-ui/react'
 
 const ExpAccordion = (props:any) => {
@@ -43,6 +41,12 @@ const ExpAccordion = (props:any) => {
 const Experience = () => {
   return ( 
     <Box textAlign={'center'} padding={{base:'2rem 1rem 3rem', md:'5rem 4rem 4rem', lg:'10rem 6rem 4rem'}} minHeight={{lg:'800px'}} id={'experience'} >
+       <SectionHeading 
+          name='Experience'
+        />
+        <SectionSubHeading 
+          name='Spaces where I have worked.'
+        />
       <Heading fontSize={{base:'30px', md:'40px'}} fontWeight={900} fontFamily={'fantasy'} mb={5}>Experience</Heading>
       <Text fontSize={{base:'16px', md:'18px'}}>Spaces where I have worked.</Text>
 
