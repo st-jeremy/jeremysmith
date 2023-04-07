@@ -21,15 +21,15 @@ const TechImage = (props: any) => {
 const Tech = () => {
   return ( 
     <motion.div
-      initial={{marginTop: '-3rem'}}
+      initial={{marginTop: '-5rem'}}
       whileInView={{marginTop: '0'}}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={spring}
     >
-      <Box py={{base:'2.5rem', }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'}height={{base:'100vh', '2xl':'fit-content'}} id={'tech'}  maxWidth={'1500px'} fontFamily={'fantasy'}>
+      <Box py={{base:'5rem', md:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'}height={{base:'100vh', '2xl':'fit-content'}} id={'tech'} maxWidth={'1500px'} fontFamily={'fantasy'}>
 
-        <Heading textAlign={'center'} fontFamily={'fantasy'}>Tech Stack</Heading>
-        <Text pb={'3rem'}>Tech worked with over time. Skilled at using the following software</Text>
+        <Heading textAlign={'center'} fontSize={{base:'35px', md:'40px', lg:'50px'}} fontFamily={'fantasy'}>Tech Stack</Heading>
+        <Text pb={'3rem'} fontSize={{base:'20px', lg:'30px'}}>Skilled at the following software</Text>
 
         <Box 
           display={{base:'grid'}} 
