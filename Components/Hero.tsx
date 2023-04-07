@@ -15,9 +15,9 @@ const Hero = () => {
       dragTransition={{ bounceStiffness: 600, bounceDamping: 50 }} 
       dragPropagation
     >
-      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', lg:'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} id={'hero'}>
+      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'5rem', md:'7rem'}} height={{base:'100vh', xl:'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} id={'hero'}>
 
-        <Box textAlign={{base:'center', md: 'left'}} width={{base: '100%', lg: '60%'}} >
+        <Box textAlign={{base:'center', lg: 'left'}} width={{base: '100%', lg: '60%'}} >
           <Heading fontFamily={'fantasy'} fontSize={{base:'24px', md: '40px', lg:'30px'}} pb={5}>Hello, I am</Heading>
 
           <Heading fontFamily={'fantasy'} fontSize={{base:'57px', md: '79px', lg: '64px'}} color={'blue.900'} textShadow={'-3px -3px blue'} pb={5}>JEREMY SMITH</Heading>
@@ -49,6 +49,7 @@ const Hero = () => {
             height={300}
             width={500}
             alt='hero image'
+            // fill
           />
         </Box>
         
