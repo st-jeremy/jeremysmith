@@ -86,3 +86,6 @@ const draw = {
         />
 
       </Box> */}
+
+ background={'linear-gradient( to bottom, rgb(184,227,253) 0%, rgb(125,179,213)  100%)'}
+ background={'linear-gradient( to bottom, rgb(125,179,213) 0%, rgb(55,156,215) 100%)'}
