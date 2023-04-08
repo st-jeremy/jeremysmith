@@ -131,9 +131,11 @@ const Projects = () => {
 
       <SectionHeading 
         name='Projects'
+        position='left'
       />
       <SectionSubHeading 
         name='Some projects worked on'
+        position='left'
       />
 
       <ProjectCarousel />
