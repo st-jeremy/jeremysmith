@@ -42,7 +42,7 @@ const Hero = () => {
           </motion.button>
         </Box>
 
-        <Box display={{base:'none', lg:'flex'}} width={{ lg: '40%'}}>
+        <Box display={{base:'none', lg:'flex'}} width={{ lg: '40%'}} transform={'rotateY(180deg)'}>
           <motion.div 
             whileTap={{ scale: 1.4 }} 
             drag 

@@ -15,11 +15,11 @@ import styles from '@/styles/Home.module.css'
 const ProjectCard = (props:any) => {
   return (
     <Box width='320px' height={'420px'} alignItems={'center'} pt={0} mb={'3rem'} pb={'1rem'} flexDir={'column'} 
-    className={styles.projectCard} 
-    bgColor={'white'} color={'white'}
+    // className={styles.projectCard} 
+    bgColor={'white'} color={'black'}
     >
-      <Box bgColor={'linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1))'} p={0} m={0}>
-      <Image
+      <Box p={0} m={0}>
+        <Image
           src={props.src}
           alt={props.alt}
           height={300}

@@ -68,26 +68,25 @@ const ProjectCarousel = () => {
           badge4='Chakra UI'
           badge5='CSS'
           repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
+          link='https://fashionhaven.vercel.app'
         />
 
         <ProjectCard 
-          src='/fashion-haven.png'
-          alt='fashion haven image'
-          heading='Fashion haven'
-          description= 'a fashion e-commerce website'
-          category='e-commerce'
+          src='/sonergy.png'
+          alt='sonergy image'
+          heading='Sonergy'
+          description= 'a decentralized research data landing page'
+          category='landing page'
           badge1='Next.Js'
           badge2='TypeScript'
-          badge3='Redux'
-          badge4='Chakra UI'
-          badge5='CSS'
-          repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
+          badge3='Chakra UI'
+          badge4='CSS'
+          repoLink='https://github.com/st-jeremy/Sonergy'
+          link='https://sonergy.vercel.app'
         />
 
         <ProjectCard 
-          src='/fashion-haven.png'
+          src='/flyplux.png'
           alt='Fly plux'
           heading='Flyplux'
           description='an airline landing page'
@@ -100,24 +99,15 @@ const ProjectCarousel = () => {
         />
 
         <ProjectCard 
-          src='/fashion-haven.png'
-          alt='fashion haven image'
-          heading='Fashion haven'
-          description= 'an e-commerce website for fashion products.'
+          src='/decx.png'
+          alt='decx image'
+          heading='Decx'
+          description= 'an enquiries website for agriculture.'
           category='e-commerce'
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
 
-        <ProjectCard 
-          src='/fashion-haven.png'
-          alt='fashion haven image'
-          heading='Fashion haven'
-          description= 'an e-commerce website for fashion products.'
-          category='e-commerce'
-          repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
-        />
       </Carousel>
      
     </Box>

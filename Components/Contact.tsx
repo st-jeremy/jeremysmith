@@ -6,7 +6,7 @@ import SectionSubHeading from './SectionSubHeading';
 
 const Contact = () => {
   return ( 
-    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base:'6.5rem', sm:'5rem', md:'5rem' }} textAlign={'center'} background={'linear-gradient( to bottom, white 10%, rgb(55,156,215) 80%)'} id={'contact'}>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base:'6.5rem', sm:'5rem', md:'5rem' }} textAlign={'center'} background={'linear-gradient( to bottom, white 10%, rgb(55,156,215) 50%, rgb(6,31,43) 90%)'} id={'contact'}>
 
       <SectionHeading
         name='Contact'
@@ -49,7 +49,7 @@ const Contact = () => {
         />
       </Box>
 
-      <Text mt={'2rem'} fontWeight={800} fontStyle={'italic'}>
+      <Text mt={'2rem'} fontWeight={800} fontStyle={'italic'} color={'white'}>
         Let&apos;s work together on your next projects. 
       </Text>
     </Box>
