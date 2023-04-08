@@ -41,11 +41,11 @@ const Navlinks = (props:any) => {
 
       <CustomBtn 
         name='Download Resume'
-        link='https://drive.com'
+        link='/Jeremy_Smith-Resume.pdf'
         icon={<MdContacts />}
         bgColor='rgb(125,179,213)'
         color='white'
-        download='true'
+        download='Jeremy_Smith-Resume'
       />
 
     </Box>
