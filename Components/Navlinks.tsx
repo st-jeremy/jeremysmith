@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { FcHome, FcWorkflow } from 'react-icons/fc'
 import { VscProject, VscFileCode } from 'react-icons/vsc'
 import { MdContacts } from 'react-icons/md'
+import { BiDownload } from 'react-icons/bi'
 import CustomBtn from './CustomBtn'
 
 
@@ -42,7 +43,7 @@ const Navlinks = (props:any) => {
       <CustomBtn 
         name='Download Resume'
         link='/Jeremy_Smith-Resume.pdf'
-        icon={<MdContacts />}
+        icon={<BiDownload />}
         bgColor='rgb(125,179,213)'
         color='white'
         download='Jeremy_Smith-Resume'
