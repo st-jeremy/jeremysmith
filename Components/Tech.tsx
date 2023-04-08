@@ -7,7 +7,7 @@ import SectionSubHeading from "./SectionSubHeading";
 const TechImage = (props: any) => {
   return ( 
     <Box width={'fit-content'} objectFit={'contain'}>
-      <Tooltip label={props.tooltip} aria-label='A tooltip' fontFamily={'fantasy'}>
+      <Tooltip label={props.tooltip} aria-label='A tooltip' fontWeight={900} fontFamily={'fantasy'} bgColor={'rgb(26,54,93)'}>
         <Image 
           src={props.src}
           alt={props.alt}

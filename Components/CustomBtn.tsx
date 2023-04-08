@@ -30,7 +30,7 @@ const CustomBtn = (props: any) => {
           rightIcon={props.rightIcon}
           fontSize={{xl: '21px'}}
         >
-          <a href={props.link} style={{paddingTop:'.25rem'}}>
+          <a href={props.link} style={{paddingTop:'.25rem'}} download={props.download}>
             {props.name}
           </a>
         </Button>

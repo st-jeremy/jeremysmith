@@ -45,6 +45,7 @@ const Navlinks = (props:any) => {
         icon={<MdContacts />}
         bgColor='rgb(125,179,213)'
         color='white'
+        download='true'
       />
 
     </Box>
