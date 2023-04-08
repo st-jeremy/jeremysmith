@@ -83,7 +83,7 @@ const Tech = () => {
             tooltip='Redux'
           />
           <TechImage 
-          src='/tailwind.png'
+          src='/tailwindcss.png'
           alt='Tailwind'
           tooltip='Tailwind'
           />
