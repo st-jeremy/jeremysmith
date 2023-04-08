@@ -48,7 +48,7 @@ const ProjectCard = (props:any) => {
           </Box>
         </Stack>
 
-        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'2.5rem', md: '3.7rem'}} gap={'40px'} borderRadius={'50%'}>
+        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'2.5rem', md: '1.6rem', lg: '3.5rem'}} gap={'40px'} borderRadius={'50%'}>
           <motion.button
             whileHover={{
               scale: 1.2,
