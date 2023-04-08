@@ -16,17 +16,17 @@ const ProjectCarousel = () => {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 3,
-      slidesToSlide: 3
+      slidesToSlide: 1
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 2 
+      slidesToSlide: 1 
     },
     tablet:{
       breakpoint: { max: 1024, min: 715 },
       items: 2,
-      slidesToSlide: 2 
+      slidesToSlide: 1 
     },
     mobile: {
       breakpoint: { max: 714, min: 0 },
@@ -75,7 +75,7 @@ const ProjectCarousel = () => {
           src='/sonergy.png'
           alt='sonergy image'
           heading='Sonergy'
-          description= 'a decentralized research data landing page'
+          description= 'a research data landing page'
           category='landing page'
           badge1='Next.Js'
           badge2='TypeScript'
@@ -104,6 +104,9 @@ const ProjectCarousel = () => {
           heading='Decx'
           description= 'an enquiries website for agriculture.'
           category='e-commerce'
+          badge1='React'
+          badge2='Chakra UI'
+          badge3='CSS'
           repoLink='https://github.com/fashion-haven'
           link='https://github.com/fashion-haven'
         />
