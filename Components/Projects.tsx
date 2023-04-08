@@ -68,7 +68,7 @@ const ProjectCarousel = () => {
           badge3='Redux'
           badge4='Chakra UI'
           badge5='CSS'
-          repoLink='https://github.com/fashion-haven'
+          repoLink='https://github.com/st-jeremy/fashion-haven'
           link='https://fashionhaven.vercel.app'
         />
 
@@ -95,8 +95,8 @@ const ProjectCarousel = () => {
           badge1='React'
           badge2='Chakra UI'
           badge3='CSS'
-          repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
+          repoLink='https://github.com/st-jeremy/flyplux'
+          link='https://flyplux.vercel.app'
         />
 
         <ProjectCard 
@@ -108,8 +108,8 @@ const ProjectCarousel = () => {
           badge1='React'
           badge2='Chakra UI'
           badge3='CSS'
-          repoLink='https://github.com/fashion-haven'
-          link='https://github.com/fashion-haven'
+          repoLink='https://github.com/st-jeremy/decx'
+          link='https://decx.vercel.app'
         />
 
       </Carousel>
