@@ -34,7 +34,7 @@ const Hero = () => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button rightIcon={<MdArrowForward />} color={'blue.900'} fontSize={'22px'} border={'1px solid black'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
+            <Button rightIcon={<MdArrowForward />} color={'white'} fontWeight={900} bgColor={'rgb(125,179,213)'} fontSize={'22px'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
               <a href="#contact" style={{paddingTop:'.3rem'}}>
                 Contact me
               </a>
