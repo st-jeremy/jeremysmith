@@ -55,6 +55,7 @@ const ProjectCarousel = () => {
         itemClass="carousel-item-padding-40-px"
         className={styles.carousel}
         partialVisible={false}
+        renderButtonGroupOutside={true}
       >
         <ProjectCard 
           src='/fashion-haven.png'

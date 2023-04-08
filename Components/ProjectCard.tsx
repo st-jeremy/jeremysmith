@@ -14,18 +14,19 @@ import styles from '@/styles/Home.module.css'
 
 const ProjectCard = (props:any) => {
   return (
-    <Box width='320px' height={'400px'} alignItems={'center'} pt={0} mb={'3rem'} pb={'1rem'} flexDir={'column'} 
+    <Box width={{base:'320px', md: '90%'}} height={'400px'} alignItems={'center'} pt={0} mb={'3rem'} pb={'1rem'} flexDir={'column'} 
     // className={styles.projectCard}  
-    borderRadius={'0 0 30px 30px'}
+    borderRadius={' 30px 30px'}
     bgColor={'white'} color={'black'}
     >
-      <Box p={0} m={0}>
+      <Box p={0} m={{base: 0, md: 'auto'}} alignItems={'center'} justifyItems={'center'} justifyContent={'center'}>
         <Box height={180}>
           <Image
             src={props.src}
             alt={props.alt}
             height={300}
             width={320}
+            style={{margin:'auto'}}
           />
         </Box>  
 
@@ -47,7 +48,7 @@ const ProjectCard = (props:any) => {
           </Box>
         </Stack>
 
-        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={'2.5rem'} gap={'40px'} borderRadius={'50%'}>
+        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'2.5rem', md: '3.7rem'}} gap={'40px'} borderRadius={'50%'}>
           <motion.button
             whileHover={{
               scale: 1.2,
@@ -55,7 +56,7 @@ const ProjectCard = (props:any) => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button variant='outline' colorScheme='black' onClick={props.repoLink}  _hover={{bgColor:'blue', color:'white'}} fontSize={'14px'} height={8}>
+            <Button variant='outline' colorScheme='black' onClick={props.repoLink}  _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'14px'} height={8}>
               View Repository
             </Button>
           </motion.button>
@@ -67,7 +68,7 @@ const ProjectCard = (props:any) => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button variant='outline' colorScheme='black' onClick={props.link} _hover={{bgColor:'blue', color:'white'}} fontSize={'16px'} height={8}>
+            <Button variant='outline' colorScheme='black' onClick={props.link} _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'16px'} height={8}>
               Visit 
             </Button>
           </motion.button>
