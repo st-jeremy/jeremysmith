@@ -20,7 +20,7 @@ const ProjectCard = (props:any) => {
     bgColor={'white'} color={'black'}
     >
       <Box p={0} m={{base: 0, md: 'auto'}} alignItems={'center'} justifyItems={'center'} justifyContent={'center'}>
-        <Box height={180}>
+        <Box height={180} pt={5}>
           <Image
             src={props.src}
             alt={props.alt}
@@ -30,7 +30,7 @@ const ProjectCard = (props:any) => {
           />
         </Box>  
 
-        <Stack spacing='.1' p={'1rem'} >
+        <Stack spacing='.1' p={'1.2rem 1rem'} >
           <Heading size='md' pb={'1rem'}>{props.heading}</Heading>
           <Text>{props.description}</Text>
           <Text fontStyle={'italic'} fontWeight={'bold'} mb={'2rem'}>
