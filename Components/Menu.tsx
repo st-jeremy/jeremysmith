@@ -48,7 +48,7 @@ const Menu = () => {
               mt='3rem'
             />
 
-            <Text fontSize={'16px'} position={'absolute'} bottom={5}>
+            <Text fontSize={'16px'} position={'absolute'} bottom={5} textAlign={'center'}>
               Made with passion by <span style={{fontWeight: 900}}>Jeremy Smith.</span> <br />
               <br />
 

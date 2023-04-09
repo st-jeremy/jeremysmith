@@ -126,7 +126,7 @@ const Projects = () => {
         position='left'
       />
       <SectionSubHeading 
-        name='Some projects worked on'
+        name='Some of the projects worked on.'
         position='left'
       />
 

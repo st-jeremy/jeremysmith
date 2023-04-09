@@ -24,7 +24,8 @@ const Footer = () => {
       <Divider color={'black'} height={'2px'} w={'90%'} m={'auto'} pb={'4'}/>
 
       <Text fontSize={{base:'14px', lg: '20px'}} color={'white'} textAlign={'center'} pt={'4'} >
-        Copyright © {new Date().getFullYear()}- jeremysmith.dev
+      All rights reserved. <br />
+      Copyright © {new Date().getFullYear()}
       </Text>
     </Box>
    );
