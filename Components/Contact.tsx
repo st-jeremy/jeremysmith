@@ -17,7 +17,7 @@ const Contact = () => {
         position='left'
       />
       <SectionSubHeading
-        name='Contact me via'
+        name='Contact me via...'
       />
       
       <Box display={{base:'flex', md: 'grid'}} gridTemplateColumns={{md:'auto auto', xl: 'auto auto auto'}} flexDir={{ base:'column'}} gap={'10px'} justifyContent={{base:'left', md:'center'}} width={{base:'13.5rem', md: '100%'}} margin={'auto'} alignItems={'center'}>
@@ -49,7 +49,7 @@ const Contact = () => {
         />
       </Box>
 
-      <Text mt={'2rem'} fontWeight={800} fontStyle={'italic'} color={'white'}>
+      <Text mt={'2rem'} fontSize={{lg:'30px'}} fontWeight={600} fontStyle={'italic'} color={'white'}>
         Let&apos;s work together on your next projects. 
       </Text>
     </Box>

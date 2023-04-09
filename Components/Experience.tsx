@@ -59,11 +59,11 @@ const Experience = () => {
           title='Frontend Developer'
           post='Freelance'
           date='Nov 2022 – Present'
-          about='Collaborated with other devs in building landing pages, ecommerce website, blog etc'
-          line1='Implement several websites, and web applications: ecommerce and landing pages from concept to deployment'
+          about='Collaborated with other devs in building landing pages, ecommerce website, blog etc.'
+          line1='Implement several websites, and web applications: ecommerce and landing pages from concept to deployment.'
           line2='Implement responsive design techniques to ensure websites were optimized for mobile devices.'
           line3=' Convert product designs into high-quality code and responsive interfaces for a great user experience.'
-          line4='Collaborate with product team members to implement new feature developments'
+          line4='Collaborate with product team members to implement new feature developments.'
         />
         
         <ExpAccordion 
