@@ -48,12 +48,13 @@ const Menu = () => {
               mt='3rem'
             />
 
-            <Text fontSize={'16px'} position={'absolute'} bottom={5} fontFamily={'fantasy'}>
+            <Text fontSize={'16px'} position={'absolute'} bottom={5}>
               Made with passion by <span style={{fontWeight: 900}}>Jeremy Smith.</span> <br />
               <br />
 
               All rights reserved. <br />
-              Copyright © {new Date().getFullYear()}- <span style={{fontWeight: 900}}>jeremysmith.dev</span>
+              Copyright © {new Date().getFullYear()}
+              {/* - <span style={{fontWeight: 900}}>jeremysmith.dev</span> */}
             </Text>
           </DrawerBody>
          

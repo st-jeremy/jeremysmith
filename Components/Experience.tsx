@@ -17,7 +17,7 @@ const ExpAccordion = (props:any) => {
             <h2>
               <AccordionButton p={{base:0, xl:'.5rem'}} height={{ xl:'16rem'}} border={{base:'.5px solid grey', xl:'none'}}>
                 <Box as="span" flex='1' textAlign={{base:'center', xl:'left'}} width={{base:'12rem', xl: 'fit-content'}} pt={{base: 3, xl:'unset'}}>
-                  <Heading fontFamily={'fantasy'} fontSize={{base:'25px', md:'28px'}}>
+                  <Heading fontFamily={'Dyna Puff'} fontSize={{base:'25px', md:'28px'}}>
                     {props.title}
                   </Heading>
                   <Text>{props.post}</Text>
