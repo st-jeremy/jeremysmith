@@ -85,6 +85,22 @@ const ProjectCarousel = () => {
         />
 
         <ProjectCard 
+          src='/dataVault.png'
+          alt='data*** image'
+          heading='Data***'
+          description= 'an blog website for data analysis and research.'
+          category='blog website'
+          badge1='React'
+          badge2='Redux'
+          badge3='TypeScript'
+          badge4='Tailwind'
+          badge5='SCSS'
+          repoLink='/'
+          link='/'
+          disable
+        />
+
+        <ProjectCard 
           src='/flyplux.png'
           alt='Fly plux'
           heading='Flyplux'

@@ -13,6 +13,7 @@ import styles from '@/styles/Home.module.css'
  
 
 const ProjectCard = (props:any) => {
+
   return (
     <Box width={{base:'320px', md: '90%'}} height={'400px'} alignItems={'center'} pt={0} pb={'1rem'} flexDir={'column'} 
     // className={styles.projectCard}  
@@ -50,7 +51,7 @@ const ProjectCard = (props:any) => {
           </Box>
         </Stack>
 
-        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'3rem', sm:'6rem', md: '3.2rem', lg: '5rem', xl:'4.5rem'}} gap={'20px'} borderRadius={'50%'}>
+        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'3rem', sm:'6rem', md: '3.2rem', lg: '5rem', xl:'4.5rem'}} gap={'20px'} borderRadius={'50%'} isDisabled={props.disable}>
           <motion.button
             whileHover={{
               scale: 1.2,
@@ -58,8 +59,8 @@ const ProjectCard = (props:any) => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button variant='outline' colorScheme='black' onClick={props.repoLink}  _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'14px'} height={8}>
-              View Repository
+            <Button variant='outline' colorScheme='black' _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'14px'} height={8}>
+              <a href={props.repoLink}>View Repository</a>
             </Button>
           </motion.button>
 
@@ -70,8 +71,8 @@ const ProjectCard = (props:any) => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button variant='outline' colorScheme='black' onClick={props.link} _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'16px'} height={8}>
-              Visit 
+            <Button variant='outline' colorScheme='black' _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'16px'} height={8}>
+              <a href={props.link}>Visit</a>
             </Button>
           </motion.button>
         </ButtonGroup>

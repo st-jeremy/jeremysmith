@@ -93,14 +93,14 @@ const Tech = () => {
             tooltip='Material UI'
           />
           <TechImage 
-            src='/chakra.png'
-            alt='Chakra UI'
-            tooltip='Chakra UI'
-          />
-          <TechImage 
             src='/bootstrap.png'
             alt='Bootstrap'
             tooltip='Bootstrap'
+          />
+          <TechImage 
+            src='/chakra.png'
+            alt='Chakra UI'
+            tooltip='Chakra UI'
           />
           <TechImage 
             src='/sass.png'
