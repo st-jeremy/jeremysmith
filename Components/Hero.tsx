@@ -8,7 +8,7 @@ import Image from "next/image";
 const Hero = () => {
   return ( 
     <motion.div>
-      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'7rem', md:'7rem'}} height={{base:'80vh', '2xl':'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} background={'linear-gradient( to bottom, white 0%, rgb(184,227,253) 100%)'} margin={'auto'}  id={'hero'}>
+      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'7rem', md:'7rem'}} height={{base:'90vh', '2xl':'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} background={'linear-gradient( to bottom, white 0%, rgb(184,227,253) 100%)'} margin={'auto'}  id={'hero'}>
         <Box textAlign={{base:'center', lg: 'left'}} width={{base: '100%', lg: '60%'}} >
          
           <Heading fontFamily={'Dyna Puff'} fontSize={{base:'24px', md: '40px', lg:'30px'}} pb={5}>Hello, I am</Heading>
@@ -55,7 +55,7 @@ const Hero = () => {
         </Box>
       </Box>
 
-      <Box position={'absolute'} left={{base: 0, xl: 5}} top={{base:'39rem', xl: '36rem'}}>
+      <Box position={'absolute'} left={{base: 0, xl: 5}} top={{base:'32rem', xl: '36rem'}}>
         <Text className={styles.scrollDown} fontSize={{base:'10.5px', lg: '14px'}} fontWeight={900} padding={1}>SCROLL DOWN</Text>
       </Box>
     </motion.div>
