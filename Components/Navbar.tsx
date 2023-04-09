@@ -13,7 +13,7 @@ const Navbar = () => {
  
       <Box display={'flex'} gap={'10px'}>
         <Image src='/heroImage.png' alt='logo' width={27} height={40} />
-        <Heading  fontFamily={'Dyna Puff'} fontWeight={900} fontSize={{base:'25px'}} width={'fit-content'} m={0} pt={{base:'.2rem', lg:'-2rem', xl:'0.5rem'}}>Jeremy_Smith</Heading>
+        <Heading  fontFamily={'Verdana, Geneva, Tahoma, sans-serif'} fontWeight={900} fontSize={{base:'25px'}} width={'fit-content'} m={0} pt={{base:'.2rem', lg:'-2rem', xl:'0.5rem'}}>Jeremy_Smith</Heading>
       </Box>
 
       <Menu />

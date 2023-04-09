@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link href="https://fonts.googleapis.com/css2?family=Dyna+Puff&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet"></link>
       </Head>
 
       <body>
