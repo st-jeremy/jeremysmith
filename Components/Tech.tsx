@@ -98,7 +98,7 @@ const Tech = () => {
             tooltip='Bootstrap'
           />
           <TechImage 
-            src='/chakra.png'
+            src='/chakraui.png'
             alt='Chakra UI'
             tooltip='Chakra UI'
           />
