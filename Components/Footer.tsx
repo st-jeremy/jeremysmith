@@ -5,6 +5,7 @@ import {
   Divider } from "@chakra-ui/react";
 import { BsFillFileArrowUpFill } from 'react-icons/bs'
 import ContactIcons from "./ContactIcons";
+import Image from "next/image";
 
 const Footer = () => {
   return ( 
@@ -15,6 +16,15 @@ const Footer = () => {
             <BsFillFileArrowUpFill style={{color:'white', backgroundColor:'black', fontSize: '30px'}}/>
           </a>
         </Tooltip>
+      </Box>
+
+      <Box margin={'auto'} justifyContent={'center'} display={{base:'flex', lg:'none'}} alignItems='center' justifyItems={'center'} mb={5} >
+        <Image
+          src='/heroBackground.png'
+          width={300}
+          height={300}
+          alt='contact image'
+        />
       </Box>
 
       <ContactIcons 

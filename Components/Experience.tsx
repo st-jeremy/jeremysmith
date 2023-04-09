@@ -48,7 +48,7 @@ const Experience = () => {
           position='right'
         />
         <SectionSubHeading 
-          name='Spaces where I have worked.'
+          name='Sphere where I have put skills into work.'
           position='right'
         />
 
