@@ -1,7 +1,7 @@
 import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css';
-import { MdArrowForward } from "react-icons/md";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Image from "next/image";
 
 
@@ -28,8 +28,8 @@ const Hero = () => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button rightIcon={<MdArrowForward />} color={'white'} fontWeight={900} bgColor={'rgb(125,179,213)'} fontSize={'22px'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
-              <a href="#contact" style={{paddingTop:'.1rem'}}>
+            <Button rightIcon={<HiOutlineArrowNarrowRight />} color={'white'} fontWeight={900} bgColor={'rgb(125,179,213)'} fontSize={'22px'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
+              <a href="#contact" style={{paddingTop:'0'}}>
                 Contact me
               </a>
             </Button>
