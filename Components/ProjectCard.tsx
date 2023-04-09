@@ -18,6 +18,7 @@ const ProjectCard = (props:any) => {
     // className={styles.projectCard}  
     borderRadius={' 30px 30px'}
     bgColor={'white'} color={'black'}
+    margin={'auto'}
     >
       <Box p={0} m={{base: 0, md: 'auto'}} alignItems={'center'} justifyItems={'center'} justifyContent={'center'}>
         <Box height={180} pt={5}>
