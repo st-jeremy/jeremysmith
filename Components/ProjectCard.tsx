@@ -14,11 +14,12 @@ import styles from '@/styles/Home.module.css'
 
 const ProjectCard = (props:any) => {
   return (
-    <Box width={{base:'320px', md: '90%'}} height={'400px'} alignItems={'center'} pt={0} mb={'3rem'} pb={'1rem'} flexDir={'column'} 
+    <Box width={{base:'320px', md: '90%'}} height={'400px'} alignItems={'center'} pt={0} pb={'1rem'} flexDir={'column'} 
     // className={styles.projectCard}  
     borderRadius={' 30px 30px'}
     bgColor={'white'} color={'black'}
-    margin={'auto'}
+    margin={'auto'}  mb={'3rem'}
+    
     >
       <Box p={0} m={{base: 0, md: 'auto'}} alignItems={'center'} justifyItems={'center'} justifyContent={'center'}>
         <Box height={180} pt={5}>
@@ -49,7 +50,7 @@ const ProjectCard = (props:any) => {
           </Box>
         </Stack>
 
-        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'2.5rem', md: '1.6rem', lg: '3.5rem'}} gap={'40px'} borderRadius={'50%'}>
+        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'3rem', sm:'6rem', md: '3.2rem', lg: '5rem', xl:'4.5rem'}} gap={'20px'} borderRadius={'50%'}>
           <motion.button
             whileHover={{
               scale: 1.2,
