@@ -52,78 +52,88 @@ const Tech = () => {
             alt='HTML'
             tooltip='HyperText Markup Language'
           />
+
           <TechImage 
             src='/CSS.png'
             alt='CSS'
             tooltip='Cascading Style Sheets'
           />
+
           <TechImage 
             src='/JavaScript.png'
             alt='JavaScript'
             tooltip='JavaScript'
           />
+
           <TechImage 
           src='/react.png'
           alt='React'
           tooltip='React'
           />
+
           <TechImage 
             src='/TypeScript.png'
             alt='TypeScript'
             tooltip='TypeScript'
           />
+
           <TechImage 
             src='/Nextjs.png'
             alt='Next.JS'
             tooltip='Next.JS'
           />
+
           <TechImage 
             src='/redux.png'
             alt='Redux'
             tooltip='Redux'
           />
+
           <TechImage 
           src='/tailwindcss.png'
-          alt='Tailwind'
-          tooltip='Tailwind'
+          alt='Tailwind CSS'
+          tooltip='Tailwind CSS'
           />
-          <TechImage 
-            src='/mui.png'
-            alt='Material UI'
-            tooltip='Material UI'
-          />
+
           <TechImage 
             src='/bootstrap.png'
             alt='Bootstrap'
             tooltip='Bootstrap'
           />
+
+          <TechImage 
+            src='/mui.png'
+            alt='Material UI'
+            tooltip='Material UI'
+          />
+
           <TechImage 
             src='/chakraui.png'
             alt='Chakra UI'
             tooltip='Chakra UI'
           />
+
           <TechImage 
             src='/sass.png'
             alt='SASS'
             tooltip='Syntactically Awesome Style Sheets'
           />
+
           <TechImage 
             src='/git.jpeg'
             alt='git'
             tooltip='git'
           />
+
           <TechImage 
             src='/jira.png'
             alt='Jira'
             tooltip='Jira'
           />
-          
-
         </Box>
-
       </Box>
     </motion.div>
-   );
+  );
 }
  
 export default Tech;
