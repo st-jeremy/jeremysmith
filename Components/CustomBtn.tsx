@@ -23,7 +23,8 @@ const CustomBtn = (props: any) => {
           alignItems={'left'} 
           _hover={{
             color:'white', 
-            bgColor:'rgb(26,54,93)'}}
+            bgColor:'rgb(26,54,93)'
+          }}
           _visited={{color: 'grey' }}
           bgColor={props.bgColor}
           color={props.color}
