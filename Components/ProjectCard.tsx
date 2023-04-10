@@ -9,19 +9,13 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image';
 import { motion } from 'framer-motion'
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
  
 
 const ProjectCard = (props:any) => {
 
   return (
-    <Box width={{base:'320px', md: '90%'}} height={'400px'} alignItems={'center'} pt={0} pb={'1rem'} flexDir={'column'} 
-    // className={styles.projectCard}  
-    borderRadius={' 30px 30px'}
-    bgColor={'white'} color={'black'}
-    margin={'auto'}  mb={'3rem'}
-    
-    >
+    <Box width={{base:'320px', md: '90%'}} height={'400px'} alignItems={'center'} pt={0} pb={'1rem'} flexDir={'column'}    borderRadius={' 30px 30px'} bgColor={'white'} color={'black'} margin={'auto'}  mb={'3rem'}>
       <Box p={0} m={{base: 0, md: 'auto'}} alignItems={'center'} justifyItems={'center'} justifyContent={'center'}>
         <Box height={180} pt={5}>
           <Image
@@ -45,6 +39,7 @@ const ProjectCard = (props:any) => {
             <Badge bgColor={'blue.200'}>{props.badge2}</Badge>
             <Badge bgColor={'red.200'}>{props.badge3}</Badge>
           </Box>
+
           <Box display={'flex'} justifyContent={'center'} textAlign={'center'} gap={'.3rem'}>
             <Badge bgColor={'green.200'}>{props.badge4}</Badge>
             <Badge bgColor={'blue.300'}>{props.badge5}</Badge>
@@ -60,7 +55,9 @@ const ProjectCard = (props:any) => {
             whileTap={{ scale: 0.9 }}
           >
             <Button variant='outline' colorScheme='black' _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'14px'} height={8}>
-              <a href={props.repoLink}>View Repository</a>
+              <a href={props.repoLink}>
+                View Repository
+              </a>
             </Button>
           </motion.button>
 
@@ -72,7 +69,9 @@ const ProjectCard = (props:any) => {
             whileTap={{ scale: 0.9 }}
           >
             <Button variant='outline' colorScheme='black' _hover={{bgColor:'rgb(13,17,32)', color:'white'}} fontSize={'16px'} height={8}>
-              <a href={props.link}>Visit</a>
+              <a href={props.link}>
+                Visit
+              </a>
             </Button>
           </motion.button>
         </ButtonGroup>
