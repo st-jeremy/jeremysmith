@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Button } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import { BsGithub, BsLinkedin, BsMailbox, BsPhone, BsWhatsapp } from 'react-icons/bs';
 import ContactButton from './ContactButton';
 import SectionHeading from './SectionHeading';
