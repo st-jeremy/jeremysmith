@@ -1,10 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap'); */
 
 .main {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  /* font-family: DynaPuff; */
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -14,23 +12,14 @@
   transition-duration: 150ms;
 }
 
-.circle{
-  stroke-width: 30px;
-  stroke-linecap: round;
-  fill: transparent;
-}
-
 .scrollDown{
   writing-mode:vertical-rl;
   text-orientation: upright;
-
 }
 
 .carousel{
   width: 100%;
- }
-
-
+}
 
 .description {
   display: inherit;
