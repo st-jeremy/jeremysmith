@@ -5,8 +5,6 @@ import { MdContacts } from 'react-icons/md'
 import { BiDownload } from 'react-icons/bi'
 import CustomBtn from './CustomBtn'
 
-
-
 const Navlinks = (props:any) => {
   return ( 
     <Box display={props.display} flexDir={props.flexDir} gap={{base:'.5rem', md: 2, lg: 5, xl:2}}>
