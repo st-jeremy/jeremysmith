@@ -4,10 +4,11 @@ import { VscProject, VscFileCode } from 'react-icons/vsc'
 import { MdContacts } from 'react-icons/md'
 import { BiDownload } from 'react-icons/bi'
 import CustomBtn from './CustomBtn'
+import styles from '../styles/Home.module.css'
 
 const Navlinks = (props:any) => {
   return ( 
-    <Box display={props.display} flexDir={props.flexDir} gap={{base:'.5rem', md: 2, lg: 5, xl:2}}>
+    <Box display={props.display} flexDir={props.flexDir} gap={{base:'.5rem', md: 2, lg: '.15rem', xl:2}}>
       <CustomBtn 
         name='Home'
         link='#hero'

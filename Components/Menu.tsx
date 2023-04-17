@@ -19,7 +19,7 @@ const Menu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   
   return ( 
-    <Box display={{xl: 'none'}}>
+    <Box display={{base: 'flex', lg: 'none'}}>
       <Box position={'absolute'} right={{base:'1.25rem', sm: '1.5rem', md: '2.8rem', lg: '5rem'}} top={{base: '1rem', sm:'1.2rem'}} className={styles.btn} fontSize={'20px'} fontWeight={900}>
         <BsMenuApp onClick={onOpen}/>
       </Box>

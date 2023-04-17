@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .btn{
@@ -20,6 +21,42 @@
 .carousel{
   width: 100%;
 }
+
+.customBtn{
+  padding-top: .25rem;
+}
+
+@media (min-width: 700px) {
+  .customBtn{
+    padding-top: 0;
+  }
+}
+
+
+
+
+/* .navlinkBox{
+  gap: .5rem;
+}
+
+@media (min-width: 768px) {
+  .navlinkBox{
+    gap: .3rem;
+  }
+}
+@media (min-width: 992px) {
+  .navlinkBox{
+    gap: .35rem;
+  }
+}
+@media (min-width: 1280px) {
+  .navlinkBox{
+    gap: .5rem;
+  }
+} */
+
+
+
 
 .description {
   display: inherit;

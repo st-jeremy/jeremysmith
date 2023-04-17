@@ -1,5 +1,6 @@
 import { Box, Button } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import styles from '../styles/Home.module.css'
 
 const CustomBtn = (props: any) => {
   
@@ -7,7 +8,7 @@ const CustomBtn = (props: any) => {
     <Box width={{md:'fit-content'}}>
       <motion.button
         whileHover={{
-          scale: 1.2,
+          scale: 1.1,
           transition: { duration: 1 },
         }}
         whileTap={{ scale: 0.9 }}
@@ -31,7 +32,7 @@ const CustomBtn = (props: any) => {
           rightIcon={props.rightIcon}
           fontSize={{xl: '21px'}}
         >
-          <a href={props.link} style={{paddingTop:'.25rem'}} download={props.download}>
+          <a href={props.link} className={styles.customBtn} download={props.download}>
             {props.name}
           </a>
         </Button>

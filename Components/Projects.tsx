@@ -57,7 +57,7 @@ const ProjectCarousel = () => {
           src='/fashion-haven.png'
           alt='fashion haven image'
           heading='Fashion haven'
-          description= 'a fashion e-commerce website'
+          description= 'fashion e-commerce website'
           category='e-commerce'
           badge1='Next.Js'
           badge2='TypeScript'
@@ -72,7 +72,7 @@ const ProjectCarousel = () => {
           src='/sonergy.png'
           alt='sonergy image'
           heading='Sonergy'
-          description= 'a data research landing page'
+          description= 'data research landing page'
           category='landing page'
           badge1='Next.Js'
           badge2='TypeScript'
@@ -86,7 +86,7 @@ const ProjectCarousel = () => {
           src='/dataVault.png'
           alt='data*** image'
           heading='Data***'
-          description= 'a data analysis and research blog.'
+          description= 'data analysis & research blog'
           category='blog website'
           badge1='React'
           badge2='Redux'
@@ -102,11 +102,13 @@ const ProjectCarousel = () => {
           src='/flyplux.png'
           alt='Fly plux'
           heading='Flyplux'
-          description='an airline landing page'
+          description='airline landing page'
           category='landing page'
           badge1='React'
           badge2='Chakra UI'
           badge3='CSS'
+          badge4='&nbsp;'
+          badge5='&nbsp;'
           repoLink='https://github.com/st-jeremy/flyplux'
           link='https://flyplux.vercel.app'
         />
@@ -115,11 +117,13 @@ const ProjectCarousel = () => {
           src='/decx.png'
           alt='decx image'
           heading='Decx'
-          description= 'an agriculture enquiries website.'
+          description= 'agric. enquiries website'
           category='e-commerce'
           badge1='React'
           badge2='Chakra UI'
           badge3='CSS'
+          badge4='&nbsp;'
+          badge5='&nbsp;'
           repoLink='https://github.com/st-jeremy/decx'
           link='https://decx.vercel.app'
         />
@@ -133,7 +137,7 @@ const ProjectCarousel = () => {
 
 const Projects = () => {
   return ( 
-    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, white 5%, rgb(55,156,215) 90%)'}>
+    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(247,252,255) 0%, rgb(55,156,215) 100%)'}>
 
       <SectionHeading 
         name='Projects'

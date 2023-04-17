@@ -13,10 +13,10 @@ import SectionSubHeading from './SectionSubHeading';
 const ExpAccordion = (props:any) => {
   return ( 
     <Box p={0} borderRadius={'20px'}>
-          <AccordionItem bgColor={props.bgColor} p={'1rem'} display={{base:'block', xl:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} pb={{xl:'3rem'}} pt={{xl:'3rem'}} height={{xl:'22rem'}} _hover={{bgColor:'blue.400'}}>
+          <AccordionItem bgColor={props.bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} pb={{lg:'3rem'}} pt={{lg:'3rem'}} height={{lg:'22rem'}} _hover={{bgColor:'blue.400'}}>
             <h2>
-              <AccordionButton p={{base:0, xl:'.5rem'}} height={{ xl:'16rem'}} border={{base:'.5px solid grey', xl:'none'}}>
-                <Box as="span" flex='1' textAlign={{base:'center', xl:'left'}} width={{base:'12rem', xl: 'fit-content'}} pt={{base: 3, xl:'unset'}}>
+              <AccordionButton p={{base:0, lg:'.5rem'}} height={{ lg:'16rem'}} border={{base:'.5px solid grey', lg:'none'}}>
+                <Box as="span" flex='1' textAlign={{base:'center', lg:'left'}} width={{base:'12rem', lg: 'fit-content'}} pt={{base: 3, lg:'unset'}}>
                   <Heading fontFamily={'Dyna Puff'} fontSize={{base:'25px', md:'28px'}}>
                     {props.title}
                   </Heading>
@@ -26,7 +26,7 @@ const ExpAccordion = (props:any) => {
               </AccordionButton>
             </h2>
 
-            <AccordionPanel p={{base:'1rem 0 0 0', xl: '1rem'}} fontSize={'16px'} height={{ xl:'16rem'}} borderLeft={{xl:'2px solid black'}} textAlign={{xl: 'left'}} width={{base:'fit-content', xl:'fit-content'}}>
+            <AccordionPanel p={{base:'1rem 0 0 0', lg: '1rem'}} fontSize={'16px'} height={{ lg:'16rem'}} borderLeft={{lg:'2px solid black'}} textAlign={{lg: 'left'}} width={{base:'fit-content', lg:'fit-content'}}>
               {props.about}
               <ul>&nbsp;</ul>
               <li>{props.line1}</li>
@@ -42,7 +42,7 @@ const ExpAccordion = (props:any) => {
 
 const Experience = () => {
   return ( 
-    <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'}  background={'linear-gradient( to bottom, rgb(55,156,215)  10%, white 90%)'} >
+    <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'}  background={'linear-gradient( to bottom, rgb(55,156,215)  0%, rgb(247,252,255) 100%)'} >
        <SectionHeading 
           name='Experience'
           position='right'
@@ -53,7 +53,7 @@ const Experience = () => {
         />
 
       <Box  p={0} borderRadius={'20px'} margin={'auto'}>
-        <Accordion defaultIndex={[0]} reduceMotion display={'flex'} flexDirection={{base:'column', xl:'row'}} >
+        <Accordion defaultIndex={[0]} reduceMotion display={'flex'} flexDirection={{base:'column', lg:'row'}} >
         <ExpAccordion 
           bgColor='blue.500'
           title='Frontend Developer'

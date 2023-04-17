@@ -15,7 +15,7 @@ import { motion } from 'framer-motion'
 const ProjectCard = (props:any) => {
 
   return (
-    <Box width={{base:'320px', md: '90%'}} height={'400px'} alignItems={'center'} pt={0} pb={'1rem'} flexDir={'column'}    borderRadius={' 30px 30px'} bgColor={'white'} color={'black'} margin={'auto'}  mb={'3rem'}>
+    <Box width={{base:'320px'}} height={'450px'} alignItems={'center'} pt={0} pb={'1rem'} flexDir={'column'}    borderRadius={' 30px 30px'} bgColor={'white'} color={'black'} margin={'auto'}  mb={'3rem'}>
       <Box p={0} m={{base: 0, md: 'auto'}} alignItems={'center'} justifyItems={'center'} justifyContent={'center'}>
         <Box height={180} pt={5}>
           <Image
@@ -28,7 +28,7 @@ const ProjectCard = (props:any) => {
         </Box>  
 
         <Stack spacing='.1' p={'1.2rem 1rem'} >
-          <Heading size='md' pb={'1rem'}>{props.heading}</Heading>
+          <Heading size='md' pb={'.3rem'}>{props.heading}</Heading>
           <Text>{props.description}</Text>
           <Text fontStyle={'italic'} fontWeight={'bold'} mb={'2rem'}>
             {props.category}
@@ -46,7 +46,7 @@ const ProjectCard = (props:any) => {
           </Box>
         </Stack>
 
-        <ButtonGroup position={'absolute'} bottom={'4.5rem'} left={{base:'3rem', sm:'6rem', md: '3.2rem', lg: '5rem', xl:'4.5rem'}} gap={'20px'} borderRadius={'50%'} isDisabled={props.disable}>
+        <ButtonGroup position={{base:'relative'}} gap={'20px'} borderRadius={'50%'} isDisabled={props.disable}>
           <motion.button
             whileHover={{
               scale: 1.2,
