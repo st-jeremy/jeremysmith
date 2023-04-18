@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsMailbox, BsPhone, BsWhatsapp } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsPhone, BsWhatsapp } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si'
 import { Button, Box, Tooltip } from '@chakra-ui/react';
 
@@ -7,7 +7,7 @@ const ContactIcon = (props:any) => {
     <Box>
       <Tooltip label={props.tooltip} aria-label='A tooltip'>
         <Button variant={'ghost'} color={'white'} _hover={{color:'black', backgroundColor:'white'}} fontSize={{lg:'24px' ,xl:'30px'}}>
-          <a href={props.link}>{props.icon}</a>
+          <a href={props.link} >{props.icon}</a>
         </Button>
       </Tooltip>
     </Box>

@@ -127,9 +127,7 @@ const ProjectCarousel = () => {
           repoLink='https://github.com/st-jeremy/decx'
           link='https://decx.vercel.app'
         />
-
       </Carousel>
-     
     </Box>
    );
 }
