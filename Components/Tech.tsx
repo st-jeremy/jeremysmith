@@ -138,7 +138,7 @@ const Tech = () => {
           />
 
           <TechImage 
-            src='/git.jpeg'
+            src='/git.png'
             alt='git'
             tooltip='git'
           />
