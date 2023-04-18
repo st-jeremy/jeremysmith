@@ -90,6 +90,12 @@ const Tech = () => {
           />
 
           <TechImage 
+            src='/reactQuery.png'
+            alt='React Query'
+            tooltip='React Query'
+          />
+
+          <TechImage 
           src='/tailwindcss.png'
           alt='Tailwind CSS'
           tooltip='Tailwind CSS'
