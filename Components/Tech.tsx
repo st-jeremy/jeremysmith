@@ -96,6 +96,18 @@ const Tech = () => {
           />
 
           <TechImage 
+            src='/reactHookForm.png'
+            alt='React Hook Form'
+            tooltip='React Hook Form'
+          />
+          
+          <TechImage 
+          src='/axios.png'
+          alt='Axios'
+          tooltip='Axios'
+        />
+
+          <TechImage 
           src='/tailwindcss.png'
           alt='Tailwind CSS'
           tooltip='Tailwind CSS'
@@ -114,7 +126,7 @@ const Tech = () => {
           />
 
           <TechImage 
-            src='/chakraui.png'
+            src='/chakra.png'
             alt='Chakra UI'
             tooltip='Chakra UI'
           />
