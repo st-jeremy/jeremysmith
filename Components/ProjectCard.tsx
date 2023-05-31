@@ -1,7 +1,8 @@
 import { 
   Badge,
   Box,
-  Stack,
+  VStack,
+  HStack,
   Button,
   Text,
   ButtonGroup,
@@ -9,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image';
 import { motion } from 'framer-motion'
+import AnimatedBtn from './AnimatedBtn';
 // import styles from '@/styles/Home.module.css'
  
 
@@ -31,37 +33,32 @@ const ProjectCard = (props:any) => {
   } = props;
 
   return (
-    <Box width={{base:'320px'}} height={'450px'} alignItems={'center'} pt={0} pb={'1rem'} flexDir={'column'}    borderRadius={' 30px 30px'} bgColor={'white'} color={'black'} margin={'auto'}  mb={'3rem'}>
-      <Box p={0} m={{base: 0, md: 'auto'}} alignItems={'center'} justifyItems={'center'} justifyContent={'center'}>
-        <Box height={180} pt={5}>
-          <Image
-            src={src}
-            alt={alt}
-            height={300}
-            width={320}
-            style={{margin:'auto'}}
-          />
-        </Box>  
+    <Box width={'320px'} height={'385px'} alignItems={'center'} pt={0} flexDir={'column'} borderRadius={' 30px 30px'} bgColor={'white'} margin={'auto'} mb={'3rem'}>
 
-        <Stack spacing='.1' p={'1.2rem 1rem'} >
+      <Box p={0} m={{base: 0, md: 'auto'}}>
+        <Image
+          src={src}
+          alt={alt}
+          height={180}
+          width={320}
+          style={{margin:'auto'}}
+        />
+
+        <VStack spacing='2' p={'1.2rem 1rem'} >
           <Heading size='md' pb={'.3rem'}>{heading}</Heading>
           <Text>{description}</Text>
-          <Text fontStyle={'italic'} fontWeight={'bold'} mb={'2rem'}>
-            {category}
-          </Text>
-
-          <Box display={'flex'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} gap={'.3rem'} pb={'.3rem'}>
+          <HStack>
             <Badge bgColor={'grey'}>{badge1}</Badge>
             <Badge bgColor={'blue.200'}>{badge2}</Badge>
             <Badge bgColor={'red.200'}>{badge3}</Badge>
-          </Box>
+          </HStack>
 
-          <Box display={'flex'} justifyContent={'center'} textAlign={'center'} gap={'.3rem'}>
+          <HStack>
             <Badge bgColor={'green.200'}>{badge4}</Badge>
             <Badge bgColor={'blue.300'}>{badge5}</Badge>
             <Badge bgColor={'blue.50'}>{badge6}</Badge>
-          </Box>
-        </Stack>
+          </HStack>
+        </VStack>
 
         <ButtonGroup position={{base:'relative'}} gap={'20px'} borderRadius={'50%'} isDisabled={disable}>
           <motion.button
@@ -77,6 +74,7 @@ const ProjectCard = (props:any) => {
               </a>
             </Button>
           </motion.button>
+          <AnimatedBtn name='View Repository' />
 
           <motion.button
             whileHover={{
