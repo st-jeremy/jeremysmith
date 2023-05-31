@@ -30,7 +30,7 @@ const ProjectCard = (props:any) => {
         style={{margin:'auto'}}
       />
 
-      <VStack spacing='2' width={'320px'} position={'absolute'} bottom={10}>
+      <VStack spacing='2' width={'320px'} position={'absolute'} bottom={8}>
         <Heading size='md'>{heading}</Heading>
         <Text>{description}</Text>
 
@@ -42,7 +42,7 @@ const ProjectCard = (props:any) => {
           )}
         </Box>
 
-        <HStack _disabled={disable}>
+        <HStack _disabled={disable} pt={'1rem'}>
           <AnimatedBtn name='View Repository' link='/' />
           <AnimatedBtn name='Visit' link='/' />
         </HStack>

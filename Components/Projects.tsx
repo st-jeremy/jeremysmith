@@ -56,7 +56,7 @@ const ProjectCarousel = () => {
           src='/fashion-haven.png'
           alt='fashion haven image'
           heading='Fashion haven'
-          description= 'fashion e-commerce website'
+          description= 'E-commerce website'
           badges={[ 'Next.Js', 'TypeScript', 'Redux', 'Chakra UI', 'CSS' ]}
           repoLink='https://github.com/st-jeremy/fashion-haven'
           link='https://fashionhaven.vercel.app'
@@ -66,7 +66,7 @@ const ProjectCarousel = () => {
           src='/sonergy.png'
           alt='sonergy image'
           heading='Sonergy'
-          description= 'data research landing page'
+          description= 'Data research landing page'
           badges={[ 'Next.Js', 'TypeScript', 'Chakra UI' ]}
           repoLink='https://github.com/st-jeremy/Sonergy'
           link='https://sonergy.vercel.app'
@@ -76,7 +76,7 @@ const ProjectCarousel = () => {
           src='/dataVaultpage.png'
           alt='dataVault image'
           heading='DataVault'
-          description= 'data analysis & research blog'
+          description= 'Data analysis & research blog'
           badges={[ 'Next.Js', 'TypeScript', 'React-Query', 'Chakra UI', 'CSS', 'Jest', 'Axios' ]}
           repoLink='/'
           link='/'
@@ -87,7 +87,7 @@ const ProjectCarousel = () => {
           src='/flyplux.png'
           alt='Fly plux'
           heading='Flyplux'
-          description='airline landing page'
+          description='Airline landing page'
           badges={[ 'React', 'Chakra UI', 'CSS' ]}
           repoLink='https://github.com/st-jeremy/flyplux'
           link='https://flyplux.vercel.app'
@@ -97,7 +97,7 @@ const ProjectCarousel = () => {
           src='/decx.png'
           alt='decx image'
           heading='Decx'
-          description= 'agric. enquiries website'
+          description= 'Agric. enquiries website'
           badges={[ 'React', 'Chakra UI', 'CSS' ]}
           repoLink='https://github.com/st-jeremy/decx'
           link='https://decx.vercel.app'
