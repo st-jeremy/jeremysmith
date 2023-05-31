@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css';
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Image from "next/image";
-import PrimaryBtn from "./PrimaryBtn";
+import PrimaryBtn from "./buttons/PrimaryBtn";
 
 
 const Hero = () => {

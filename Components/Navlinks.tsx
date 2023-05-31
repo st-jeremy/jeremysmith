@@ -3,7 +3,7 @@ import { FcHome, FcWorkflow } from 'react-icons/fc'
 import { VscProject, VscFileCode } from 'react-icons/vsc'
 import { MdContacts } from 'react-icons/md'
 import { BiDownload } from 'react-icons/bi'
-import CustomBtn from './CustomBtn'
+import CustomBtn from './buttons/CustomBtn'
 import styles from '../styles/Home.module.css'
 
 const Navlinks = ({ display, flexDir }:any) => {

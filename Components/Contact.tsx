@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react';
 import { BsGithub, BsLinkedin, BsMailbox, BsPhone, BsWhatsapp } from 'react-icons/bs';
-import ContactButton from './ContactButton';
+import ContactButton from './buttons/ContactButton';
 import Header from './Header';
 
 const Contact = () => {
