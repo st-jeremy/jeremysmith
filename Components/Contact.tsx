@@ -10,12 +10,12 @@ const Contact = () => {
 
       <SectionHeading
         name='Contact'
-        position='right'
+        position='center'
         color={'white'}
       />
       <SectionSubHeading
         name='Have an exciting project you need help with or collaboration on?'
-        position='right'
+        position='center'
         color={'white'}
       />
       
