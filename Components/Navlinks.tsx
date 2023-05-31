@@ -2,53 +2,53 @@ import { Box } from '@chakra-ui/react'
 import { FcHome, FcWorkflow } from 'react-icons/fc'
 import { VscProject, VscFileCode } from 'react-icons/vsc'
 import { MdContacts } from 'react-icons/md'
-import { BiDownload } from 'react-icons/bi'
-import CustomBtn from './buttons/CustomBtn'
-import styles from '../styles/Home.module.css'
+import { BiDownload } from 'react-icons/bi';
+import PrimaryBtn from './buttons/PrimaryBtn';
+import { INavlink } from './types';
 
-const Navlinks = ({ display, flexDir }:any) => {
+
+const Navlinks = ( { display, flexDir }: INavlink ) => {
 
   return ( 
     <Box display={display} flexDir={flexDir} gap={{base:'.5rem', md: 2, lg: '.15rem', xl:2}}>
-      <CustomBtn 
+      <PrimaryBtn 
         name='Home'
         link='#hero'
-        icon={<FcHome />} 
+        leftIcon={<FcHome />} 
       />
 
-      <CustomBtn 
+      <PrimaryBtn 
         name='Tech'
         link='#tech'
-        icon={<VscFileCode/>}
+        leftIcon={<VscFileCode/>}
       />
 
-      <CustomBtn 
+      <PrimaryBtn 
         name='Projects'
         link='#projects'
-        icon={<VscProject/>}
+        leftIcon={<VscProject/>}
       />
 
-      <CustomBtn 
+      <PrimaryBtn 
         name='Experience'
         link='#experience'
-        icon={<FcWorkflow />}
+        leftIcon={<FcWorkflow />}
       />
 
-      <CustomBtn 
+      <PrimaryBtn 
         name='Contact'
         link='#contact'
-        icon={<MdContacts />}
+        leftIcon={<MdContacts />}
       />
 
-      <CustomBtn 
+      <PrimaryBtn 
         name='Download Resume'
         link='/Jeremy_Smith-Resume.pdf'
-        icon={<BiDownload />}
+        leftIcon={<BiDownload />}
         bgColor='rgb(26,54,93)'
         color='white'
         download='Jeremy_Smith-Resume'
       />
-
     </Box>
    );
 }

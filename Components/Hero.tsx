@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css';
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Image from "next/image";
-import PrimaryBtn from "./buttons/PrimaryBtn";
+import PrimaryBtn from "./buttons/SecondaryBtn";
 
 
 const Hero = () => {
-  
+
   return ( 
     <motion.div>
       <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'7rem', md:'7rem', lg:'10rem'}} height={{base:'90vh', sm:'fit-content',  '2xl':'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} background={'linear-gradient( to bottom, white 0%, rgb(184,227,253) 100%)'} margin={'auto'}  id={'hero'}>
