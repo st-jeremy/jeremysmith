@@ -15,44 +15,42 @@ const AccordionCard = ( props: IAccordionCard) => {
   const { bgColor, title, post, logo, date, about, points } = props;
 
   return ( 
-    <Box p={0} borderRadius={'20px'}>
-      <AccordionItem bgColor={bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} pb={{lg:'3rem'}} pt={{lg:'3rem'}} height={{lg:'22rem'}} _hover={{bgColor:'blue.50'}}>
+    <AccordionItem bgColor={bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} pb={{lg:'3rem'}} pt={{lg:'3rem'}} height={{lg:'25rem'}} _hover={{bgColor:'blue.50'}}>
 
-        <AccordionButton border={{base:'.5px solid grey', lg:'none'}}>
-          <Stack flex={1} direction={{base:'row', lg:'column'}} width={{base:'12rem', lg: 'fit-content'}} height={{lg:'16rem'}} >
-            <Box width={{base:'30%', md:'unset'}}>
-              <Image src={logo} width={150} height={150} alt={'Logo'} loading={'lazy'} />
-            </Box>
+      <AccordionButton border={{base:'.5px solid grey', lg:'none'}} _hover={{color:'blue.900'}}>
+        <Stack flex={{base:1, md:'unset'}} direction={{base:'row', lg:'column'}} width={{base:'12rem', lg: 'fit-content'}} height={{lg:'16rem'}} m={'auto'}>
+          <Box width={{base:'30%', md:'unset'}}>
+            <Image src={logo} width={150} height={150} alt={'Logo'} loading={'lazy'} />
+          </Box>
 
-            <Box flex={1}>
-              <Text fontWeight={700} fontSize={{md:'28px'}}>{title}</Text>
-              <Text>{post}</Text>
-              <Text>{date}</Text>
-            </Box>
-          </Stack>
-        </AccordionButton>
+          <Box flex={{base:1, md:'unset'}} height={{md:'fit-content'}}>
+            <Text fontWeight={700} fontSize={{md:'20px'}}>{title}</Text>
+            <Text>{post}</Text>
+            <Text>{date}</Text>
+          </Box>
+        </Stack>
+      </AccordionButton>
 
-        <AccordionPanel p={{base:'1rem 0 0 0', lg: '1rem'}} fontSize={'16px'} height={{ lg:'16rem'}} borderLeft={{lg:'2px solid black'}} textAlign={'left'}>
-          <Text textAlign={'center'} mb='1rem'>{about}</Text>
-          {points.map((point: string, index: number) =>
-            <li key={index}>
-              {point}
-            </li>
-          )}
-        </AccordionPanel>
-      </AccordionItem>
-    </Box>
+      <AccordionPanel height={{ lg:'19rem'}} borderLeft={{lg:'2px solid black'}} textAlign={'left'}>
+        <Text textAlign={'center'} mb='1rem'>{about}</Text>
+        {points.map((point: string, index: number) =>
+          <li key={index}>
+            {point}
+          </li>
+        )}
+      </AccordionPanel>
+    </AccordionItem>
    );
 };
  
 
 const Experience = () => {
   return ( 
-    <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'}  background={'linear-gradient( to bottom, rgb(55,156,215)  0%, RGB(28 87 121) 100%)'} >
-      <Header heading='Experience' position='left' />
+    <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }}  px={{base: '1.25rem', sm: '1.rem', md: '1.2rem', lg: '6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'}  background={'linear-gradient( to bottom, rgb(55,156,215)  0%, RGB(28 87 121) 100%)'} >
+      <Header name='Experience' position='left' />
 
-      <Box  p={0} borderRadius={'20px'} margin={'auto'}>
-        <Accordion defaultIndex={[0]} reduceMotion display={'flex'} flexDirection={{base:'column', lg:'row'}} >
+      <Box borderRadius={'20px'} margin={'auto'}>
+        <Accordion defaultIndex={[0]} p={0} reduceMotion display={'flex'} flexDirection={{base:'column', lg:'row'}} >
           <AccordionCard 
             bgColor='blue.100'
             logo='/hightable.png'
@@ -73,7 +71,7 @@ const Experience = () => {
             title='DataVault Nigeria'
             post='Frontend Engineer'
             date='March 2023 – Present'
-            about='DataVault bridges the global gap by connecting African research, data, and researchers through a distinctive system. Our aim is to authenticate and promote exceptional research and data, fostering advancements in Africa&apos;s creative and innovative landscape.'
+            about='DataVault bridges the global gap by connecting African research, data, and researchers through a distinctive system aiming at authenticating and promoting exceptional research and data, fostering advancements in Africa&apos;s creative and innovative landscape.'
             points={[
               'Create visually appealing and intuitive user interfaces with high-quality frontend code.',
               'Conduct thorough testing and debugging of websites and web applications to identify and resolve any issues or bugs, ensuring a smooth and error-free user experience.',

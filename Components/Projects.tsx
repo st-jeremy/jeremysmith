@@ -112,7 +112,7 @@ const Projects = () => {
   return ( 
     <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(91 181 229) 0%, rgb(55,156,215) 100%)'}>
 
-    <Header heading={'Projects'} subHeading={'Some of the projects worked on.'} position={'left'} />
+    <Header name={'Projects'} position={'left'} />
     <ProjectCarousel />
     </Box>
    );

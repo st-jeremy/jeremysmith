@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css';
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Image from "next/image";
+import PrimaryBtn from "./PrimaryBtn";
 
 
 const Hero = () => {
   return ( 
     <motion.div>
-      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'7rem', md:'7rem', lg:'10rem'}} height={{base:'90vh', '2xl':'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} background={'linear-gradient( to bottom, white 0%, rgb(184,227,253) 100%)'} margin={'auto'}  id={'hero'}>
+      <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'7rem', md:'7rem', lg:'10rem'}} height={{base:'90vh', sm:'fit-content',  '2xl':'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} background={'linear-gradient( to bottom, white 0%, rgb(184,227,253) 100%)'} margin={'auto'}  id={'hero'}>
         <Box textAlign={{base:'center', lg: 'left'}} width={{base: '100%', lg: '60%'}} >
          
           <Text fontSize={{base:'24px', md: '40px', lg:'30px'}} pb={5}>
@@ -27,19 +28,7 @@ const Hero = () => {
             ...with a mission of turning designs into great experiences, through user-centric approach.
           </Text>
 
-          <motion.button
-            whileHover={{
-              scale: 1.2,
-              transition: { duration: 1 },
-            }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <a href="#contact">
-            <Button rightIcon={<HiOutlineArrowNarrowRight />} color={'white'} fontWeight={900} bgColor={'rgb(6,31,43)'} fontSize={'22px'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
-                Contact me
-            </Button>
-            </a>
-          </motion.button>
+          <PrimaryBtn name='Contact me' link='#contact' rightIcon={<HiOutlineArrowNarrowRight />} />
         </Box>
 
         <Box display={{base:'none', lg:'flex'}} width={{ lg: '40%'}} transform={'rotateY(180deg)'} p={'2rem'}>

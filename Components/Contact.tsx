@@ -1,23 +1,13 @@
 import { Box, Text } from '@chakra-ui/react';
 import { BsGithub, BsLinkedin, BsMailbox, BsPhone, BsWhatsapp } from 'react-icons/bs';
 import ContactButton from './ContactButton';
-import SectionHeading from './SectionHeading';
-import SectionSubHeading from './SectionSubHeading';
+import Header from './Header';
 
 const Contact = () => {
   return ( 
     <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base:'6.5rem', sm:'5rem', md:'5rem' }} textAlign={'center'} background={'linear-gradient( to bottom, RGB(28 87 121) 0%, rgb(6,31,43) 90%)'} margin={'auto'} maxW={'1500px'} id={'contact'}>
 
-      <SectionHeading
-        name='Contact'
-        position='center'
-        color={'white'}
-      />
-      <SectionSubHeading
-        name='Have an exciting project you need help with or collaboration on?'
-        position='center'
-        color={'white'}
-      />
+      <Header name='Contact' position='center' color='white' />
       
       <Box display={{base:'flex', md: 'grid'}} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}} flexDir={{ base:'column'}} gap={'10px'} justifyContent={{base:'left', md:'center'}} width={{base:'13.5rem', md: '100%'}} margin={'auto'} alignItems={'center'}>
         
