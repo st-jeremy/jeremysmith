@@ -44,7 +44,7 @@ const ExpAccordion = (props:any) => {
 
 const Experience = () => {
   return ( 
-    <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'}  background={'linear-gradient( to bottom, rgb(55,156,215)  0%, rgb(247,252,255) 100%)'} >
+    <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'}  background={'linear-gradient( to bottom, rgb(55,156,215)  0%, RGB(28 87 121) 100%)'} >
        <SectionHeading 
           name='Experience'
           position='left'

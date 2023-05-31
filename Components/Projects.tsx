@@ -83,16 +83,18 @@ const ProjectCarousel = () => {
         />
 
         <ProjectCard 
-          src='/dataVault.png'
-          alt='data*** image'
-          heading='Data***'
+          src='/dataVaultpage.png'
+          alt='dataVault image'
+          heading='DataVault'
           description= 'data analysis & research blog'
           category='blog website'
           badge1='NextJS'
           badge2='TypeScript'
           badge3='React Query'
-          badge4='Tailwind CSS'
+          badge4='Chakra UI'
           badge5='SCSS'
+          badge6='Axios'
+          badge7='Jest'
           repoLink='/'
           link='/'
           disable
@@ -135,7 +137,8 @@ const ProjectCarousel = () => {
 
 const Projects = () => {
   return ( 
-    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(247,252,255) 0%, rgb(55,156,215) 100%)'}>
+    // background={'linear-gradient( to bottom, rgb(247,252,255) 0%, rgb(55,156,215) 100%)'
+    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(91 181 229) 0%, rgb(55,156,215) 100%)'}>
 
       <SectionHeading 
         name='Projects'

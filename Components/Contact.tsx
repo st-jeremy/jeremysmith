@@ -6,7 +6,7 @@ import SectionSubHeading from './SectionSubHeading';
 
 const Contact = () => {
   return ( 
-    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base:'6.5rem', sm:'5rem', md:'5rem' }} textAlign={'center'} background={'linear-gradient( to bottom, rgb(247,252,255) 0%, rgb(55,156,215) 50%, rgb(6,31,43) 90%)'} margin={'auto'} maxW={'1500px'} id={'contact'}>
+    <Box  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} py={{base:'6.5rem', sm:'5rem', md:'5rem' }} textAlign={'center'} background={'linear-gradient( to bottom, RGB(28 87 121) 0%, rgb(6,31,43) 90%)'} margin={'auto'} maxW={'1500px'} id={'contact'}>
 
       <SectionHeading
         name='Contact'

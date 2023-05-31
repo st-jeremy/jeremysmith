@@ -43,6 +43,7 @@ const ProjectCard = (props:any) => {
           <Box display={'flex'} justifyContent={'center'} textAlign={'center'} gap={'.3rem'}>
             <Badge bgColor={'green.200'}>{props.badge4}</Badge>
             <Badge bgColor={'blue.300'}>{props.badge5}</Badge>
+            <Badge bgColor={'blue.50'}>{props.badge6}</Badge>
           </Box>
         </Stack>
 

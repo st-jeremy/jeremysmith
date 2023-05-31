@@ -11,17 +11,17 @@ const Hero = () => {
       <Box px={{base: '1.25rem', sm: '1.7rem', md: '3rem', lg: '6rem'}} pt={{base:'7rem', md:'7rem', lg:'10rem'}} height={{base:'90vh', '2xl':'fit-content'}} position={'sticky'} display={'flex'} flexDir={'row'} alignItems={'center'} justifyContent={'center'} textAlign={{base:'center', lg: 'left'}} gap={'1rem'} maxWidth={'1500px'} background={'linear-gradient( to bottom, white 0%, rgb(184,227,253) 100%)'} margin={'auto'}  id={'hero'}>
         <Box textAlign={{base:'center', lg: 'left'}} width={{base: '100%', lg: '60%'}} >
          
-          <Heading fontFamily={'Verdana, Geneva, Tahoma, sans-serif'} fontSize={{base:'24px', md: '40px', lg:'30px'}} pb={5}>
+          <Text fontSize={{base:'24px', md: '40px', lg:'30px'}} pb={5}>
             Hello, I am
-          </Heading>
+          </Text>
 
-          <Heading fontFamily={'Verdana, Geneva, Tahoma, sans-serif'} fontSize={{base:'68px', md: '80px', lg: '84px'}} color={'blue.900'} fontWeight={900} pb={5}>
+          <Text fontSize={{base:'68px', md: '80px', lg: '84px'}} color={'blue.900'} fontWeight={900} pb={5}>
             JEREMY SMITH
-          </Heading>
+          </Text>
           
-          <Heading  fontFamily={'Verdana, Geneva, Tahoma, sans-serif'} fontSize={{base:'20px', md: '40px', lg: '40px'}} pb={5}>
-            a Front-End Developer
-          </Heading>
+          <Text fontSize={{base:'20px', md: '40px', lg: '40px'}} pb={5}>
+            a Front-End Engineer
+          </Text>
 
           <Text fontSize={{base:'16px', md:'24px', lg: '24px'}} mb={'2rem'} textShadow={'outline'}>
             ...with a mission of turning designs into great experiences, through user-centric approach.
@@ -34,11 +34,11 @@ const Hero = () => {
             }}
             whileTap={{ scale: 0.9 }}
           >
-            <Button rightIcon={<HiOutlineArrowNarrowRight />} color={'white'} fontWeight={900} bgColor={'rgb(125,179,213)'} fontSize={'22px'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
-              <a href="#contact" style={{paddingTop:'0'}}>
+            <a href="#contact">
+            <Button rightIcon={<HiOutlineArrowNarrowRight />} color={'white'} fontWeight={900} bgColor={'rgb(6,31,43)'} fontSize={'22px'} _hover={{ color:'white', bgColor:'rgb(26,54,93)' }}>
                 Contact me
-              </a>
             </Button>
+            </a>
           </motion.button>
         </Box>
 
