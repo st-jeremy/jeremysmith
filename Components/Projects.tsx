@@ -3,8 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from '@/styles/Home.module.css';
 import ProjectCard from './ProjectCard';
-import SectionHeading from './SectionHeading';
-import SectionSubHeading from './SectionSubHeading';
+import Header from './Header';
 
 
 const ProjectCarousel = () => {
@@ -111,18 +110,10 @@ const ProjectCarousel = () => {
 
 const Projects = () => {
   return ( 
-    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(91 181 229) 0%, rgb(55,156,215) 100%)'}>
+    <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(91 181 229) 0%, rgb(55,156,215) 100%)'}>
 
-      <SectionHeading 
-        name='Projects'
-        position='right'
-      />
-      <SectionSubHeading 
-        name='Some of the projects worked on.'
-        position='right'
-      />
-
-      <ProjectCarousel />
+    <Header heading={'Projects'} subHeading={'Some of the projects worked on.'} position={'left'} />
+    <ProjectCarousel />
     </Box>
    );
 }
