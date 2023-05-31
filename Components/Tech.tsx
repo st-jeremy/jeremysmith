@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion, spring } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import SectionSubHeading from "./SectionSubHeading";
+import Header from "./Header";
 
 const TechImage = (props: any) => {
   return ( 
@@ -31,14 +32,7 @@ const Tech = () => {
       {/* background={'linear-gradient( to bottom, rgb(184,227,253) 0%, rgb(247,252,255)55,156,215 80%)'}  */}
       <Box py={{base:'5rem', md:'6rem' }} background={'linear-gradient( to bottom, rgb(184,227,253) 0%, rgb(91 181 229) 80%)'} px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} minHeight={{base:'60vh', '2xl':'fit-content'}} id={'tech'} maxWidth={'1500px'} m={'auto'}>
 
-        <SectionHeading 
-          name='Tech'
-          position='left'
-        />
-        <SectionSubHeading 
-          name='Skilled at the following software.'
-          position='left'
-        />
+        <Header heading={'Tech Stack'} position={'left'}  />
 
         <Box 
           display={'grid'} 

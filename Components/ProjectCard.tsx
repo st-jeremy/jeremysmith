@@ -7,7 +7,6 @@ import {
   Heading
 } from '@chakra-ui/react'
 import Image from 'next/image';
-import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react';
 import AnimatedBtn from './AnimatedBtn';
  
 
@@ -18,16 +17,8 @@ const ProjectCard = (props:any) => {
     heading,
     description,
     disable,
-    badge1,
-    badge2,
-    badge3,
-    badge4,
-    badge5,
-    badge6,
     badges
   } = props;
-
-
 
   return (
     <Box width={'320px'} height={'385px'} borderBottomRadius={'30px 30px'} bgColor={'white'} margin={'auto'} >
@@ -43,22 +34,13 @@ const ProjectCard = (props:any) => {
         <Heading size='md'>{heading}</Heading>
         <Text>{description}</Text>
 
-        <HStack>
-          {/* <Badge bgColor={'grey'}>{badge1}</Badge>
-          <Badge bgColor={'blue.200'}>{badge2}</Badge>
-          <Badge bgColor={'red.200'}>{badge3}</Badge> */}
-
-
+        <Box display={'flow'}>
           {badges.map((badge: string, index: number) =>
-            <Badge key={index}>{badge}</Badge>
+            <Badge mr={'.7rem'} key={index} bgColor={'blue.400'}>
+              {badge}
+            </Badge>
           )}
-        </HStack>
-
-        <HStack>
-          {/* <Badge bgColor={'green.200'}>{badge4}</Badge>
-          <Badge bgColor={'blue.300'}>{badge5}</Badge>
-          <Badge bgColor={'blue.50'}>{badge6}</Badge> */}
-        </HStack>
+        </Box>
 
         <HStack _disabled={disable}>
           <AnimatedBtn name='View Repository' link='/' />
