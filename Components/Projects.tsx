@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+import { Box, HStack } from '@chakra-ui/react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from '@/styles/Home.module.css';
@@ -32,12 +32,12 @@ const ProjectCarousel = () => {
   };
 
   return ( 
-    <Box m={'auto'} maxWidth={'1400px'} display={'flex'} justifyItems={'center'} alignItems={'center'}>
+    <HStack maxWidth={'1400px'}>
       <Carousel 
         responsive={responsive}
         swipeable={true}
         draggable={true}
-        showDots={true}
+        // showDots={true}
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={4000}
@@ -58,12 +58,7 @@ const ProjectCarousel = () => {
           alt='fashion haven image'
           heading='Fashion haven'
           description= 'fashion e-commerce website'
-          category='e-commerce'
-          badge1='Next.Js'
-          badge2='TypeScript'
-          badge3='Redux'
-          badge4='Chakra UI'
-          badge5='CSS'
+          badges={[ 'Next.Js', 'TypeScript', 'Redux', 'Chakra UI', 'CSS' ]}
           repoLink='https://github.com/st-jeremy/fashion-haven'
           link='https://fashionhaven.vercel.app'
         />
@@ -73,11 +68,7 @@ const ProjectCarousel = () => {
           alt='sonergy image'
           heading='Sonergy'
           description= 'data research landing page'
-          category='landing page'
-          badge1='Next.Js'
-          badge2='TypeScript'
-          badge3='Chakra UI'
-          badge4='CSS'
+          badges={[ 'Next.Js', 'TypeScript', 'Chakra UI' ]}
           repoLink='https://github.com/st-jeremy/Sonergy'
           link='https://sonergy.vercel.app'
         />
@@ -87,14 +78,7 @@ const ProjectCarousel = () => {
           alt='dataVault image'
           heading='DataVault'
           description= 'data analysis & research blog'
-          category='blog website'
-          badge1='NextJS'
-          badge2='TypeScript'
-          badge3='React Query'
-          badge4='Chakra UI'
-          badge5='SCSS'
-          badge6='Axios'
-          badge7='Jest'
+          badges={[ 'Next.Js', 'TypeScript', 'React-Query', 'Chakra UI', 'CSS', 'Jest', 'Axios' ]}
           repoLink='/'
           link='/'
           disable
@@ -105,12 +89,7 @@ const ProjectCarousel = () => {
           alt='Fly plux'
           heading='Flyplux'
           description='airline landing page'
-          category='landing page'
-          badge1='React'
-          badge2='Chakra UI'
-          badge3='CSS'
-          badge4='&nbsp;'
-          badge5='&nbsp;'
+          badges={[ 'React', 'Chakra UI', 'CSS' ]}
           repoLink='https://github.com/st-jeremy/flyplux'
           link='https://flyplux.vercel.app'
         />
@@ -120,24 +99,18 @@ const ProjectCarousel = () => {
           alt='decx image'
           heading='Decx'
           description= 'agric. enquiries website'
-          category='e-commerce'
-          badge1='React'
-          badge2='Chakra UI'
-          badge3='CSS'
-          badge4='&nbsp;'
-          badge5='&nbsp;'
+          badges={[ 'React', 'Chakra UI', 'CSS' ]}
           repoLink='https://github.com/st-jeremy/decx'
           link='https://decx.vercel.app'
         />
       </Carousel>
-    </Box>
+    </HStack>
    );
 }
 
 
 const Projects = () => {
   return ( 
-    // background={'linear-gradient( to bottom, rgb(247,252,255) 0%, rgb(55,156,215) 100%)'
     <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}}  height={'fit-content'} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(91 181 229) 0%, rgb(55,156,215) 100%)'}>
 
       <SectionHeading 
