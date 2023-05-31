@@ -58,7 +58,7 @@ const Experience = () => {
         <Accordion defaultIndex={[0]} reduceMotion display={'flex'} flexDirection={{base:'column', lg:'row'}} >
           <ExpAccordion 
             bgColor='blue.300'
-            logo='/hightable.jpeg'
+            logo='/hightable.png'
             title='HighTable Inc.'
             post='Frontend Engineer'
             date='Nov 2022 – Present'
@@ -70,8 +70,8 @@ const Experience = () => {
           />
 
           <ExpAccordion 
-            bgColor='blue.400'
-            logo='/datavault.jpeg'
+            bgColor='blue.100'
+            logo='/datavault.png'
             title='DataVault Nigeria'
             post='Frontend Engineer'
             date='March 2023 – Present'
@@ -83,8 +83,8 @@ const Experience = () => {
           />
 
           <ExpAccordion 
-            bgColor='blue.500'
-            logo='/freelance.jpeg'
+            bgColor='blue.200'
+            logo='/freelance.png'
             title='Freelance'
             post='Frontend Engineer'
             date='Nov 2022 – Present'
@@ -96,7 +96,7 @@ const Experience = () => {
           />
           
           <ExpAccordion 
-            bgColor='blue.600'
+            bgColor='blue.300'
             logo='/sendme.png'
             title='Sendme.ng'
             post='Implementation Specialist'
