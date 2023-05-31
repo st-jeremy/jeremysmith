@@ -10,7 +10,6 @@ import Projects from '@/Components/Projects'
 import Tech from '@/Components/Tech'
 import Footer from '@/Components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (

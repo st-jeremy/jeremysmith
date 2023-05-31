@@ -6,9 +6,10 @@ import { BiDownload } from 'react-icons/bi'
 import CustomBtn from './CustomBtn'
 import styles from '../styles/Home.module.css'
 
-const Navlinks = (props:any) => {
+const Navlinks = ({ display, flexDir }:any) => {
+
   return ( 
-    <Box display={props.display} flexDir={props.flexDir} gap={{base:'.5rem', md: 2, lg: '.15rem', xl:2}}>
+    <Box display={display} flexDir={flexDir} gap={{base:'.5rem', md: 2, lg: '.15rem', xl:2}}>
       <CustomBtn 
         name='Home'
         link='#hero'
@@ -43,7 +44,7 @@ const Navlinks = (props:any) => {
         name='Download Resume'
         link='/Jeremy_Smith-Resume.pdf'
         icon={<BiDownload />}
-        bgColor='rgb(125,179,213)'
+        bgColor='rgb(26,54,93)'
         color='white'
         download='Jeremy_Smith-Resume'
       />
