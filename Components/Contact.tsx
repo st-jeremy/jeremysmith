@@ -11,13 +11,12 @@ const Contact = () => {
       <SectionHeading
         name='Contact'
         position='right'
+        color={'white'}
       />
       <SectionSubHeading
         name='Have an exciting project you need help with or collaboration on?'
         position='right'
-      />
-      <SectionSubHeading
-        name='Contact me via...'
+        color={'white'}
       />
       
       <Box display={{base:'flex', md: 'grid'}} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}} flexDir={{ base:'column'}} gap={'10px'} justifyContent={{base:'left', md:'center'}} width={{base:'13.5rem', md: '100%'}} margin={'auto'} alignItems={'center'}>
