@@ -1,11 +1,20 @@
 import { Box, Button } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-const CustomBtn = (props: any) => {
+interface IPrimaryBtn{
+  name: string;
+  link: string;
+  download?: string;
+  bgColor: string;
+  color: string;
+  rightIcon?: any;
+  leftIcon?: any;
+}
+const PrimaryBtn = (props: any) => {
   
   return ( 
-    <Box width={{md:'fit-content'}}>
+    <a href={link} className={styles.customBtn} download={download}>
       <motion.button
         whileHover={{
           scale: 1.1,
@@ -18,7 +27,7 @@ const CustomBtn = (props: any) => {
           border={'none'} 
           width={{base: '11rem', md:'fit-content'}}
           height={'fit-content'}
-          leftIcon={props.icon} 
+          leftIcon={icon} 
           p={{base:'1.5', xl:'2'}}
           justifyContent='left'
           alignItems={'left'} 
@@ -27,18 +36,18 @@ const CustomBtn = (props: any) => {
             bgColor:'rgb(26,54,93)'
           }}
           _visited={{color: 'grey' }}
-          bgColor={props.bgColor}
-          color={props.color}
-          rightIcon={props.rightIcon}
+          bgColor={bgColor}
+          color={color}
+          rightIcon={rightIcon}
           fontSize={{xl: '21px'}}
         >
-          <a href={props.link} className={styles.customBtn} download={props.download}>
-            {props.name}
-          </a>
+         
+            {name}
+         
         </Button>
       </motion.button>
-    </Box>
+    </a>
    );
 }
 
-export default CustomBtn;
+export default PrimaryBtn;
