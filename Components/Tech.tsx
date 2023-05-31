@@ -32,15 +32,15 @@ const Tech = () => {
 
         <SectionHeading 
           name='Tech'
-          position='right'
+          position='left'
         />
         <SectionSubHeading 
           name='Skilled at the following software.'
-          position='right'
+          position='left'
         />
 
         <Box 
-          display={{base:'grid'}} 
+          display={'grid'} 
           gap={'1rem'} 
           gridTemplateColumns={{base:'repeat(3, minmax(0, 1fr))', sm: 'repeat(4, minmax(0, 1fr))', md: 'repeat(5, minmax(0, 1fr))'}} 
           margin={'auto'}

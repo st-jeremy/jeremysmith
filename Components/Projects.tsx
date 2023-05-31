@@ -139,11 +139,11 @@ const Projects = () => {
 
       <SectionHeading 
         name='Projects'
-        position='left'
+        position='right'
       />
       <SectionSubHeading 
         name='Some of the projects worked on.'
-        position='left'
+        position='right'
       />
 
       <ProjectCarousel />

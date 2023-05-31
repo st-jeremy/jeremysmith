@@ -19,7 +19,7 @@ const ExpAccordion = (props:any) => {
             <h2>
               <AccordionButton p={{base:0, lg:'.5rem'}} height={{ lg:'16rem'}} border={{base:'.5px solid grey', lg:'none'}}>
                 <Box as="span" flex='1' textAlign={{base:'center', lg:'left'}} width={{base:'12rem', lg: 'fit-content'}} pt={{base: 3, lg:'unset'}}>
-                  <Image src={logo} width={200} height={250} alt={'Logo'} />
+                  <Image src={logo} width={200} height={200} alt={'Logo'} loading={'lazy'} />
                   <Heading fontFamily={'Dyna Puff'} fontSize={{base:'25px', md:'28px'}}>
                     {title}
                   </Heading>
@@ -47,17 +47,17 @@ const Experience = () => {
     <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'}  background={'linear-gradient( to bottom, rgb(55,156,215)  0%, rgb(247,252,255) 100%)'} >
        <SectionHeading 
           name='Experience'
-          position='right'
+          position='left'
         />
         <SectionSubHeading 
           name='Sphere where I have put skills into work.'
-          position='right'
+          position='left'
         />
 
       <Box  p={0} borderRadius={'20px'} margin={'auto'}>
         <Accordion defaultIndex={[0]} reduceMotion display={'flex'} flexDirection={{base:'column', lg:'row'}} >
           <ExpAccordion 
-            bgColor='blue.300'
+            bgColor='blue.50'
             logo='/hightable.png'
             title='HighTable Inc.'
             post='Frontend Engineer'
@@ -101,7 +101,7 @@ const Experience = () => {
             title='Sendme.ng'
             post='Implementation Specialist'
             date='Jun 2022 – present'
-            about='Sendme.ng (YC W22) is a startup backed by Y Combinators and Voltron Capital, with the goal of decentralizing the distribution of animal protein from production through to consumers using artificial intelligence and data analytics.'
+            about='Sendme.ng (YC W22) is a startup with the goal of decentralizing the distribution of animal protein from production through to consumers using artificial intelligence and data analytics.'
 
             line1='Collaborate with clients to understand their needs and requirements, provide recommendations for design and functionality, and support bug resolution on apps and software.'
             line2='Manage inventory on the software systems, increasing customer satisfaction by 70%.'
