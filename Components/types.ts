@@ -6,7 +6,7 @@ export interface IAccordionCard{
   logo: string;
   date: string; 
   about: string;
-  points: string[];
+  points?: string[];
 }
 
 export interface IProjectCard{
@@ -28,6 +28,7 @@ export interface IPrimaryBtn{
   width?: string;
   rightIcon?: any;
   leftIcon?: any;
+  border?: string;
 }
 
 

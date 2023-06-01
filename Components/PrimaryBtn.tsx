@@ -5,7 +5,7 @@ import { IPrimaryBtn } from './types';
 
 
 const PrimaryBtn = (props: IPrimaryBtn) => {
-  const { name, href, download, color, bgColor, width, rightIcon, leftIcon } = props;
+  const { name, href, download, color, bgColor, width, rightIcon, leftIcon, border } = props;
 
   return ( 
     <a href={href} className={styles.customBtn} download={download}>
@@ -18,7 +18,7 @@ const PrimaryBtn = (props: IPrimaryBtn) => {
       >
         <Button 
           variant={'ghost'} 
-          border={'none'} 
+          border={border} 
           width={width}
           leftIcon={leftIcon} 
           p={'2'}

@@ -10,6 +10,7 @@ import {
 import Image from 'next/image';
 import { IAccordionCard } from './types';
 import Header from './Header';
+import { MdOutlineArrowDropDownCircle  } from 'react-icons/md';
 
 const AccordionCard = ( props: IAccordionCard) => {
   const { bgColor, title, post, logo, date, about, points } = props;
@@ -17,7 +18,7 @@ const AccordionCard = ( props: IAccordionCard) => {
   return ( 
     <AccordionItem bgColor={bgColor} color={'whiteAlpha.800'} p={'1rem'} display={{base:'block', xl:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} py={{xl:'3rem'}} height={{xl:'27rem'}} _hover={{bgColor:'blue.100', color: 'blue.900'}}>
 
-      <AccordionButton border={{base:'.5px solid grey', xl:'none'}} _hover={{color:'blue.900'}} minW={{xl:'11rem'}} >
+      <AccordionButton border={{base:'.5px solid grey', xl:'none'}} _hover={{color:'blue.900'}} minW={{xl:'12rem', '2xl':'13rem'}} >
         <Stack flex={{base:1, md:'unset'}} direction={{base:'row', xl:'column'}} width={{base:'12rem', md:'100%', xl: '100%'}} m={'auto'}>
           <Box width={{base:'30%', xl:'unset'}}>
             <Image src={logo} width={150} height={150} alt={'Logo'} loading={'lazy'} />
@@ -28,12 +29,15 @@ const AccordionCard = ( props: IAccordionCard) => {
             <Text>{post}</Text>
             <Text>{date}</Text>
           </Box>
+          <Box pt={{base:'3.5rem', sm:'2rem'}} display={{xl:'none'}}>
+            <MdOutlineArrowDropDownCircle />
+          </Box>
         </Stack>
       </AccordionButton>
 
-      <AccordionPanel height={{ xl:'22rem'}} borderLeft={{xl:'2px solid black'}} textAlign={'left'}>
+      <AccordionPanel display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} height={{ xl:'22rem'}} borderLeft={{xl:'2px solid black'}} textAlign={'left'}>
         <Text textAlign={'center'} mb='1rem'>{about}</Text>
-        {points.map((point: string, index: number) =>
+        {points && points.map((point: string, index: number) =>
           <li key={index}>
             {point}
           </li>
@@ -46,7 +50,7 @@ const AccordionCard = ( props: IAccordionCard) => {
 
 const Experience = () => {
   return ( 
-    <Box textAlign={'center'} py={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }} px={{base: '1.25rem', sm: '1.rem', md: '1.2rem', lg: '6rem', xl:'3rem', '2xl':'6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'} background={'linear-gradient( to bottom, rgb(55,156,215)  0%, RGB(28 87 121) 100%)'} >
+    <Box textAlign={'center'} pt={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }} pb={'3rem'} px={{base: '1.25rem', sm: '1.rem', md: '1.2rem', lg: '6rem', xl:'3rem', '2xl':'6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'} background={'linear-gradient( to bottom, rgb(55,156,215)  0%, RGB(28 87 121) 100%)'} >
       <Box pl={'3rem'}>
         <Header name='Experience' position='left' />
       </Box>
@@ -60,17 +64,17 @@ const Experience = () => {
             post='Frontend Engineer'
             date='May 2023 – Present'
             about='HighTable is an early-stage VC-backed hospitality-tech startup headquartered in Delaware, US, with a mission to transform the African hospitality industry through a powerful and efficient Software as a Service (SaaS) application.'
-            points={[
-              'Develop and deploy responsive websites and web applications.',
-              'Implement responsive design for seamless mobile experiences.',
-              'Collaborate with cross-functional teams to implement design concepts into interactive web experiences.'
-            ]}
+            // points={[
+            //   'Develop and deploy responsive websites and web applications.',
+            //   'Implement responsive design for seamless mobile experiences.',
+            //   'Collaborate with cross-functional teams to implement design concepts into interactive web experiences.'
+            // ]}
           />
 
           <AccordionCard 
             bgColor='blue.500'
             logo='/datavault.png'
-            title='DataVault Nigeria'
+            title='DataVault Nig.'
             post='Frontend Engineer'
             date='Mar 2023 – Present'
             about='Datavault Nigeria is a data research platform that automates data analysis and publish data-driven market research for MSMEs fostering advancements in Africa&apos;s creative and innovative landscape.'

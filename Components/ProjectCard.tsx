@@ -45,9 +45,9 @@ const ProjectCard = (props:IProjectCard) => {
           )}
         </Box>
 
-        <HStack _disabled={disable} pt={'1rem'}>
-          <PrimaryBtn name='View Repository' href={repoLink} />
-          <PrimaryBtn name='Visit' href={link} />
+        <HStack _disabled={disable} pt={'1rem'} spacing={'1rem'}>
+          <PrimaryBtn name='View Repository' href={repoLink} border={'1px solid black'} />
+          <PrimaryBtn name='Visit' href={link} border={'1px solid black'} />
         </HStack>
       </VStack>
     </Box>
