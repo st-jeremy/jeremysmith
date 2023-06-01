@@ -74,7 +74,7 @@ const Experience = () => {
 
           <AccordionCard 
             bgColor='blue.500'
-            logo='/datavault.png'
+            logo='/dataVault.png'
             title='DataVault Nig.'
             post='Frontend Engineer'
             date='Mar 2023 – Present'
@@ -88,7 +88,7 @@ const Experience = () => {
 
           <AccordionCard 
             bgColor='blue.700'
-            color='whiteAlpha.800'
+            // color='whiteAlpha.800'
             logo='/freelance.png'
             title='Freelance'
             post='Frontend Engineer'

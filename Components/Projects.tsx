@@ -73,7 +73,7 @@ const ProjectCarousel = () => {
         />
 
         <ProjectCard 
-          src='/dataVaultpage.png'
+          src='/datavaultpage.png'
           alt='dataVault image'
           heading='DataVault'
           description= 'Data analysis & research blog'
