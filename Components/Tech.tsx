@@ -1,23 +1,23 @@
-import { Box, Heading, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Tooltip } from "@chakra-ui/react";
 import Image from "next/image";
 import { motion, spring } from "framer-motion";
-import SectionHeading from "./SectionHeading";
-import SectionSubHeading from "./SectionSubHeading";
 import Header from "./Header";
+import { ITechImage } from "./types";
 
-const TechImage = (props: any) => {
+const TechImage = ({ tooltip, src, alt }: ITechImage) => {
+
   return ( 
     <Box width={'fit-content'} objectFit={'contain'}>
-      <Tooltip label={props.tooltip} aria-label='A tooltip' fontWeight={900} fontFamily={'fantasy'} bgColor={'rgb(26,54,93)'}>
+      <Tooltip label={tooltip} aria-label='A tooltip' fontWeight={900} bgColor={'rgb(26,54,93)'}>
         <Image 
-          src={props.src}
-          alt={props.alt}
+          src={src}
+          alt={alt}
           loading={'lazy'}
           width={100}
           height={60}
         />
       </Tooltip>
-      </Box>
+    </Box>
    );
 }
  

@@ -5,10 +5,10 @@ import { IPrimaryBtn } from '../types';
 
 
 const PrimaryBtn = (props: IPrimaryBtn) => {
-  const { name, link, download, color, bgColor, rightIcon, leftIcon } = props;
+  const { name, href, download, color, bgColor, rightIcon, leftIcon } = props;
 
   return ( 
-    <a href={link} className={styles.customBtn} download={download}>
+    <a href={href} className={styles.customBtn} download={download}>
       <motion.button
         whileHover={{
           scale: 1.1,

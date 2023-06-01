@@ -54,7 +54,6 @@ const Menu = () => {
 
               All rights reserved. <br />
               Copyright © {new Date().getFullYear()}
-              {/* - <span style={{fontWeight: 900}}>jeremysmith.dev</span> */}
             </Text>
           </DrawerBody>
          

@@ -13,37 +13,37 @@ const Navlinks = ( { display, flexDir }: INavlink ) => {
     <Box display={display} flexDir={flexDir} gap={{base:'.5rem', md: 2, lg: '.15rem', xl:2}}>
       <PrimaryBtn 
         name='Home'
-        link='#hero'
+        href='#hero'
         leftIcon={<FcHome />} 
       />
 
       <PrimaryBtn 
         name='Tech'
-        link='#tech'
+        href='#tech'
         leftIcon={<VscFileCode/>}
       />
 
       <PrimaryBtn 
         name='Projects'
-        link='#projects'
+        href='#projects'
         leftIcon={<VscProject/>}
       />
 
       <PrimaryBtn 
         name='Experience'
-        link='#experience'
+        href='#experience'
         leftIcon={<FcWorkflow />}
       />
 
       <PrimaryBtn 
         name='Contact'
-        link='#contact'
+        href='#contact'
         leftIcon={<MdContacts />}
       />
 
       <PrimaryBtn 
         name='Download Resume'
-        link='/Jeremy_Smith-Resume.pdf'
+        href='/Jeremy_Smith-Resume.pdf'
         leftIcon={<BiDownload />}
         bgColor='rgb(26,54,93)'
         color='white'

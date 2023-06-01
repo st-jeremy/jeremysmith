@@ -1,3 +1,4 @@
+import ContactIcons from './ContactIcons';
 export interface IAccordionCard{
   bgColor: string;
   title: string;
@@ -10,7 +11,7 @@ export interface IAccordionCard{
 
 export interface IPrimaryBtn{
   name: string;
-  link: string;
+  href: string;
   download?: string;
   bgColor?: string;
   color?: string;
@@ -22,4 +23,22 @@ export interface IPrimaryBtn{
 export interface INavlink{
   display: string;
   flexDir: 'row' | 'column';
+}
+
+export interface ITechImage{
+  tooltip: string;
+  src: string;
+  alt: string;
+}
+
+export interface IContactIcon{
+  icon: any;
+  href: string;
+  tooltip?: string;
+}
+
+export interface IContactIcons{
+  ml?: string;
+  mt?: string;
+  justifyContent?: string;
 }

@@ -1,45 +1,48 @@
 import { BsGithub, BsLinkedin, BsPhone, BsWhatsapp } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si'
 import { Button, Box, Tooltip } from '@chakra-ui/react';
+import { IContactIcon, IContactIcons } from './types';
 
-const ContactIcon = (props:any) => {
+const ContactIcon = ( props:IContactIcon ) => {
+  const { href, tooltip, icon} = props;
   return ( 
-    <Box>
-      <Tooltip label={props.tooltip} aria-label='A tooltip'>
+    <a href={href} >
+      <Tooltip label={tooltip} aria-label='A tooltip'>
         <Button variant={'ghost'} color={'white'} _hover={{color:'black', backgroundColor:'white'}} fontSize={{lg:'24px' ,xl:'30px'}}>
-          <a href={props.link} >{props.icon}</a>
+         {icon}
         </Button>
       </Tooltip>
-    </Box>
+    </a>
    );
 }
  
-const ContactIcons = (props:any) => {
+const ContactIcons = (props:IContactIcons) => {
+  const { ml, mt, justifyContent } = props;
   return ( 
-    <Box display={'flex'} flexDir={'row'} ml={props.ml} justifyContent={props.justifyContent} mt={props.mt}>
+    <Box display={'flex'} flexDir={'row'} ml={ml} justifyContent={justifyContent} mt={mt}>
       <ContactIcon 
         tooltip='G-mail'
-        link="mailto:st.jeremy1@gmail.com"
+        href="mailto:st.jeremy1@gmail.com"
         icon={<SiGmail />}
       />
       <ContactIcon 
         tooltip='Whatsapp'
-        link="http://wa.me/2349053292009"
+        href="http://wa.me/2349053292009"
         icon={<BsWhatsapp />}
       />
       <ContactIcon 
         tooltip='Phone: +234 905 329 2009'
-        link="tel:+2349053292009"
+        href="tel:+2349053292009"
         icon={<BsPhone />}
       />
       <ContactIcon 
         tooltip='LinkedIn'
-        link='"https://linkedin.com/in/stjeremy1"'
+        href='"https://linkedin.com/in/stjeremy1"'
         icon={<BsLinkedin />}
       />
       <ContactIcon 
         tooltip='GitHub'
-        link="https://github.com/st-jeremy"
+        href="https://github.com/st-jeremy"
         icon={<BsGithub />}
       />
     </Box>

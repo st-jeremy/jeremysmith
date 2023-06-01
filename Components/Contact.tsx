@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react';
 import { BsGithub, BsLinkedin, BsMailbox, BsPhone, BsWhatsapp } from 'react-icons/bs';
-import ContactButton from './buttons/ContactButton';
+import PrimaryBtn from './buttons/PrimaryBtn';
 import Header from './Header';
 
 const Contact = () => {
@@ -11,30 +11,35 @@ const Contact = () => {
       
       <Box display={{base:'flex', md: 'grid'}} gridTemplateColumns={{md:'auto auto', lg: 'auto auto auto'}} flexDir={{ base:'column'}} gap={'10px'} justifyContent={{base:'left', md:'center'}} width={{base:'13.5rem', md: '100%'}} margin={'auto'} alignItems={'center'}>
         
-        <ContactButton 
+        <PrimaryBtn 
           href='mailto:st.jeremy1@gmail.com'
-          icon={<BsMailbox />}
+          leftIcon={<BsMailbox />}
           name='st.jeremy1@gmail.com'
+          bgColor='white'
         />
-        <ContactButton 
+        <PrimaryBtn 
           href='http://wa.me/2349053292009'
-          icon={<BsWhatsapp />}
+          leftIcon={<BsWhatsapp />}
           name='WhatsApp Messenger'
+          bgColor='white'
         />
-        <ContactButton 
+        <PrimaryBtn 
           href='tel:+2349053292009'
-          icon={<BsPhone />}
+          leftIcon={<BsPhone />}
           name='+234 905 329 2009'
+          bgColor='white'
         />
-        <ContactButton 
+        <PrimaryBtn 
           href='https://linkedin.com/in/stjeremy1'
-          icon={<BsLinkedin />}
+          leftIcon={<BsLinkedin />}
           name='LinkedIn'
+          bgColor='white'
         />
-        <ContactButton 
+        <PrimaryBtn 
           href='https://github.com/st-jeremy'
-          icon={<BsGithub />}
+          leftIcon={<BsGithub />}
           name='Github'
+          bgColor='white'
         />
       </Box>
 
