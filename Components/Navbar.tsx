@@ -10,7 +10,7 @@ import Image from "next/image";
 const Navbar = () => {
  
   return (
-    <Box position={'fixed'} width={{base: '100%'}} zIndex={'1000'} px={{base: '1.5rem', sm: '1.7rem', md: '3rem', lg: '5.4rem'}} py={{base: '.65rem', sm: '.7rem', md:'1rem', xl:'1.5rem'}} borderBottom={'2.5px solid rgb(26,54,93)'} bgColor={'white'} display={'flex'} maxWidth={'1500px'} ml={{'2xl':'20.7%'}}>
+    <Box position={'fixed'} width={{base: '100%'}} zIndex={'1000'} px={{base: '1.5rem', sm: '1.7rem', md: '2.5rem', lg: '5.4rem'}} py={{base: '.65rem', sm: '.7rem', md:'.7rem', xl:'1.5rem'}} borderBottom={'2.5px solid rgb(26,54,93)'} bgColor={'white'} display={'flex'} maxWidth={'1500px'} ml={{'2xl':'20.7%'}}>
  
       <Box display={'flex'} gap={'3px'}>
         <Image src='/heroImage.png' alt='logo' width={27} height={40} />

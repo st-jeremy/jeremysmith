@@ -19,10 +19,10 @@ const PrimaryBtn = (props: IPrimaryBtn) => {
         <Button 
           variant={'ghost'} 
           border={'none'} 
-          width={{base: '11rem', md:'fit-content'}}
-          height={'fit-content'}
+          // width={{base: '11rem', md:'fit-content'}}
+          // height={'fit-content'}
           leftIcon={leftIcon} 
-          p={{base:'1.5', xl:'2'}}
+          p={'2'}
           justifyContent='left'
           alignItems={'left'} 
           _hover={{

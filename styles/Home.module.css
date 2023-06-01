@@ -33,31 +33,6 @@
 }
 
 
-
-
-/* .navlinkBox{
-  gap: .5rem;
-}
-
-@media (min-width: 768px) {
-  .navlinkBox{
-    gap: .3rem;
-  }
-}
-@media (min-width: 992px) {
-  .navlinkBox{
-    gap: .35rem;
-  }
-}
-@media (min-width: 1280px) {
-  .navlinkBox{
-    gap: .5rem;
-  }
-} */
-
-
-
-
 .description {
   display: inherit;
   justify-content: inherit;

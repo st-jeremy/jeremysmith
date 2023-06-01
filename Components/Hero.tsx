@@ -29,7 +29,7 @@ const Hero = () => {
             ...with a mission of turning designs into great experiences, through user-centric approach.
           </Text>
 
-          <PrimaryBtn name='Contact me' href='#contact' bgColor="" rightIcon={<HiOutlineArrowNarrowRight />} />
+          <PrimaryBtn name='Contact me' href='#contact' bgColor='rgb(26,54,93)' color="white" rightIcon={<HiOutlineArrowNarrowRight />} />
         </Box>
 
         <Box display={{base:'none', lg:'flex'}} width={{ lg: '40%'}} transform={'rotateY(180deg)'} p={'2rem'}>
