@@ -5,6 +5,7 @@ export interface IAccordionCard{
   post: string;
   logo: string;
   date: string; 
+  color?: string;
   about: string;
   points?: string[];
 }
