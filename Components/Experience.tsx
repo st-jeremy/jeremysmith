@@ -15,15 +15,15 @@ const AccordionCard = ( props: IAccordionCard) => {
   const { bgColor, title, post, logo, date, about, points } = props;
 
   return ( 
-    <AccordionItem bgColor={bgColor} p={'1rem'} display={{base:'block', lg:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} pb={{lg:'3rem'}} pt={{lg:'3rem'}} height={{lg:'25rem'}} _hover={{bgColor:'blue.50'}}>
+    <AccordionItem bgColor={bgColor} p={'1rem'} display={{base:'block', xl:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} py={{xl:'3rem'}} height={{xl:'25rem'}} _hover={{bgColor:'blue.50'}}>
 
-      <AccordionButton border={{base:'.5px solid grey', lg:'none'}} _hover={{color:'blue.900'}}>
-        <Stack flex={{base:1, md:'unset'}} direction={{base:'row', lg:'column'}} width={{base:'12rem', lg: 'fit-content'}} height={{lg:'16rem'}} m={'auto'}>
-          <Box width={{base:'30%', md:'unset'}}>
+      <AccordionButton border={{base:'.5px solid grey', xl:'none'}} _hover={{color:'blue.900'}}>
+        <Stack flex={{base:1, md:'unset'}} direction={{base:'row', xl:'column'}} width={{base:'12rem', md:'100%', xl: '100%'}} height={{xl:'16rem'}} m={'auto'}>
+          <Box width={{base:'30%', xl:'unset'}}>
             <Image src={logo} width={150} height={150} alt={'Logo'} loading={'lazy'} />
           </Box>
 
-          <Box flex={{base:1, md:'unset'}} height={{md:'fit-content'}}>
+          <Box flex={{base:1, xl:'unset'}} height={{xl:'fit-content'}} textAlign={'left'}>
             <Text fontWeight={700} fontSize={{md:'20px'}}>{title}</Text>
             <Text>{post}</Text>
             <Text>{date}</Text>
@@ -31,7 +31,7 @@ const AccordionCard = ( props: IAccordionCard) => {
         </Stack>
       </AccordionButton>
 
-      <AccordionPanel height={{ lg:'19rem'}} borderLeft={{lg:'2px solid black'}} textAlign={'left'}>
+      <AccordionPanel height={{ xl:'19rem'}} borderLeft={{xl:'2px solid black'}} textAlign={'left'}>
         <Text textAlign={'center'} mb='1rem'>{about}</Text>
         {points.map((point: string, index: number) =>
           <li key={index}>
@@ -50,13 +50,13 @@ const Experience = () => {
       <Header name='Experience' position='left' />
 
       <Box borderRadius={'20px'} margin={'auto'}>
-        <Accordion defaultIndex={[0]} p={0} reduceMotion display={'flex'} flexDirection={{base:'column', lg:'row'}} >
+        <Accordion defaultIndex={[0]} p={0} reduceMotion display={'flex'} flexDirection={{base:'column', xl:'row'}} >
           <AccordionCard 
             bgColor='blue.100'
             logo='/hightable.png'
             title='HighTable Inc.'
             post='Frontend Engineer'
-            date='Nov 2022 – Present'
+            date='May 2023 – Present'
             about='HighTable is an early-stage VC-backed hospitality-tech startup headquartered in Delaware, US, with a mission to transform the African hospitality industry through a powerful and efficient Software as a Service (SaaS) application.'
             points={[
               'Develop and deploy responsive websites and web applications.',
