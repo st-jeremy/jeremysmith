@@ -7,7 +7,7 @@ import {
   Heading
 } from '@chakra-ui/react'
 import Image from 'next/image';
-import AnimatedBtn from './AnimatedBtn';
+import PrimaryBtn from './PrimaryBtn';
  
 
 const ProjectCard = (props:any) => {
@@ -43,8 +43,8 @@ const ProjectCard = (props:any) => {
         </Box>
 
         <HStack _disabled={disable} pt={'1rem'}>
-          <AnimatedBtn name='View Repository' link='/' />
-          <AnimatedBtn name='Visit' link='/' />
+          <PrimaryBtn name='View Repository' href='/' />
+          <PrimaryBtn name='Visit' href='/' />
         </HStack>
       </VStack>
     </Box>

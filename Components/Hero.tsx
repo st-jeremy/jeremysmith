@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from '@/styles/Home.module.css';
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Image from "next/image";
-import PrimaryBtn from "./buttons/SecondaryBtn";
+import PrimaryBtn from "./PrimaryBtn";
 
 
 const Hero = () => {
@@ -29,7 +29,7 @@ const Hero = () => {
             ...with a mission of turning designs into great experiences, through user-centric approach.
           </Text>
 
-          <PrimaryBtn name='Contact me' link='#contact' rightIcon={<HiOutlineArrowNarrowRight />} />
+          <PrimaryBtn name='Contact me' href='#contact' bgColor="" rightIcon={<HiOutlineArrowNarrowRight />} />
         </Box>
 
         <Box display={{base:'none', lg:'flex'}} width={{ lg: '40%'}} transform={'rotateY(180deg)'} p={'2rem'}>

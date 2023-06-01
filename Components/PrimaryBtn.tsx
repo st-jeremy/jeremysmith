@@ -1,7 +1,7 @@
-import { Box, Button } from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import styles from '../../styles/Home.module.css'
-import { IPrimaryBtn } from '../types';
+import styles from '../styles/Home.module.css'
+import { IPrimaryBtn } from './types';
 
 
 const PrimaryBtn = (props: IPrimaryBtn) => {

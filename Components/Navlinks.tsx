@@ -3,7 +3,7 @@ import { FcHome, FcWorkflow } from 'react-icons/fc'
 import { VscProject, VscFileCode } from 'react-icons/vsc'
 import { MdContacts } from 'react-icons/md'
 import { BiDownload } from 'react-icons/bi';
-import PrimaryBtn from './buttons/PrimaryBtn';
+import PrimaryBtn from './PrimaryBtn';
 import { INavlink } from './types';
 
 
