@@ -5,7 +5,7 @@ import { IPrimaryBtn } from './types';
 
 
 const PrimaryBtn = (props: IPrimaryBtn) => {
-  const { name, href, download, color, bgColor, rightIcon, leftIcon } = props;
+  const { name, href, download, color, bgColor, width, rightIcon, leftIcon } = props;
 
   return ( 
     <a href={href} className={styles.customBtn} download={download}>
@@ -19,12 +19,10 @@ const PrimaryBtn = (props: IPrimaryBtn) => {
         <Button 
           variant={'ghost'} 
           border={'none'} 
-          // width={{base: '11rem', md:'fit-content'}}
-          // height={'fit-content'}
+          width={width}
           leftIcon={leftIcon} 
           p={'2'}
-          justifyContent='left'
-          alignItems={'left'} 
+          justifyContent='center'
           _hover={{
             color:'white', 
             bgColor:'rgb(26,54,93)'

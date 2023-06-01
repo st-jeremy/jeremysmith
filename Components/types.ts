@@ -2,19 +2,30 @@ import ContactIcons from './ContactIcons';
 export interface IAccordionCard{
   bgColor: string;
   title: string;
-  post: string,
+  post: string;
   logo: string;
   date: string; 
   about: string;
   points: string[];
 }
 
+export interface IProjectCard{
+  src: string;
+  alt: string; 
+  heading: string;
+  description: string;
+  disable?: any;
+  badges: string[];
+  repoLink: string;
+  link: string;
+}
 export interface IPrimaryBtn{
   name: string;
   href: string;
   download?: string;
   bgColor?: string;
   color?: string;
+  width?: string;
   rightIcon?: any;
   leftIcon?: any;
 }

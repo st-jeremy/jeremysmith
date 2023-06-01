@@ -8,16 +8,19 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image';
 import PrimaryBtn from './PrimaryBtn';
+import { IProjectCard } from './types';
  
 
-const ProjectCard = (props:any) => {
+const ProjectCard = (props:IProjectCard) => {
   const { 
     src,
     alt, 
     heading,
     description,
     disable,
-    badges
+    badges,
+    repoLink,
+    link
   } = props;
 
   return (
@@ -43,8 +46,8 @@ const ProjectCard = (props:any) => {
         </Box>
 
         <HStack _disabled={disable} pt={'1rem'}>
-          <PrimaryBtn name='View Repository' href='/' />
-          <PrimaryBtn name='Visit' href='/' />
+          <PrimaryBtn name='View Repository' href={repoLink} />
+          <PrimaryBtn name='Visit' href={link} />
         </HStack>
       </VStack>
     </Box>

@@ -16,30 +16,35 @@ const Contact = () => {
           leftIcon={<BsMailbox />}
           name='st.jeremy1@gmail.com'
           bgColor='white'
+          width='18rem'
         />
         <PrimaryBtn 
           href='http://wa.me/2349053292009'
           leftIcon={<BsWhatsapp />}
           name='WhatsApp Messenger'
           bgColor='white'
+          width='18rem'
         />
         <PrimaryBtn 
           href='tel:+2349053292009'
           leftIcon={<BsPhone />}
           name='+234 905 329 2009'
           bgColor='white'
+          width='18rem'
         />
         <PrimaryBtn 
           href='https://linkedin.com/in/stjeremy1'
           leftIcon={<BsLinkedin />}
           name='LinkedIn'
           bgColor='white'
+          width='18rem'
         />
         <PrimaryBtn 
           href='https://github.com/st-jeremy'
           leftIcon={<BsGithub />}
           name='Github'
           bgColor='white'
+          width='18rem'
         />
       </Box>
 

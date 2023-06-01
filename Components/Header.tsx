@@ -8,8 +8,8 @@ interface IHeader{
 const Header = ({ name, color, position }: IHeader) => {
 
   return ( 
-    <Box fontFamily={'MuseoModerno'} color={color} textAlign={position} mb={'3rem'}>
-      <Heading fontSize={{base:'35px', lg:'45px'}} >
+    <Box color={color} textAlign={position} mb={'3rem'}>
+      <Heading fontFamily={'MuseoModerno'} fontSize={{base:'35px', lg:'45px'}} >
         {name}
       </Heading>
     </Box>

@@ -10,7 +10,7 @@ import { INavlink } from './types';
 const Navlinks = ( { display, flexDir }: INavlink ) => {
 
   return ( 
-    <Box display={display} flexDir={flexDir} gap={{base:'.5rem', md: 2, lg: '.15rem', xl:2}}>
+    <Box display={display} flexDir={flexDir} gap={{base:'.5rem', md: 2, lg: '.15rem', xl:5}}>
       <PrimaryBtn 
         name='Home'
         href='#hero'
@@ -45,7 +45,7 @@ const Navlinks = ( { display, flexDir }: INavlink ) => {
         name='Download Resume'
         href='/Jeremy_Smith-Resume.pdf'
         leftIcon={<BiDownload />}
-        bgColor='rgb(26,54,93)'
+        bgColor='blue.400'
         color='white'
         download='Jeremy_Smith-Resume'
       />
