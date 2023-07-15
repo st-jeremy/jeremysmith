@@ -27,9 +27,7 @@ const Footer = () => {
         />
       </Box>
 
-      <ContactIcons 
-        justifyContent='center'
-      />
+      <ContactIcons justifyContent='center' />
 
       <Divider color={'black'} height={'2px'} w={'90%'} m={'auto'} pb={'4'}/>
 

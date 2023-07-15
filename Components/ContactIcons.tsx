@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsPhone, BsWhatsapp } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsPhone, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import { SiGmail } from 'react-icons/si'
 import { Button, Box, Tooltip } from '@chakra-ui/react';
 import { IContactIcon, IContactIcons } from './types';
@@ -26,16 +26,6 @@ const ContactIcons = (props:IContactIcons) => {
         icon={<SiGmail />}
       />
       <ContactIcon 
-        tooltip='Whatsapp'
-        href="http://wa.me/2349053292009"
-        icon={<BsWhatsapp />}
-      />
-      <ContactIcon 
-        tooltip='Phone: +234 905 329 2009'
-        href="tel:+2349053292009"
-        icon={<BsPhone />}
-      />
-      <ContactIcon 
         tooltip='LinkedIn'
         href='"https://linkedin.com/in/stjeremy1"'
         icon={<BsLinkedin />}
@@ -44,6 +34,21 @@ const ContactIcons = (props:IContactIcons) => {
         tooltip='GitHub'
         href="https://github.com/st-jeremy"
         icon={<BsGithub />}
+      />
+      <ContactIcon 
+        tooltip='Twitter'
+        href="https://twitter.com/St_Jeremy1"
+        icon={<BsTwitter />}
+      />
+      <ContactIcon 
+        tooltip='Whatsapp'
+        href="http://wa.me/2349053292009"
+        icon={<BsWhatsapp />}
+      />
+      <ContactIcon 
+        tooltip='Phone: +234 905 329 2009'
+        href="tel:+2349053292009"
+        icon={<BsPhone />}
       />
     </Box>
    );
