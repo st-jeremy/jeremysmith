@@ -20,7 +20,7 @@ const AccordionCard = ( props: IAccordionCard) => {
 
       <AccordionButton border={{base:'.5px solid grey', xl:'none'}} _hover={{color:'blue.900'}} minW={{xl:'12rem', '2xl':'13rem'}} >
         <Stack flex={{base:1, md:'unset'}} direction={{base:'row', xl:'column'}} width={{base:'12rem', md:'100%', xl: '100%'}} m={'auto'}>
-          <Box width={{base:'30%', xl:'unset'}}>
+          <Box width={{base:'30%', xl:'unset'}} m="auto">
             <Image src={logo} width={150} height={150} alt={'Logo'} loading={'lazy'} />
           </Box>
 
@@ -59,55 +59,64 @@ const Experience = () => {
       <Box margin={'auto'}>
         <Accordion defaultIndex={[1]} p={0} reduceMotion display={'flex'} flexDirection={{base:'column', xl:'row'}}>
           <AccordionCard 
-            bgColor='blue.300'
+            bgColor='blue.200'
             logo='/hightable.png'
             title='HighTable Inc.'
             post='Frontend Engineer'
             date='May 2023 – Present'
-            about='HighTable is an early-stage VC-backed hospitality-tech startup headquartered in Delaware, US, with a mission to transform the African hospitality industry through a powerful and efficient Software as a Service (SaaS) application.'
+            about='HighTable is an early-stage VC-backed hospitality-tech startup headquartered in Delaware, US, with a mission to transform the African hospitality industry through an efficient Software as a Service (SaaS) application.'
             points={[
-              'Develop and deploy responsive websites and web applications.',
-              'Implement responsive design for seamless mobile experiences.',
-              'Collaborate with cross-functional teams to implement design concepts into interactive web experiences.'
+              'Worked closely with cross-functional teams to integrate frontend components with server-side logic and APIs, ensuring a smooth operation of the platform.',
+              'Utilized technologies to develop a consistent and engaging user interface.',
+              'Implemented various code optimizations, leading to a 30% improvement in page load times and an enhanced user experience.'
+              // 'Develop and deploy responsive websites and web applications.',
+              // 'Implement responsive design for seamless mobile experiences.',
+              // 'Collaborate with cross-functional teams to implement design concepts into interactive web experiences.'
+
             ]}
           />
 
           <AccordionCard 
-            bgColor='blue.500'
+            bgColor='blue.400'
             logo='/dataVault.png'
             title='DataVault Nig.'
             post='Frontend Engineer'
             date='Mar 2023 – Present'
-            about='Datavault Nigeria is a data research platform that automates data analysis and publish data-driven market research for MSMEs fostering advancements in Africa&apos;s creative and innovative landscape.'
+            about='Datavault Nigeria is a data research platform that automates data analysis and publish data-driven market research.'
+            //  for MSMEs fostering advancements in Africa&apos;s creative and innovative landscape.'
             points={[
-              'Create visually appealing and intuitive user interfaces with high-quality frontend code.',
+              'Utilize technologies to translate design mockups into high-quality code, delivering a consistent and engaging user interface.',
+              // 'Create visually appealing and intuitive user interfaces with high-quality frontend code.',
               'Conduct thorough testing and debugging of websites and web apps, ensuring a smooth and error-free user experience.',
-              'Peer Programming with other colleagues.'
+              'Peer Programming with cross-functional teams to integrate frontend components with server-side logic and APIs.'
             ]}
           />
 
           <AccordionCard 
-            bgColor='blue.700'
+            bgColor='blue.600'
             // color='whiteAlpha.800'
             logo='/freelance.png'
             title='Freelance'
             post='Frontend Engineer'
-            date='Nov 2022 – Present'
-            about='Collaborate with other devs in building landing pages, ecommerce website, blog etc.'
+            date='Nov. 2022 – Mar. 2023'
+            about='Built webapps with intuitive user interfaces and great user experience.'
             points={[
-              'Create visually appealing and intuitive user interfaces with high-quality frontend code.',
-              'Implement responsive design for seamless mobile experiences.',
-              'Collaborate with cross-functional teams to implement design concepts into interactive web experiences.'
+              // 'Create visually appealing and intuitive user interfaces with high-quality frontend code.',
+              'Worked with cross-functional teams to develop and implement scalable, and user-friendly frontend solutions for various platforms.',
+              'Translated design mockups into high-quality code, with visually appealing interface.',
+              ' Implemented code optimizations techniques, resulting in an enhanced user experience.'
+              // 'Implemented responsive design for seamless mobile experiences.',
+              // 'Collaborate with cross-functional teams to implement design concepts into interactive web experiences.'
             ]}
           />
           
           <AccordionCard 
-            bgColor='blue.900'
+            bgColor='blue.800'
             color='whiteAlpha.800'
             logo='/sendme.png'
             title='Sendme.ng'
             post='Implementation Specialist'
-            date='Jun 2022 – present'
+            date='Jun. 2022 – May 2023'
             about='Sendme.ng (YC W22) is a startup with the goal of decentralizing the distribution of animal protein from production via to consumers using AI and data analytics.'
             points={[
               'Collaborate with clients, provide recommendations for design and functionality, and support bug resolution on apps and software.',
