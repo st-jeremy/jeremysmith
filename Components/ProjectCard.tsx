@@ -24,7 +24,7 @@ const ProjectCard = (props:IProjectCard) => {
   } = props;
 
   return (
-    <Box width={'320px'} height={'385px'} borderBottomRadius={'30px 30px'} bgColor={'white'} margin={'auto'} >
+    <Box width={'320px'} height={'400px'} borderBottomRadius={'30px 30px'} bgColor={'whiteAlpha.800'} margin={'auto'} pt={15}>
       <Image
         src={src}
         alt={alt}
