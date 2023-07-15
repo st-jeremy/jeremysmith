@@ -43,11 +43,11 @@ const Navlinks = ( { display, flexDir }: INavlink ) => {
 
       <PrimaryBtn 
         name='Download Resume'
-        href='/Jeremy_Smith-Resume.pdf'
+        href='/Resume-Jeremy_Smith.pdf'
         leftIcon={<BiDownload />}
         bgColor='blue.400'
         color='white'
-        download='Jeremy_Smith-Resume'
+        download='Resume-Jeremy_Smith'
       />
     </Box>
    );
