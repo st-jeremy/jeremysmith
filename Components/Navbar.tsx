@@ -15,7 +15,7 @@ const Navbar = () => {
       <Box display={'flex'} gap={'3px'}>
         <Image src='/heroImage.png' alt='logo' width={27} height={40} />
         <Heading fontSize={{base:'23px'}} width={'fit-content'} m={0} pt={{base:'.2rem', lg:'-3rem', xl:'0.5rem'}}>
-          Jem_Smith
+          J_Smith
         </Heading>
       </Box>
 
