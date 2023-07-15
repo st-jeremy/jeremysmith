@@ -16,12 +16,12 @@ const AccordionCard = ( props: IAccordionCard) => {
   const { bgColor, title, post, logo, date, about, points, color } = props;
 
   return ( 
-    <AccordionItem bgColor={bgColor} color={color} p={'1rem'} display={{base:'block', xl:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} py={{xl:'3rem'}} height={{xl:'27rem'}} _hover={{bgColor:'blue.100', color: 'blue.900'}}>
+    <AccordionItem bgColor={bgColor} color={color} p={'1rem'} display={{base:'block', xl:'flex'}} borderRadius={{base:0, xl:'20px 0 0 0 20px'}} borderTop={'1px solid black'} border={{ xl:'none'}} py={{xl:'3rem'}} height={{xl:'27rem'}} _hover={{bgColor:'blue.50', color: 'blue.900'}}>
 
       <AccordionButton border={{base:'.5px solid grey', xl:'none'}} _hover={{color:'blue.900'}} minW={{xl:'12rem', '2xl':'13rem'}} >
         <Stack flex={{base:1, md:'unset'}} direction={{base:'row', xl:'column'}} width={{base:'12rem', md:'100%', xl: '100%'}} m={'auto'}>
           <Box width={{base:'30%', xl:'unset'}} m="auto">
-            <Image src={logo} width={150} height={150} alt={'Logo'} loading={'lazy'} />
+            <Image src={logo} width={150} height={75} alt={'Logo'} loading={'lazy'} />
           </Box>
 
           <Box flex={{base:1, xl:'unset'}} height={{xl:'fit-content'}} textAlign={{base:'left', xl:'center'}}>
@@ -59,7 +59,7 @@ const Experience = () => {
       <Box margin={'auto'}>
         <Accordion defaultIndex={[1]} p={0} reduceMotion display={'flex'} flexDirection={{base:'column', xl:'row'}}>
           <AccordionCard 
-            bgColor='blue.200'
+            bgColor='blue.100'
             logo='/hightable.png'
             title='HighTable Inc.'
             post='Frontend Engineer'
@@ -77,7 +77,7 @@ const Experience = () => {
           />
 
           <AccordionCard 
-            bgColor='blue.400'
+            bgColor='blue.300'
             logo='/dataVault.png'
             title='DataVault Nig.'
             post='Frontend Engineer'
@@ -93,7 +93,7 @@ const Experience = () => {
           />
 
           <AccordionCard 
-            bgColor='blue.600'
+            bgColor='blue.500'
             // color='whiteAlpha.800'
             logo='/freelance.png'
             title='Freelance'
@@ -111,8 +111,8 @@ const Experience = () => {
           />
           
           <AccordionCard 
-            bgColor='blue.800'
-            color='whiteAlpha.800'
+            bgColor='blue.600'
+            // color='whiteAlpha.800'
             logo='/sendme.png'
             title='Sendme.ng'
             post='Implementation Specialist'
