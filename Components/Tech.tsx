@@ -71,6 +71,12 @@ const Tech = () => {
         />
 
         <TechImage 
+          src='/apollo-client.jpeg'
+          alt='Apollo Client'
+          tooltip='Apollo Client'
+        />
+
+        <TechImage 
           src='/redux.png'
           alt='Redux'
           tooltip='Redux'
