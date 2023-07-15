@@ -26,7 +26,7 @@ export interface IPrimaryBtn{
   download?: string;
   bgColor?: string;
   color?: string;
-  width?: string;
+  width?: string | number;
   rightIcon?: any;
   leftIcon?: any;
   border?: string;

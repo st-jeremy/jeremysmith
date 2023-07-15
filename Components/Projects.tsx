@@ -53,11 +53,21 @@ const ProjectCarousel = () => {
         renderButtonGroupOutside={true}
       >
         <ProjectCard 
+          src='/farmily.png'
+          alt='farmily image'
+          heading='Farmily'
+          description= 'Agric. e-commerce website'
+          badges={[ 'Next.JS', 'TypeScript', 'Apollo Client', 'Tailwind']}
+          repoLink='https://github.com/st-jeremy/decx'
+          link='https://farmily.africa'
+        />
+
+        <ProjectCard 
           src='/fashion-haven.png'
           alt='fashion haven image'
           heading='Fashion haven'
           description= 'E-commerce website'
-          badges={[ 'Next.Js', 'TypeScript', 'Redux', 'Chakra UI', 'CSS' ]}
+          badges={[ 'Next.Js', 'TypeScript', 'Redux', 'Chakra UI' ]}
           repoLink='https://github.com/st-jeremy/fashion-haven'
           link='https://fashionhaven.vercel.app'
         />
@@ -77,9 +87,9 @@ const ProjectCarousel = () => {
           alt='dataVault image'
           heading='DataVault'
           description= 'Data analysis & research blog'
-          badges={[ 'Next.Js', 'TypeScript', 'React-Query', 'Chakra UI', 'CSS', 'Jest', 'Axios' ]}
+          badges={[ 'Next.Js', 'TypeScript', 'React-Query', 'Chakra UI', 'Tailwind', 'Jest', 'Axios' ]}
           repoLink='/'
-          link='/'
+          link='https://data-vault-neon.vercel.app'
           disable
         />
 
@@ -93,7 +103,7 @@ const ProjectCarousel = () => {
           link='https://flyplux.vercel.app'
         />
 
-        <ProjectCard 
+        {/* <ProjectCard 
           src='/decx.png'
           alt='decx image'
           heading='Decx'
@@ -101,7 +111,7 @@ const ProjectCarousel = () => {
           badges={[ 'React', 'Chakra UI', 'CSS' ]}
           repoLink='https://github.com/st-jeremy/decx'
           link='https://decx.vercel.app'
-        />
+        /> */}
       </Carousel>
     </HStack>
    );
@@ -112,7 +122,7 @@ const Projects = () => {
   return ( 
     <Box py={{base:'4rem', sm:'5rem', md:'5rem' }}  px={{base: '1.25rem', sm: '1.5rem', md: '3rem', lg: '6rem'}} textAlign={'center'} maxW={'1500px'} id={'projects'} margin={'auto'} background={'linear-gradient( to bottom, rgb(91 181 229) 0%, rgb(55,156,215) 100%)'}>
 
-    <Header name={'Projects'} position={'left'} />
+    <Header name={'Some Projects...'} position={'left'} />
     <ProjectCarousel />
     </Box>
    );

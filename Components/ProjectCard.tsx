@@ -39,15 +39,15 @@ const ProjectCard = (props:IProjectCard) => {
 
         <Box display={'flow'}>
           {badges.map((badge: string, index: number) =>
-            <Badge mr={'.7rem'} key={index} bgColor={'blue.400'}>
+            <Badge mr={'.7rem'} key={index} bgColor={'blue.500'} color={'white'}>
               {badge}
             </Badge>
           )}
         </Box>
 
-        <HStack _disabled={disable} pt={'1rem'} spacing={'1rem'}>
-          <PrimaryBtn name='View Repository' href={repoLink} border={'1px solid black'} />
-          <PrimaryBtn name='Visit' href={link} border={'1px solid black'} />
+        <HStack _disabled={disable} pt={'.7rem'} spacing={'1rem'}>
+          {/* <PrimaryBtn name='View Repository' href={repoLink} border={'1px solid black'} /> */}
+          <PrimaryBtn name='Visit' href={link} border={'1px solid black'} width={200} />
         </HStack>
       </VStack>
     </Box>
