@@ -36,10 +36,10 @@ const AccordionCard = ( props: IAccordionCard) => {
         </Stack>
       </AccordionButton>
 
-      <AccordionPanel display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} height={{ xl:'22rem'}} borderLeft={{xl:'2px solid black'}} textAlign={'left'}>
+      <AccordionPanel display={'flex'} flexDir={'column'} alignItems={{base:'left', xl:'center'}} justifyContent={'center'} height={{ xl:'22rem'}} borderLeft={{xl:'2px solid black'}} textAlign={'left'}>
         <Text textAlign={'center'} mb='1rem'>{about}</Text>
         {points && points.map((point: string, index: number) =>
-          <li key={index}>
+          <li key={index} style={{textAlign:'left'}}>
             {point}
           </li>
         )}
