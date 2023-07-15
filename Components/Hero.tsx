@@ -17,15 +17,15 @@ const Hero = () => {
             Hello, I am
           </Text>
 
-          <Text fontSize={{base:'68px', md: '80px', lg: '84px'}} color={'blue.900'} fontWeight={900} pb={5}>
+          <Heading fontSize={{base:'68px', md: '80px', xl: '90px'}} color={'blue.900'} fontWeight={900} pb={5}>
             JEREMY SMITH
-          </Text>
+          </Heading>
           
           <Text fontSize={{base:'20px', md: '40px', lg: '40px'}} pb={5}>
             a Front-End Engineer
           </Text>
 
-          <Text fontSize={{base:'16px', md:'24px', lg: '24px'}} mb={'2rem'} textShadow={'outline'}>
+          <Text fontSize={{base:'16px', md:'22px', lg: '18px', xl:'24px'}} textShadow={'outline'} maxW={530} m={'auto'} mb={'2rem'} >
             ...with a mission of turning designs into great experiences, through user-centric approach.
           </Text>
 
