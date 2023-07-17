@@ -64,7 +64,7 @@ const Experience = () => {
             title='HighTable Inc.'
             post='Frontend Engineer'
             date='May 2023 – Present'
-            about='HighTable is an early-stage VC-backed hospitality-tech startup headquartered in Delaware, US, with a mission to transform the African hospitality industry through an efficient Software as a Service (SaaS) application.'
+            about='HighTable is an early-stage VC-backed hospitality-tech startup headquartered in Delaware, US, with a mission to transform the African hospitality industry through efficient Software as a Service apps.'
             points={[
               'Worked closely with cross-functional teams to integrate frontend components with server-side logic and APIs, ensuring a smooth operation of the platform.',
               'Utilized technologies to develop a consistent and engaging user interface.',
