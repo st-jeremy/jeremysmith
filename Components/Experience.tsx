@@ -57,7 +57,7 @@ const Experience = () => {
       </Box>
 
       <Box margin={'auto'}>
-        <Accordion defaultIndex={[1]} p={0} reduceMotion display={'flex'} flexDirection={{base:'column', xl:'row'}}>
+        <Accordion defaultIndex={[0]} p={0} reduceMotion display={'flex'} flexDirection={{base:'column', xl:'row'}}>
           <AccordionCard 
             bgColor='blue.100'
             logo='/hightable.png'
