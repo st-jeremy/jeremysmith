@@ -52,7 +52,7 @@ const ProjectCarousel = () => {
         partialVisible={false}
         renderButtonGroupOutside={true}
       >
-        <ProjectCard 
+        {/* <ProjectCard 
           src='/farmily.png'
           alt='farmily image'
           heading='Farmily'
@@ -60,7 +60,7 @@ const ProjectCarousel = () => {
           badges={[ 'Next.JS', 'TypeScript', 'Apollo Client', 'Tailwind']}
           repoLink='https://github.com/st-jeremy/decx'
           link='https://farmily.africa'
-        />
+        /> */}
 
         <ProjectCard 
           src='/fashion-haven.png'
