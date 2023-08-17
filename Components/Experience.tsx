@@ -51,7 +51,7 @@ const AccordionCard = ( props: IAccordionCard) => {
 
 const Experience = () => {
   return ( 
-    <Box textAlign={'center'} pt={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }} px={{base: '1.25rem', sm: '1.rem', md: '1.2rem', lg: '6rem', xl:'3rem', '2xl':'6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'} background={'linear-gradient( to bottom, rgb(55,156,215)  0%, RGB(28 87 121) 100%)'}>
+    <Box textAlign={'center'} pt={{base:'4rem', sm:'6.5rem', md:'10rem', lg:'6rem' }} px={{base: '1.25rem', sm: '1.rem', md: '1.2rem', lg: '6rem', xl:'3rem', '2xl':'6rem'}} minHeight={{lg:'600px'}} id={'experience'} maxW={'1500px'} margin={'auto'} background={'linear-gradient( to bottom, rgb(91 181 229) 0%, RGB(28 87 121) 100%)'}>
       <Box pl={{xl:'3rem'}}>
         <Header name='Experience' position='left' />
       </Box>
